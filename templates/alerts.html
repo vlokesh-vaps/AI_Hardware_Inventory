@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+
+{% block title %}Storage Alerts & Recommendations | Hardware Inventory{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <div class="page-header">
+        <div class="header-titles">
+            <h1 class="page-title">Storage Alerts & Recommendations</h1>
+            <p class="page-subtitle">Capacity monitoring and proactive hardware upgrade advisories</p>
+        </div>
+        <div class="header-actions">
+            <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">&larr; Back to Dashboard</a>
+        </div>
+    </div>
+
+    <!-- Storage Capacity Alerts Section -->
+    <div class="content-card mb-4">
+        <div class="card-header">
+            <div class="card-title-group">
+                <h2 class="card-title"><span>💾</span> Storage Capacity Alerts</h2>
+                <span class="badge {% if storage_alerts %}badge-warning{% else %}badge-healthy{% endif %}">
+                    {{ storage_alerts|length }} Drive{{ 's' if storage_alerts|length != 1 else '' }}
+                </span>
+            </div>
+            <span class="text-subtle">Thresholds: Warning &lt; 15% free, Critical &lt; 5% free</span>
+        </div>
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Computer</th>
+                        <th>Drive</th>
+                        <th>File System</th>
+                        <th>Used Space</th>
+                        <th>Free Space</th>
+                        <th>Free %</th>
+                        <th>Utilization Bar</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for alert in storage_alerts %}
+                    {% set used_pct = (100 - alert.free_percentage)|round(1) if alert.free_percentage is not none else 0 %}
+                    <tr>
+                        <td>
+                            <a href="{{ url_for('pc_details', computer_name=alert.computer_name) }}" class="asset-name-link">
+                                <strong>{{ alert.computer_name }}</strong>
+                            </a>
+                            <span class="cell-subtext">{{ alert.ip_address }}</span>
+                        </td>
+                        <td>
+                            <strong>{{ alert.drive_letter }}</strong>
+                            {% if alert.volume_name and alert.volume_name != 'N/A' %}
+                                <small class="text-muted">({{ alert.volume_name }})</small>
+                            {% endif %}
+                        </td>
+                        <td>{{ alert.file_system }}</td>
+                        <td>{{ alert.used_space_gb }} GB</td>
+                        <td><strong>{{ alert.free_space_gb }} GB</strong></td>
+                        <td><strong>{{ alert.free_percentage }}%</strong></td>
+                        <td style="min-width: 140px;">
+                            <div class="progress-bar-container">
+                                <div class="progress-bar bar-{{ alert.status|lower }}" style="width: {{ used_pct }}%;"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <span class="status-badge badge-{{ alert.status|lower }}">
+                                {{ alert.status }}
+                            </span>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="8" class="table-empty">
+                            <div class="empty-state">
+                                <span class="empty-icon">✅</span>
+                                <h3>All drives have sufficient capacity</h3>
+                                <p>No drives are currently below the warning (15%) or critical (5%) thresholds.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Upgrade Recommendations Section -->
+    <div class="content-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <h2 class="card-title"><span>🚀</span> Upgrade Required & Hardware Recommendations</h2>
+                <span class="badge badge-neutral">{{ recommendations|length }} Recommendation{{ 's' if recommendations|length != 1 else '' }}</span>
+            </div>
+            <span class="text-subtle">Configurable business rules for enterprise readiness</span>
+        </div>
+        <div class="card-body">
+            {% if recommendations %}
+            <div class="recommendations-grid">
+                {% for rec in recommendations %}
+                <div class="recommendation-card">
+                    <div class="rec-header">
+                        <div class="rec-title">
+                            <a href="{{ url_for('pc_details', computer_name=rec.computer_name) }}" class="asset-name-link">
+                                <strong>{{ rec.computer_name }}</strong>
+                            </a>
+                            <span class="text-muted text-sm">({{ rec.model }})</span>
+                        </div>
+                        <span class="cell-badge">{{ rec.component }}</span>
+                    </div>
+                    <div class="rec-body">
+                        <p class="rec-reason"><strong>Reason:</strong> {{ rec.reason }}</p>
+                        <div class="rec-stat">
+                            <span>Current Value:</span>
+                            <code>{{ rec.current_value }}</code>
+                        </div>
+                        <div class="rec-action">
+                            <span>Recommended Action:</span>
+                            <div class="rec-action-text">{{ rec.recommended_action }}</div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <div class="empty-state">
+                <span class="empty-icon">🎉</span>
+                <h3>No upgrades currently flagged</h3>
+                <p>All monitored systems meet or exceed the configured enterprise hardware thresholds.</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

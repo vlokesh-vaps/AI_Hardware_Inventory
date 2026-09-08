@@ -1,0 +1,64 @@
+{
+  "asset": {
+    "computer_name": "API-TEST-PC",
+    "ip_address": "192.168.1.99",
+    "all_ip_addresses": "192.168.1.99",
+    "manufacturer": "N/A",
+    "model": "N/A",
+    "system_type": "N/A",
+    "domain_workgroup": "N/A",
+    "logged_user": "N/A",
+    "report_date": "2026-09-05 12:00:00",
+    "report_file": "api_test.txt",
+    "original_filename": "api_test.txt"
+  },
+  "os": {
+    "name": "Windows 11 Enterprise",
+    "version": "N/A",
+    "build": "N/A",
+    "architecture": "N/A",
+    "serial": "N/A",
+    "install_date": "N/A",
+    "last_boot": "N/A"
+  },
+  "cpu": [],
+  "ram": [],
+  "total_ram_gb": 16.0,
+  "storage": [],
+  "drives": [],
+  "gpu": [],
+  "monitors": [],
+  "keyboards": [],
+  "mice": [],
+  "usb_devices": [],
+  "network_adapters": [],
+  "motherboard": {
+    "manufacturer": "N/A",
+    "model": "N/A",
+    "version": "N/A",
+    "serial_number": "N/A",
+    "part_number": "N/A",
+    "status": "OK"
+  },
+  "bios": {
+    "manufacturer": "N/A",
+    "bios_version": "N/A",
+    "bios_version_2": "N/A",
+    "serial_number": "N/A",
+    "release_date": "N/A",
+    "smbios_major": "N/A",
+    "smbios_minor": "N/A"
+  },
+  "software_count": 0,
+  "installed_software": [],
+  "health": {
+    "overall": "UNKNOWN",
+    "issues": [
+      "Report contains insufficient hardware information to determine health."
+    ],
+    "warnings": [],
+    "storage_alert_count": 0,
+    "upgrade_required_count": 0,
+    "recommendations": []
+  }
+}

@@ -1,0 +1,706 @@
+{% extends "base.html" %}
+
+{% block title %}{{ asset.computer_name }} | PC Details{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <!-- Breadcrumb & Top Bar -->
+    <div class="breadcrumb-bar">
+        <a href="{{ url_for('dashboard') }}" class="breadcrumb-link">&larr; Back to Dashboard</a>
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">{{ asset.computer_name }}</span>
+    </div>
+
+    <!-- PC Profile Header -->
+    <div class="pc-hero-card">
+        <div class="pc-hero-main">
+            <div class="pc-hero-avatar">🖥️</div>
+            <div class="pc-hero-info">
+                <div class="pc-hero-title-row">
+                    <h1 class="pc-hero-name">{{ asset.computer_name }}</h1>
+                    <span class="status-badge badge-{{ health.overall|lower }} badge-lg">
+                        {{ health.overall }}
+                    </span>
+                </div>
+                <div class="pc-hero-meta">
+                    <span><strong>{{ asset.manufacturer }}</strong> {{ asset.model }}</span> &bull;
+                    <span>IP: <code>{{ asset.ip_address }}</code></span> &bull;
+                    <span>OS: {{ os.name }}</span> &bull;
+                    <span>Report Date: {{ asset.report_date }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="pc-hero-actions">
+            {% if monitoring_target %}
+            <a href="{{ url_for('monitoring_dashboard', instance=monitoring_target.instance) }}" class="btn btn-primary btn-sm" title="View live Prometheus metrics">
+                <span class="live-dot-nav">●</span> Live Telemetry
+            </a>
+            {% endif %}
+            <a href="{{ url_for('changes', computer=asset.computer_name) }}" class="btn btn-secondary btn-sm">
+                <span>🔄</span> Hardware Changes
+            </a>
+            <a href="{{ url_for('api_asset_detail', computer_name=asset.computer_name) }}" target="_blank" class="btn btn-outline btn-sm">
+                <span>⚡</span> Raw JSON
+            </a>
+        </div>
+    </div>
+
+    <!-- Live Telemetry Card (Pipeline B Integration) -->
+    {% if monitoring_target %}
+    <div class="content-card mon-pc-detail-card" id="pc-live-monitoring-box" data-instance="{{ monitoring_target.instance }}">
+        <div class="card-header mon-card-header">
+            <div class="card-title-group">
+                <h2 class="card-title">
+                    <span class="pulse-dot"></span> Live Telemetry (Prometheus Pipeline B)
+                </h2>
+                <span class="status-pill {% if monitoring_target.online %}status-online{% else %}status-offline{% endif %}" id="pc-detail-status-pill">
+                    <span class="status-dot"></span> {{ 'ONLINE' if monitoring_target.online else 'OFFLINE / UNREACHABLE' }}
+                </span>
+            </div>
+            <div class="header-actions">
+                <span class="text-muted text-sm">Instance: <code>{{ monitoring_target.instance }}</code></span> &bull;
+                <a href="{{ url_for('monitoring_dashboard', instance=monitoring_target.instance) }}" class="btn btn-secondary btn-sm">
+                    Open Full Monitoring Dashboard &rarr;
+                </a>
+            </div>
+        </div>
+
+        <div class="monitoring-kpi-grid pc-mini-kpi-grid">
+            <div class="mon-kpi-card">
+                <div class="mon-kpi-header">
+                    <span class="mon-kpi-title">CPU Utilization</span>
+                    <span class="mon-kpi-icon">⚡</span>
+                </div>
+                <div class="mon-kpi-value-row">
+                    <span class="mon-kpi-val" id="mini-cpu-val">--</span>
+                    <span class="mon-kpi-unit">%</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="mini-cpu-bar" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <div class="mon-kpi-card">
+                <div class="mon-kpi-header">
+                    <span class="mon-kpi-title">RAM Utilization</span>
+                    <span class="mon-kpi-icon">🧠</span>
+                </div>
+                <div class="mon-kpi-value-row">
+                    <span class="mon-kpi-val" id="mini-mem-val">--</span>
+                    <span class="mon-kpi-unit">%</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="mini-mem-bar" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <div class="mon-kpi-card">
+                <div class="mon-kpi-header">
+                    <span class="mon-kpi-title">Disk Utilization</span>
+                    <span class="mon-kpi-icon">💾</span>
+                </div>
+                <div class="mon-kpi-value-row">
+                    <span class="mon-kpi-val" id="mini-disk-val">--</span>
+                    <span class="mon-kpi-unit">%</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="mini-disk-bar" style="width: 0%;"></div>
+                </div>
+            </div>
+
+            <div class="mon-kpi-card">
+                <div class="mon-kpi-header">
+                    <span class="mon-kpi-title">System Uptime</span>
+                    <span class="mon-kpi-icon">⏱️</span>
+                </div>
+                <div class="mon-kpi-value-row">
+                    <span class="mon-kpi-val-text" id="mini-uptime-val">--</span>
+                </div>
+                <div class="mon-kpi-footer">
+                    <span class="text-muted">Live boot time</span>
+                </div>
+            </div>
+
+            <div class="mon-kpi-card">
+                <div class="mon-kpi-header">
+                    <span class="mon-kpi-title">Network In / Out</span>
+                    <span class="mon-kpi-icon">🌐</span>
+                </div>
+                <div class="mon-kpi-value-row">
+                    <span class="mon-kpi-val-text text-sm" id="mini-net-val">-- / --</span>
+                </div>
+                <div class="mon-kpi-footer">
+                    <span class="text-muted">Rate over 5m</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Health Issues / Warnings / Recommendations Banner -->
+    {% if health.issues or health.warnings or health.recommendations %}
+    <div class="alert-banner {% if health.issues %}banner-critical{% elif health.warnings %}banner-warning{% else %}banner-info{% endif %}">
+        <div class="banner-icon">
+            {% if health.issues %}🚨{% else %}⚠️{% endif %}
+        </div>
+        <div class="banner-body">
+            <h3 class="banner-title">
+                {% if health.issues %}Critical Issues Detected{% elif health.warnings %}System Warnings & Recommendations{% endif %}
+            </h3>
+            <ul class="banner-list">
+                {% for issue in health.issues %}
+                <li class="text-danger"><strong>Critical:</strong> {{ issue }}</li>
+                {% endfor %}
+                {% for warning in health.warnings %}
+                <li class="text-warning"><strong>Warning:</strong> {{ warning }}</li>
+                {% endfor %}
+            </ul>
+
+            {% if health.recommendations %}
+            <div class="upgrade-recs-box">
+                <span class="upgrade-rec-badge">Recommended Upgrades:</span>
+                {% for rec in health.recommendations %}
+                <div class="upgrade-rec-chip">
+                    <strong>{{ rec.component }}:</strong> {{ rec.recommended_action }} 
+                    <span class="text-muted">(Current: {{ rec.current_value }})</span>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Spec Section Grid -->
+    <div class="details-grid">
+        <!-- 1. System Info Card -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>🏢</span> System Overview</h3>
+            </div>
+            <div class="spec-table-container">
+                <table class="spec-table">
+                    <tr><th>Computer Name</th><td><strong>{{ asset.computer_name }}</strong></td></tr>
+                    <tr><th>Manufacturer</th><td>{{ asset.manufacturer }}</td></tr>
+                    <tr><th>Model</th><td>{{ asset.model }}</td></tr>
+                    <tr><th>System Type</th><td>{{ asset.system_type }}</td></tr>
+                    <tr><th>Domain / Workgroup</th><td>{{ asset.domain_workgroup }}</td></tr>
+                    <tr><th>Logged In User</th><td>{{ asset.logged_user }}</td></tr>
+                    <tr><th>Primary IP</th><td><code>{{ asset.ip_address }}</code></td></tr>
+                    <tr><th>All IPv4 Addresses</th><td><code>{{ asset.all_ip_addresses }}</code></td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 2. Operating System Card -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>🪟</span> Operating System</h3>
+            </div>
+            <div class="spec-table-container">
+                <table class="spec-table">
+                    <tr><th>Operating System</th><td><strong>{{ os.name }}</strong></td></tr>
+                    <tr><th>OS Version</th><td>{{ os.version }}</td></tr>
+                    <tr><th>OS Build</th><td>{{ os.build }}</td></tr>
+                    <tr><th>Architecture</th><td>{{ os.architecture }}</td></tr>
+                    <tr><th>Windows Serial</th><td><code>{{ os.serial }}</code></td></tr>
+                    <tr><th>Install Date</th><td>{{ os.install_date }}</td></tr>
+                    <tr><th>Last Boot Time</th><td>{{ os.last_boot }}</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 3. CPU / Processor Card -->
+        <div class="content-card card-full-width">
+            <div class="card-header">
+                <h3 class="card-title"><span>⚙️</span> CPU / Processor</h3>
+                <span class="badge badge-neutral">{{ cpu|length }} Processor{{ 's' if cpu|length != 1 else '' }}</span>
+            </div>
+            <div class="card-body">
+                {% for proc in cpu %}
+                <div class="cpu-profile">
+                    <div class="cpu-header">
+                        <h4>{{ proc.name }}</h4>
+                        <span class="status-badge badge-{{ proc.status|lower }}">{{ proc.status }}</span>
+                    </div>
+                    <div class="spec-grid-inline">
+                        <div class="spec-inline-item">
+                            <span class="spec-label">Manufacturer</span>
+                            <span class="spec-val">{{ proc.manufacturer }}</span>
+                        </div>
+                        <div class="spec-inline-item">
+                            <span class="spec-label">Cores / Threads</span>
+                            <span class="spec-val"><strong>{{ proc.cores }}</strong> Cores / <strong>{{ proc.threads }}</strong> Threads</span>
+                        </div>
+                        <div class="spec-inline-item">
+                            <span class="spec-label">Current Clock</span>
+                            <span class="spec-val">{{ proc.current_speed_mhz }} MHz</span>
+                        </div>
+                        <div class="spec-inline-item">
+                            <span class="spec-label">Max Clock</span>
+                            <span class="spec-val">{{ proc.maximum_speed_mhz }} MHz</span>
+                        </div>
+                        <div class="spec-inline-item">
+                            <span class="spec-label">Socket</span>
+                            <span class="spec-val">{{ proc.socket }}</span>
+                        </div>
+                        <div class="spec-inline-item">
+                            <span class="spec-label">Processor ID</span>
+                            <span class="spec-val"><code>{{ proc.processor_id }}</code></span>
+                        </div>
+                    </div>
+                </div>
+                {% else %}
+                <p class="text-muted">No CPU information available.</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- 4. RAM / Memory Card -->
+        <div class="content-card card-full-width">
+            <div class="card-header">
+                <div class="card-title-group">
+                    <h3 class="card-title"><span>🧠</span> RAM / Memory</h3>
+                    <span class="badge badge-primary">Total RAM: {{ total_ram_gb }} GB</span>
+                </div>
+                <span class="badge badge-neutral">{{ ram|length }} Module{{ 's' if ram|length != 1 else '' }} Installed</span>
+            </div>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Slot / Locator</th>
+                            <th>Manufacturer</th>
+                            <th>Model / Part No</th>
+                            <th>Capacity</th>
+                            <th>Speed</th>
+                            <th>Configured Speed</th>
+                            <th>Serial Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for stick in ram %}
+                        <tr>
+                            <td><strong>{{ stick.device_locator }}</strong></td>
+                            <td>{{ stick.manufacturer }}</td>
+                            <td>{{ stick.model }}</td>
+                            <td><strong>{{ stick.capacity_gb }} GB</strong></td>
+                            <td>{{ stick.speed_mhz }} MHz</td>
+                            <td>{{ stick.configured_speed_mhz or stick.speed_mhz }} MHz</td>
+                            <td><code>{{ stick.serial_number }}</code></td>
+                        </tr>
+                        {% else %}
+                        <tr><td colspan="7" class="text-center text-muted">No RAM stick data available.</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 5. Physical Storage & Drive Utilization Card -->
+        <div class="content-card card-full-width">
+            <div class="card-header">
+                <div class="card-title-group">
+                    <h3 class="card-title"><span>💾</span> Storage</h3>
+                    <span class="badge badge-neutral">{{ storage|length }} Physical Disks</span>
+                </div>
+                <span class="text-subtle">Hardware Health & Capacity separated</span>
+            </div>
+            <div class="card-body">
+                <!-- Physical Disks Sub-table -->
+                <h4 class="sub-section-title">Physical Disks</h4>
+                <div class="table-responsive mb-4">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Disk / Device</th>
+                                <th>Model</th>
+                                <th>Media Type</th>
+                                <th>Size</th>
+                                <th>Bus Type</th>
+                                <th>Serial Number</th>
+                                <th>Storage Health</th>
+                                <th>Hardware Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for disk in storage %}
+                            <tr>
+                                <td><strong>{{ disk.device }}</strong></td>
+                                <td>{{ disk.model }}</td>
+                                <td>
+                                    <span class="cell-badge {% if disk.media_type == 'SSD' %}badge-ssd{% endif %}">
+                                        {{ disk.media_type }}
+                                    </span>
+                                </td>
+                                <td><strong>{{ disk.size_gb }} GB</strong></td>
+                                <td>{{ disk.bus_type }}</td>
+                                <td><code>{{ disk.serial_number }}</code></td>
+                                <td>
+                                    <span class="status-badge badge-{{ disk.health_status|lower }}">
+                                        {{ disk.health_status }}
+                                    </span>
+                                </td>
+                                <td>
+                                    <span class="status-badge badge-{{ disk.operational_status|lower }}">
+                                        {{ disk.operational_status }}
+                                    </span>
+                                </td>
+                            </tr>
+                            {% else %}
+                            <tr><td colspan="8" class="text-center text-muted">No physical disks detected.</td></tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Drive Partitions & Utilization -->
+                <h4 class="sub-section-title">Drive Space & Capacity Alerts</h4>
+                <div class="drives-grid">
+                    {% for drv in drives %}
+                    {% set used_pct = (100 - drv.free_percentage)|round(1) if drv.free_percentage is not none else 0 %}
+                    <div class="drive-card status-border-{{ drv.status|lower }}">
+                        <div class="drive-card-header">
+                            <div class="drive-letter">
+                                <strong>{{ drv.drive_letter }}</strong>
+                                {% if drv.volume_name and drv.volume_name != 'N/A' %}
+                                    <span class="drive-label">({{ drv.volume_name }})</span>
+                                {% endif %}
+                                <span class="drive-fs">{{ drv.file_system }}</span>
+                            </div>
+                            <span class="status-badge badge-{{ drv.status|lower }}">{{ drv.status }}</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-bar bar-{{ drv.status|lower }}" style="width: {{ used_pct }}%;"></div>
+                        </div>
+                        <div class="drive-stats-row">
+                            <div class="stat-col">
+                                <span class="stat-lbl">Used</span>
+                                <span class="stat-val">{{ drv.used_space_gb }} GB ({{ used_pct }}%)</span>
+                            </div>
+                            <div class="stat-col text-right">
+                                <span class="stat-lbl">Free</span>
+                                <span class="stat-val"><strong>{{ drv.free_space_gb }} GB</strong> ({{ drv.free_percentage }}%)</span>
+                            </div>
+                        </div>
+                        <div class="drive-total">Total Capacity: {{ drv.total_size_gb }} GB</div>
+                    </div>
+                    {% else %}
+                    <p class="text-muted">No logical partition data available.</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. GPU Card -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>🎮</span> Graphics / GPU</h3>
+                <span class="badge badge-neutral">{{ gpu|length }} GPU{{ 's' if gpu|length != 1 else '' }}</span>
+            </div>
+            <div class="card-body">
+                {% for g in gpu %}
+                <div class="gpu-item">
+                    <div class="gpu-name"><strong>{{ g.name }}</strong></div>
+                    <div class="spec-table-container">
+                        <table class="spec-table">
+                            <tr><th>Manufacturer</th><td>{{ g.manufacturer }}</td></tr>
+                            <tr><th>Video Memory</th><td>{{ g.video_memory }}</td></tr>
+                            <tr><th>Driver Version</th><td><code>{{ g.driver_version }}</code></td></tr>
+                            <tr><th>Resolution</th><td>{{ g.resolution }} @ {{ g.refresh_rate }}</td></tr>
+                            <tr><th>Video Processor</th><td>{{ g.video_processor }}</td></tr>
+                        </table>
+                    </div>
+                </div>
+                {% else %}
+                <p class="text-muted">No GPU detected.</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- 7. Monitor Card -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>🖥️</span> Monitor / Display</h3>
+                <span class="badge badge-neutral">{{ monitors|length }} Display{{ 's' if monitors|length != 1 else '' }}</span>
+            </div>
+            <div class="card-body">
+                {% for m in monitors %}
+                <div class="monitor-item">
+                    <div class="monitor-name"><strong>{{ m.manufacturer }} {{ m.model }}</strong></div>
+                    <table class="spec-table">
+                        <tr><th>Manufacturer</th><td>{{ m.manufacturer }}</td></tr>
+                        <tr><th>Model</th><td>{{ m.model }}</td></tr>
+                        <tr><th>Product Code</th><td><code>{{ m.product_code }}</code></td></tr>
+                        <tr><th>Serial Number</th><td><code>{{ m.serial_number }}</code></td></tr>
+                    </table>
+                </div>
+                {% else %}
+                <p class="text-muted">No monitor detected.</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- 8. Keyboard & Mouse Card -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>⌨️</span> Input Devices</h3>
+            </div>
+            <div class="card-body">
+                <h4 class="sub-section-title">Keyboard</h4>
+                {% for kb in keyboards %}
+                <div class="peripheral-item">
+                    <div><strong>{{ kb.name }}</strong></div>
+                    <div class="text-muted text-sm">{{ kb.description }}</div>
+                    <div class="text-subtle text-xs">Device ID: <code>{{ kb.device_id }}</code></div>
+                    <span class="status-badge badge-{{ kb.status|lower }} badge-sm mt-1">{{ kb.status }}</span>
+                </div>
+                {% else %}
+                <p class="text-muted">No keyboard detected.</p>
+                {% endfor %}
+
+                <h4 class="sub-section-title mt-3">Mouse / Pointing Device</h4>
+                {% for ms in mice %}
+                <div class="peripheral-item">
+                    <div><strong>{{ ms.name }}</strong></div>
+                    <div class="text-muted text-sm">{{ ms.description }} &bull; {{ ms.hardware_type }}</div>
+                    <div class="text-subtle text-xs">Device ID: <code>{{ ms.device_id }}</code></div>
+                    <span class="status-badge badge-{{ ms.status|lower }} badge-sm mt-1">{{ ms.status }}</span>
+                </div>
+                {% else %}
+                <p class="text-muted">No mouse detected.</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- 9. Network Adapters Card -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>🌐</span> Network Adapters</h3>
+                <span class="badge badge-neutral">{{ network_adapters|length }} Adapter{{ 's' if network_adapters|length != 1 else '' }}</span>
+            </div>
+            <div class="card-body">
+                {% for net in network_adapters %}
+                <div class="network-item">
+                    <div><strong>{{ net.name }}</strong></div>
+                    <table class="spec-table">
+                        <tr><th>MAC Address</th><td><code>{{ net.mac_address }}</code></td></tr>
+                        <tr><th>Manufacturer</th><td>{{ net.manufacturer }}</td></tr>
+                        <tr><th>Type</th><td>{{ net.adapter_type }}</td></tr>
+                        <tr><th>Speed</th><td>{{ net.speed }}</td></tr>
+                        <tr><th>Status</th><td><span class="status-badge badge-{{ net.status|lower }}">{{ net.status }}</span></td></tr>
+                    </table>
+                </div>
+                {% else %}
+                <p class="text-muted">No network adapters found.</p>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- 10. Motherboard & BIOS Card -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>🔌</span> Motherboard & BIOS</h3>
+            </div>
+            <div class="card-body">
+                <h4 class="sub-section-title">Motherboard</h4>
+                <table class="spec-table mb-3">
+                    <tr><th>Manufacturer</th><td>{{ motherboard.manufacturer }}</td></tr>
+                    <tr><th>Model</th><td><strong>{{ motherboard.model }}</strong></td></tr>
+                    <tr><th>Version</th><td>{{ motherboard.version }}</td></tr>
+                    <tr><th>Serial Number</th><td><code>{{ motherboard.serial_number }}</code></td></tr>
+                    <tr><th>Status</th><td><span class="status-badge badge-{{ motherboard.status|lower }}">{{ motherboard.status }}</span></td></tr>
+                </table>
+
+                <h4 class="sub-section-title">BIOS / UEFI</h4>
+                <table class="spec-table">
+                    <tr><th>Manufacturer</th><td>{{ bios.manufacturer }}</td></tr>
+                    <tr><th>BIOS Version</th><td><strong>{{ bios.bios_version }}</strong></td></tr>
+                    <tr><th>BIOS Version 2</th><td>{{ bios.bios_version_2 }}</td></tr>
+                    <tr><th>Serial Number</th><td><code>{{ bios.serial_number }}</code></td></tr>
+                    <tr><th>Release Date</th><td>{{ bios.release_date }}</td></tr>
+                    <tr><th>SMBIOS</th><td>v{{ bios.smbios_major }}.{{ bios.smbios_minor }}</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- 11. USB Devices Table Card (With Live Search) -->
+        <div class="content-card card-full-width">
+            <div class="card-header">
+                <div class="card-title-group">
+                    <h3 class="card-title"><span>🔌</span> USB Devices</h3>
+                    <span class="badge badge-neutral" id="usb-count-badge">{{ usb_devices|length }} Connected</span>
+                </div>
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="usb-search-input" placeholder="Search USB devices..." class="form-control form-control-sm">
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="data-table" id="usb-table">
+                    <thead>
+                        <tr>
+                            <th>Device Name</th>
+                            <th>Manufacturer</th>
+                            <th>PNP / Device ID</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for usb in usb_devices %}
+                        <tr>
+                            <td><strong>{{ usb.name }}</strong></td>
+                            <td>{{ usb.manufacturer }}</td>
+                            <td><code>{{ usb.pnp_device_id }}</code></td>
+                            <td><span class="status-badge badge-{{ usb.status|lower }}">{{ usb.status }}</span></td>
+                        </tr>
+                        {% else %}
+                        <tr><td colspan="4" class="text-center text-muted">No USB devices recorded.</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 12. Installed Software Accordion (Segregated to keep hardware view clean) -->
+        <div class="content-card card-full-width">
+            <div class="card-header clickable-header" onclick="toggleSection('software-section');">
+                <div class="card-title-group">
+                    <h3 class="card-title"><span>📦</span> Installed Software Applications</h3>
+                    <span class="badge badge-neutral">{{ software_count }} Applications</span>
+                </div>
+                <button class="btn btn-outline btn-sm" id="btn-toggle-software">Show Applications &darr;</button>
+            </div>
+            <div id="software-section" class="collapsible-content" style="display: none;">
+                <div class="p-3">
+                    <div class="mb-3 search-box">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="software-search-input" placeholder="Search installed software..." class="form-control">
+                    </div>
+                    <div class="table-responsive max-height-table">
+                        <table class="data-table data-table-sm" id="software-table">
+                            <thead>
+                                <tr>
+                                    <th>Application Name</th>
+                                    <th>Version</th>
+                                    <th>Publisher</th>
+                                    <th>Architecture</th>
+                                    <th>Install Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for sw in installed_software %}
+                                <tr>
+                                    <td><strong>{{ sw.name }}</strong></td>
+                                    <td><code>{{ sw.version }}</code></td>
+                                    <td>{{ sw.publisher }}</td>
+                                    <td>{{ sw.architecture }}</td>
+                                    <td>{{ sw.install_date }}</td>
+                                </tr>
+                                {% else %}
+                                <tr><td colspan="5" class="text-center text-muted">No software records found.</td></tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 13. Snapshot History Card -->
+        <div class="content-card card-full-width">
+            <div class="card-header">
+                <h3 class="card-title"><span>🕒</span> Snapshot History</h3>
+                <span class="badge badge-neutral">{{ history|length }} Snapshot{{ 's' if history|length != 1 else '' }}</span>
+            </div>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Report Date</th>
+                            <th>Total RAM</th>
+                            <th>Storage Disks</th>
+                            <th>Overall Health</th>
+                            <th>Snapshot File</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for snap in history %}
+                        <tr>
+                            <td><strong>{{ snap.report_date }}</strong></td>
+                            <td>{{ snap.total_ram_gb }} GB</td>
+                            <td>{{ snap.storage_count }} disks</td>
+                            <td><span class="status-badge badge-{{ snap.overall_health|lower }}">{{ snap.overall_health }}</span></td>
+                            <td><code>{{ snap.filename }}</code></td>
+                        </tr>
+                        {% else %}
+                        <tr><td colspan="5" class="text-center text-muted">No snapshot history found.</td></tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{% if monitoring_target %}
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const box = document.getElementById('pc-live-monitoring-box');
+    if (!box) return;
+    const instance = box.getAttribute('data-instance');
+    if (!instance) return;
+
+    function pollMini() {
+        if (document.hidden) return;
+        fetch(`/api/monitoring/${encodeURIComponent(instance)}/current`)
+            .then(res => res.json())
+            .then(data => {
+                if (!data || !data.metrics) return;
+                const m = data.metrics;
+                const isOnline = data.online === true;
+
+                const pill = document.getElementById('pc-detail-status-pill');
+                if (pill) {
+                    pill.className = `status-pill ${isOnline ? 'status-online' : 'status-offline'}`;
+                    pill.innerHTML = `<span class="status-dot"></span> ${isOnline ? (data.status || 'ONLINE') : 'OFFLINE / UNREACHABLE'}`;
+                }
+
+                if (m.cpu_percent !== null && m.cpu_percent !== undefined) {
+                    document.getElementById('mini-cpu-val').textContent = m.cpu_percent.toFixed(1);
+                    document.getElementById('mini-cpu-bar').style.width = `${Math.min(100, Math.max(0, m.cpu_percent))}%`;
+                }
+
+                if (m.memory_percent !== null && m.memory_percent !== undefined) {
+                    document.getElementById('mini-mem-val').textContent = m.memory_percent.toFixed(1);
+                    document.getElementById('mini-mem-bar').style.width = `${Math.min(100, Math.max(0, m.memory_percent))}%`;
+                }
+
+                if (m.disk_percent !== null && m.disk_percent !== undefined) {
+                    document.getElementById('mini-disk-val').textContent = m.disk_percent.toFixed(1);
+                    document.getElementById('mini-disk-bar').style.width = `${Math.min(100, Math.max(0, m.disk_percent))}%`;
+                }
+
+                if (m.uptime_display) {
+                    document.getElementById('mini-uptime-val').textContent = m.uptime_display;
+                }
+
+                const netRx = m.network_receive_bytes_sec ?? m.network?.receive_bytes_sec;
+                const netTx = m.network_send_bytes_sec ?? m.network?.send_bytes_sec;
+                if (netRx !== null && netRx !== undefined) {
+                    const rxKb = (netRx / 1024).toFixed(0);
+                    const txKb = (netTx / 1024).toFixed(0);
+                    document.getElementById('mini-net-val').textContent = `↓ ${rxKb} / ↑ ${txKb} KB/s`;
+                }
+            })
+            .catch(err => console.debug('Mini poll debug:', err));
+    }
+
+    pollMini();
+    setInterval(pollMini, 10000);
+});
+</script>
+{% endif %}
+{% endblock %}

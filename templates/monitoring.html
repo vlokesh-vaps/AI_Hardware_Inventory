@@ -1,0 +1,352 @@
+{% extends "base.html" %}
+
+{% block title %}Live Monitoring | Hardware Inventory{% endblock %}
+
+{% block content %}
+<div class="page-container monitoring-page">
+    <!-- Header Section -->
+    <div class="page-header monitoring-header">
+        <div class="header-titles">
+            <div class="header-tag-row">
+                <span class="live-pill"><span class="pulse-dot"></span> PIPELINE B &bull; PROMETHEUS</span>
+            </div>
+            <h1 class="page-title">Live Hardware Monitoring</h1>
+            <p class="page-subtitle">Real-time metrics, system health, and time-series trends directly from Prometheus</p>
+        </div>
+        <div class="header-actions">
+            <div class="refresh-controls">
+                <label for="refresh-interval-select" class="refresh-label">Auto-Refresh:</label>
+                <select id="refresh-interval-select" class="form-control form-control-sm select-auto-refresh">
+                    <option value="5">Every 5s</option>
+                    <option value="10" selected>Every 10s</option>
+                    <option value="15">Every 15s</option>
+                    <option value="30">Every 30s</option>
+                    <option value="0">Paused</option>
+                </select>
+                <button id="btn-manual-refresh" class="btn btn-secondary btn-sm" title="Refresh Live Metrics Now">
+                    <span class="btn-icon">🔄</span> Refresh Now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Target Selector Bar -->
+    <div class="content-card target-selector-card">
+        <div class="target-bar-content">
+            <div class="target-select-group">
+                <label for="target-selector" class="target-label">
+                    <span class="icon">🖥️</span> Select Monitored PC:
+                </label>
+                <select id="target-selector" class="form-control target-dropdown">
+                    {% for t in targets %}
+                    <option value="{{ t.instance }}" data-name="{{ t.name }}" data-online="{{ 'true' if t.online else 'false' }}" {% if active_target and active_target.instance == t.instance %}selected{% endif %}>
+                        {{ t.name }} ({{ t.instance }}) &mdash; {% if t.online %}● ONLINE{% else %}○ OFFLINE / UNREACHABLE{% endif %}
+                    </option>
+                    {% endfor %}
+                    {% if not targets %}
+                    <option value="" disabled selected>No Windows monitoring targets discovered</option>
+                    {% endif %}
+                </select>
+            </div>
+
+            <div class="target-meta-group" id="target-meta-info">
+                <div class="target-meta-item">
+                    <span class="meta-label">Monitoring Status:</span>
+                    <span id="target-status-badge" class="status-pill status-loading">
+                        <span class="status-dot"></span> Loading...
+                    </span>
+                </div>
+                <div class="target-meta-item">
+                    <span class="meta-label">Instance Endpoint:</span>
+                    <code id="target-instance-display">{{ active_target.instance if active_target else 'N/A' }}</code>
+                </div>
+                <div class="target-meta-item">
+                    <span class="meta-label">Last Polled:</span>
+                    <span id="target-last-poll" class="text-muted">--:--:--</span>
+                </div>
+                <div class="target-meta-item">
+                    <a id="link-static-specs" href="#" class="btn btn-outline btn-sm" title="View static hardware specs for this computer">
+                        <span>🔍</span> View Static Specs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offline Alert Banner (shown when target up == 0) -->
+    <div id="offline-alert-banner" class="alert-banner banner-warning" style="display: none;">
+        <div class="banner-icon">⚠️</div>
+        <div class="banner-body">
+            <h3 class="banner-title">Endpoint Monitoring Unreachable (up=0)</h3>
+            <p class="banner-desc">
+                Prometheus is unable to scrape metrics from Windows Exporter on this machine.
+                <strong>Note:</strong> This indicates the exporter service is down or network port 9182 is blocked.
+                It is <em>not</em> classified as a CPU, RAM, or Disk hardware failure.
+            </p>
+        </div>
+    </div>
+
+    <!-- Live Metric KPI Cards -->
+    <div class="monitoring-kpi-grid">
+        <!-- CPU Card -->
+        <div class="mon-kpi-card" id="card-cpu">
+            <div class="mon-kpi-header">
+                <span class="mon-kpi-title">CPU Utilization</span>
+                <span class="mon-kpi-icon">⚡</span>
+            </div>
+            <div class="mon-kpi-value-row">
+                <span class="mon-kpi-val" id="val-cpu-percent">--</span>
+                <span class="mon-kpi-unit">%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="bar-cpu" style="width: 0%;"></div>
+            </div>
+            <div class="mon-kpi-footer">
+                <span id="sub-cpu-status" class="text-muted">Calculated via idle rate</span>
+            </div>
+        </div>
+
+        <!-- RAM Card -->
+        <div class="mon-kpi-card" id="card-memory">
+            <div class="mon-kpi-header">
+                <span class="mon-kpi-title">Memory (RAM)</span>
+                <span class="mon-kpi-icon">🧠</span>
+            </div>
+            <div class="mon-kpi-value-row">
+                <span class="mon-kpi-val" id="val-memory-percent">--</span>
+                <span class="mon-kpi-unit">%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="bar-memory" style="width: 0%;"></div>
+            </div>
+            <div class="mon-kpi-footer">
+                <span id="sub-memory-details" class="text-muted">Used: -- / Total: -- GB</span>
+            </div>
+        </div>
+
+        <!-- Primary Storage Card -->
+        <div class="mon-kpi-card" id="card-disk">
+            <div class="mon-kpi-header">
+                <span class="mon-kpi-title">Primary Storage</span>
+                <span class="mon-kpi-icon">💾</span>
+            </div>
+            <div class="mon-kpi-value-row">
+                <span class="mon-kpi-val" id="val-disk-percent">--</span>
+                <span class="mon-kpi-unit">%</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="bar-disk" style="width: 0%;"></div>
+            </div>
+            <div class="mon-kpi-footer">
+                <span id="sub-disk-details" class="text-muted">-- drives detected</span>
+            </div>
+        </div>
+
+        <!-- Network Card -->
+        <div class="mon-kpi-card" id="card-network">
+            <div class="mon-kpi-header">
+                <span class="mon-kpi-title">Network Throughput</span>
+                <span class="mon-kpi-icon">🌐</span>
+            </div>
+            <div class="mon-net-stats">
+                <div class="net-stat-item">
+                    <span class="net-stat-label">↓ Inbound:</span>
+                    <span class="net-stat-val" id="val-net-rx">-- KB/s</span>
+                </div>
+                <div class="net-stat-item">
+                    <span class="net-stat-label">↑ Outbound:</span>
+                    <span class="net-stat-val" id="val-net-tx">-- KB/s</span>
+                </div>
+            </div>
+            <div class="mon-kpi-footer">
+                <span id="sub-net-nics" class="text-muted">Rate over 5m window</span>
+            </div>
+        </div>
+
+        <!-- Uptime Card -->
+        <div class="mon-kpi-card" id="card-uptime">
+            <div class="mon-kpi-header">
+                <span class="mon-kpi-title">System Uptime</span>
+                <span class="mon-kpi-icon">⏱️</span>
+            </div>
+            <div class="mon-kpi-value-row">
+                <span class="mon-kpi-val-text" id="val-uptime">--</span>
+            </div>
+            <div class="mon-kpi-footer">
+                <span id="sub-uptime-since" class="text-muted">Calculated from boot time</span>
+            </div>
+        </div>
+
+        <!-- Temperature Card -->
+        <div class="mon-kpi-card" id="card-temp">
+            <div class="mon-kpi-header">
+                <span class="mon-kpi-title">Temperature</span>
+                <span class="mon-kpi-icon">🌡️</span>
+            </div>
+            <div class="mon-kpi-value-row">
+                <span class="mon-kpi-val-text text-muted" id="val-temp">N/A</span>
+            </div>
+            <div class="mon-kpi-footer">
+                <span class="text-muted">Thermal sensors not enabled</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Section (Historical & Trend Analysis) -->
+    <div class="mon-charts-section">
+        <div class="mon-charts-header">
+            <div class="chart-title-group">
+                <h2 class="section-title">Telemetry Trends</h2>
+                <span class="section-subtitle">Time-series data retrieved via Prometheus /api/v1/query_range</span>
+            </div>
+            <div class="chart-range-buttons btn-group" id="chart-range-group">
+                <button class="btn btn-filter active" data-range="1h">1 Hour</button>
+                <button class="btn btn-filter" data-range="6h">6 Hours</button>
+                <button class="btn btn-filter" data-range="24h">24 Hours</button>
+            </div>
+        </div>
+
+        <div class="mon-charts-grid">
+            <!-- CPU Chart -->
+            <div class="content-card chart-card">
+                <div class="card-header chart-card-header">
+                    <h3 class="card-title"><span>⚡</span> CPU Utilization Trend</h3>
+                    <span class="chart-legend-badge badge-cpu">CPU %</span>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="chart-cpu"></canvas>
+                </div>
+            </div>
+
+            <!-- Memory Chart -->
+            <div class="content-card chart-card">
+                <div class="card-header chart-card-header">
+                    <h3 class="card-title"><span>🧠</span> Memory Utilization Trend</h3>
+                    <span class="chart-legend-badge badge-memory">RAM %</span>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="chart-memory"></canvas>
+                </div>
+            </div>
+
+            <!-- Network Chart -->
+            <div class="content-card chart-card">
+                <div class="card-header chart-card-header">
+                    <h3 class="card-title"><span>🌐</span> Network Throughput (KB/s)</h3>
+                    <span class="chart-legend-badge badge-network">Rx / Tx</span>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="chart-network"></canvas>
+                </div>
+            </div>
+
+            <!-- Disk I/O Chart -->
+            <div class="content-card chart-card">
+                <div class="card-header chart-card-header">
+                    <h3 class="card-title"><span>💾</span> Disk I/O Rate (KB/s)</h3>
+                    <span class="chart-legend-badge badge-disk">Read / Write</span>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="chart-disk-io"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Telemetry Grids -->
+    <div class="mon-details-grid">
+        <!-- Logical Disk Volumes Table -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>💽</span> Logical Disk Drives</h3>
+                <span class="badge badge-neutral" id="disk-count-badge">-- Volumes</span>
+            </div>
+            <div class="table-responsive">
+                <table class="data-table" id="table-disks">
+                    <thead>
+                        <tr>
+                            <th>Drive</th>
+                            <th>Capacity</th>
+                            <th>Free Space</th>
+                            <th>Used %</th>
+                            <th>Utilization</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-disks">
+                        <tr><td colspan="5" class="text-center text-muted">Awaiting telemetry...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Monitored Windows Services Table -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>⚙️</span> Monitored Windows Services</h3>
+                <span class="badge badge-neutral">Windows Service Collector</span>
+            </div>
+            <div class="table-responsive">
+                <table class="data-table" id="table-services">
+                    <thead>
+                        <tr>
+                            <th>Service Name</th>
+                            <th>State</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody-services">
+                        <tr><td colspan="2" class="text-center text-muted">Awaiting telemetry...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disk I/O Operations & Process Telemetry Row -->
+    <div class="mon-details-grid mon-bottom-row">
+        <!-- Disk I/O Summary -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>📊</span> Disk I/O Operations</h3>
+            </div>
+            <div class="spec-table-container">
+                <table class="spec-table" id="table-disk-io-ops">
+                    <tr><th>Read Rate</th><td id="io-read-bytes">-- KB/s</td></tr>
+                    <tr><th>Write Rate</th><td id="io-write-bytes">-- KB/s</td></tr>
+                    <tr><th>Read Ops / Sec</th><td id="io-read-ops">-- ops/s</td></tr>
+                    <tr><th>Write Ops / Sec</th><td id="io-write-ops">-- ops/s</td></tr>
+                    <tr><th>Requests Queued</th><td id="io-queued">--</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Processes & System Info -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>📦</span> Process Telemetry</h3>
+            </div>
+            <div class="spec-table-container">
+                <table class="spec-table" id="table-processes">
+                    <tr>
+                        <th>Total Active Processes</th>
+                        <td><strong id="proc-total-count">--</strong></td>
+                    </tr>
+                    <tr>
+                        <th>Configured Watchlist</th>
+                        <td id="proc-watchlist">chrome.exe, sqlservr.exe, postgres.exe</td>
+                    </tr>
+                    <tr>
+                        <th>Collector Scope</th>
+                        <td class="text-muted">Base Windows OS Process Collector</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<!-- Include Chart.js via CDN for responsive, hardware-accelerated time-series rendering -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="{{ url_for('static', filename='js/monitoring.js') }}"></script>
+{% endblock %}

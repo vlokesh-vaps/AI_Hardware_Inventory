@@ -1,0 +1,13 @@
+WINDOWS COMPLETE HARDWARE SOFTWARE HEALTH CHECK
+================================================
+IP Address         : 192.168.1.99
+Computer Name      : API-TEST-PC
+Report Date        : 2026-09-05 12:00:00
+Report File        : api_test.txt
+
+==========================================================================================
+ COMPUTER / OPERATING SYSTEM
+==========================================================================================
+Computer Name        : API-TEST-PC
+Operating System     : Windows 11 Enterprise
+Total Physical RAM   : 16.0 GB

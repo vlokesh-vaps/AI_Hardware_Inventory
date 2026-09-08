@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Upload Reports | Hardware Inventory{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <div class="page-header">
+        <div class="header-titles">
+            <h1 class="page-title">Upload Health Check Reports</h1>
+            <p class="page-subtitle">Import Windows hardware health-check TXT files to update inventory and track hardware changes</p>
+        </div>
+        <div class="header-actions">
+            <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">&larr; Back to Dashboard</a>
+        </div>
+    </div>
+
+    <div class="grid-two-col">
+        <!-- 1. File Upload Form -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>📂</span> Select or Drop TXT Files</h3>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('upload_files') }}" enctype="multipart/form-data" id="upload-form">
+                    <div class="dropzone" id="dropzone">
+                        <div class="dropzone-icon">📄</div>
+                        <h4 class="dropzone-title">Drag & Drop TXT Reports Here</h4>
+                        <p class="dropzone-sub">or click to browse from your computer</p>
+                        <input type="file" name="files" id="file-input" multiple accept=".txt" class="file-input-hidden">
+                        <button type="button" class="btn btn-primary btn-sm" onclick="document.getElementById('file-input').click();">
+                            Select Files
+                        </button>
+                    </div>
+
+                    <!-- Selected Files List -->
+                    <div id="selected-files-container" class="selected-files-box" style="display: none;">
+                        <h4 class="text-sm font-semibold mb-2">Files to Ingest:</h4>
+                        <ul id="selected-files-list" class="file-list"></ul>
+                        <div class="upload-btn-row mt-3">
+                            <button type="submit" class="btn btn-primary" id="btn-submit-upload">
+                                <span>🚀</span> Process & Ingest Files
+                            </button>
+                            <button type="button" class="btn btn-outline" onclick="clearSelectedFiles();">
+                                Clear
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 2. Import from Organization Folder -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title"><span>📁</span> Import from Local / Network Folder</h3>
+            </div>
+            <div class="card-body">
+                <p class="text-muted text-sm mb-3">
+                    Scan and import reports directly from the organization's health-check repository folder (e.g. <code>C:\healthcheck</code>).
+                </p>
+
+                <form method="POST" action="{{ url_for('import_directory') }}" class="import-dir-form">
+                    <div class="form-group mb-3">
+                        <label for="dir_path" class="form-label">Health Check Directory Path</label>
+                        <input type="text" name="dir_path" id="dir_path" value="C:\healthcheck" class="form-control" placeholder="C:\healthcheck">
+                    </div>
+                    <button type="submit" class="btn btn-secondary">
+                        <span>🔍</span> Scan & Import Directory Reports
+                    </button>
+                </form>
+
+                <hr class="divider my-4">
+
+                <h4 class="sub-section-title">Expected Report Structure</h4>
+                <div class="text-sm text-muted">
+                    <p>The parser automatically handles files containing standard headers including:</p>
+                    <ul class="bullet-list mt-2">
+                        <li><code>COMPUTER / OPERATING SYSTEM</code></li>
+                        <li><code>CPU / PROCESSOR</code></li>
+                        <li><code>RAM / MEMORY</code> (numbered sticks)</li>
+                        <li><code>PHYSICAL STORAGE</code> & <code>STORAGE HEALTH</code></li>
+                        <li><code>DRIVE / PARTITION SPACE</code></li>
+                        <li><code>MONITOR / DISPLAY</code></li>
+                        <li><code>GRAPHICS / GPU</code></li>
+                        <li><code>USB DEVICES</code> & <code>NETWORK ADAPTERS</code></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

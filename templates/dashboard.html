@@ -1,0 +1,257 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard | Hardware Inventory{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <!-- Header Section -->
+    <div class="page-header">
+        <div class="header-titles">
+            <h1 class="page-title">Hardware Inventory</h1>
+            <p class="page-subtitle">Hardware health and asset visibility across all monitored endpoints</p>
+        </div>
+        <div class="header-actions">
+            <a href="{{ url_for('upload_page') }}" class="btn btn-primary" id="btn-upload-top">
+                <span>⬆</span> Upload Reports
+            </a>
+            <a href="{{ url_for('dashboard') }}" class="btn btn-secondary" title="Refresh Dashboard">
+                <span>🔄</span> Refresh
+            </a>
+        </div>
+    </div>
+
+    <!-- KPI Cards Row -->
+    <div class="kpi-grid">
+        <div class="kpi-card" id="kpi-assets">
+            <div class="kpi-label">Total Assets</div>
+            <div class="kpi-value">{{ kpis.total_assets }}</div>
+            <div class="kpi-subtext">Active computers</div>
+        </div>
+        <div class="kpi-card kpi-healthy" id="kpi-healthy">
+            <div class="kpi-label">Healthy</div>
+            <div class="kpi-value">{{ kpis.healthy }}</div>
+            <div class="kpi-subtext">Operating normally</div>
+        </div>
+        <div class="kpi-card kpi-warning" id="kpi-warning">
+            <div class="kpi-label">Warning</div>
+            <div class="kpi-value">{{ kpis.warning }}</div>
+            <div class="kpi-subtext">Needs attention</div>
+        </div>
+        <div class="kpi-card kpi-critical" id="kpi-critical">
+            <div class="kpi-label">Critical</div>
+            <div class="kpi-value">{{ kpis.critical }}</div>
+            <div class="kpi-subtext">Action required</div>
+        </div>
+        <div class="kpi-card kpi-changes" id="kpi-changes">
+            <div class="kpi-label">Hardware Changes</div>
+            <div class="kpi-value">
+                <a href="{{ url_for('changes') }}" class="kpi-link">{{ kpis.hardware_changes }}</a>
+            </div>
+            <div class="kpi-subtext">Detected events</div>
+        </div>
+        <div class="kpi-card kpi-storage" id="kpi-storage">
+            <div class="kpi-label">Storage Alerts</div>
+            <div class="kpi-value">
+                <a href="{{ url_for('alerts') }}" class="kpi-link">{{ kpis.storage_alerts }}</a>
+            </div>
+            <div class="kpi-subtext">Low disk space</div>
+        </div>
+        <div class="kpi-card kpi-upgrade" id="kpi-upgrade">
+            <div class="kpi-label">Upgrade Required</div>
+            <div class="kpi-value">
+                <a href="{{ url_for('alerts') }}" class="kpi-link">{{ kpis.upgrade_required }}</a>
+            </div>
+            <div class="kpi-subtext">RAM / CPU / Storage</div>
+        </div>
+    </div>
+
+    <!-- PC Inventory Table Section -->
+    <div class="content-card" id="pc-table">
+        <div class="card-header">
+            <div class="card-title-group">
+                <h2 class="card-title">PC Inventory</h2>
+                <span class="badge badge-neutral" id="pc-count-badge">{{ assets|length }} systems</span>
+            </div>
+            <div class="table-filters">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="pc-search-input" placeholder="Search by computer, IP, manufacturer, or model..." class="form-control">
+                </div>
+                <div class="btn-group" id="health-filter-buttons">
+                    <button class="btn btn-filter active" data-filter="all">All</button>
+                    <button class="btn btn-filter" data-filter="HEALTHY">Healthy</button>
+                    <button class="btn btn-filter" data-filter="WARNING">Warning</button>
+                    <button class="btn btn-filter" data-filter="CRITICAL">Critical</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="data-table" id="pc-inventory-table">
+                <thead>
+                    <tr>
+                        <th>Computer</th>
+                        <th>Monitoring</th>
+                        <th>IP Address</th>
+                        <th>Manufacturer</th>
+                        <th>Model</th>
+                        <th>CPU</th>
+                        <th>RAM</th>
+                        <th>Storage</th>
+                        <th>Health</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in assets %}
+                    {% set asset = item.asset %}
+                    {% set health = item.health %}
+                    <tr class="clickable-row" data-href="{{ url_for('pc_details', computer_name=asset.computer_name) }}" data-health="{{ health.overall }}" data-search="{{ asset.computer_name }} {{ asset.ip_address }} {{ asset.manufacturer }} {{ asset.model }}">
+                        <td class="cell-primary">
+                            <a href="{{ url_for('pc_details', computer_name=asset.computer_name) }}" class="asset-name-link">
+                                {{ asset.computer_name }}
+                            </a>
+                            {% if asset.report_date != 'N/A' %}
+                            <span class="cell-subtext">{{ asset.report_date }}</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if monitoring_map and monitoring_map.get(asset.computer_name) %}
+                                {% set target = monitoring_map[asset.computer_name] %}
+                                <a href="{{ url_for('monitoring_dashboard', instance=target.instance) }}" class="status-pill {% if target.online %}status-online{% else %}status-offline{% endif %}" title="View live Prometheus metrics for {{ target.instance }}">
+                                    <span class="status-dot"></span> {{ 'ONLINE' if target.online else 'OFFLINE' }}
+                                </a>
+                            {% else %}
+                                <span class="status-pill status-unmonitored" title="Endpoint not present in Prometheus Windows targets">
+                                    <span class="status-dot"></span> UNMONITORED
+                                </span>
+                            {% endif %}
+                        </td>
+                        <td><code>{{ asset.ip_address }}</code></td>
+                        <td>{{ asset.manufacturer }}</td>
+                        <td>{{ asset.model }}</td>
+                        <td>
+                            {% if item.cpu %}
+                                {{ item.cpu[0].name }}
+                                {% if item.cpu[0].cores %}
+                                    <span class="cell-badge">{{ item.cpu[0].cores }}C / {{ item.cpu[0].threads }}T</span>
+                                {% endif %}
+                            {% else %}
+                                <span class="text-muted">N/A</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <strong>{{ item.total_ram_gb }} GB</strong>
+                            <span class="cell-subtext">({{ item.ram|length }} sticks)</span>
+                        </td>
+                        <td>
+                            {% if item.storage %}
+                                {% set disk_count = item.storage|length %}
+                                <strong>{{ disk_count }} physical disk{{ 's' if disk_count != 1 else '' }}</strong>
+                                {% if item.storage[0].media_type %}
+                                    <span class="cell-badge">{{ item.storage[0].media_type }}</span>
+                                {% endif %}
+                            {% else %}
+                                <span class="text-muted">N/A</span>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <span class="status-badge badge-{{ health.overall|lower }}">
+                                {{ health.overall }}
+                            </span>
+                        </td>
+                        <td>
+                            <a href="{{ url_for('pc_details', computer_name=asset.computer_name) }}" class="btn btn-sm btn-outline">
+                                View Details &rarr;
+                            </a>
+                        </td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="10" class="table-empty">
+                            <div class="empty-state">
+                                <span class="empty-icon">📂</span>
+                                <h3>No hardware reports found</h3>
+                                <p>Import Windows health-check .txt files to view your hardware inventory.</p>
+                                <a href="{{ url_for('upload_page') }}" class="btn btn-primary btn-sm">Upload TXT Report</a>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Bottom Highlights Grid: Changes & Alerts -->
+    <div class="grid-two-col">
+        <!-- Recent Hardware Changes Card -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title">Recent Hardware Changes</h3>
+                <a href="{{ url_for('changes') }}" class="card-link">View All ({{ kpis.hardware_changes }}) &rarr;</a>
+            </div>
+            <div class="card-body">
+                {% if recent_changes %}
+                <ul class="activity-list">
+                    {% for change in recent_changes %}
+                    <li class="activity-item">
+                        <div class="activity-badge badge-change-{{ change.change_type|lower }}">
+                            {{ change.change_type }}
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-title">
+                                <strong>{{ change.computer_name }}</strong> &bull; {{ change.component_type }}
+                            </div>
+                            <div class="activity-desc">{{ change.description }}</div>
+                            <div class="activity-time">{{ change.date }}</div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <div class="empty-state-sm">
+                    <p class="text-muted">No hardware changes detected across uploaded snapshots.</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Storage & Capacity Alerts Card -->
+        <div class="content-card">
+            <div class="card-header">
+                <h3 class="card-title">Storage Space Alerts</h3>
+                <a href="{{ url_for('alerts') }}" class="card-link">View All Alerts &rarr;</a>
+            </div>
+            <div class="card-body">
+                {% if storage_alerts %}
+                <div class="alerts-compact-list">
+                    {% for alert in storage_alerts[:5] %}
+                    <div class="storage-alert-item status-border-{{ alert.status|lower }}">
+                        <div class="storage-alert-header">
+                            <div>
+                                <strong>{{ alert.computer_name }}</strong> &mdash; <code>{{ alert.drive_letter }}</code> ({{ alert.file_system }})
+                            </div>
+                            <span class="status-badge badge-{{ alert.status|lower }}">{{ alert.status }}</span>
+                        </div>
+                        <div class="progress-bar-container">
+                            {% set used_pct = (100 - alert.free_percentage)|round(1) %}
+                            <div class="progress-bar bar-{{ alert.status|lower }}" style="width: {{ used_pct }}%;"></div>
+                        </div>
+                        <div class="storage-alert-meta">
+                            <span>{{ alert.free_percentage }}% free space remaining</span>
+                            <span>{{ alert.free_space_gb }} GB free / {{ alert.total_size_gb }} GB total</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="empty-state-sm">
+                    <p class="text-muted">✓ All drives across all computers have healthy free capacity.</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+
+{% block title %}Hardware Changes | Hardware Inventory{% endblock %}
+
+{% block content %}
+<div class="page-container">
+    <div class="page-header">
+        <div class="header-titles">
+            <h1 class="page-title">Hardware Changes</h1>
+            <p class="page-subtitle">Tracked modifications between consecutive hardware snapshots</p>
+        </div>
+        <div class="header-actions">
+            <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">
+                &larr; Back to Dashboard
+            </a>
+        </div>
+    </div>
+
+    <!-- Filter Card -->
+    <div class="content-card mb-4">
+        <form method="GET" action="{{ url_for('changes') }}" class="filters-form">
+            <div class="filter-row">
+                <div class="filter-item">
+                    <label for="filter-computer">Computer</label>
+                    <input type="text" id="filter-computer" name="computer" value="{{ filters.computer_name or '' }}" placeholder="Filter by computer..." class="form-control form-control-sm">
+                </div>
+                <div class="filter-item">
+                    <label for="filter-component">Component</label>
+                    <select id="filter-component" name="component" class="form-control form-control-sm">
+                        <option value="">All Components</option>
+                        <option value="RAM" {% if filters.component_type == 'RAM' %}selected{% endif %}>RAM</option>
+                        <option value="Storage" {% if filters.component_type == 'Storage' %}selected{% endif %}>Storage</option>
+                        <option value="GPU" {% if filters.component_type == 'GPU' %}selected{% endif %}>GPU</option>
+                        <option value="Monitor" {% if filters.component_type == 'Monitor' %}selected{% endif %}>Monitor</option>
+                        <option value="USB Device" {% if filters.component_type == 'USB Device' %}selected{% endif %}>USB Device</option>
+                        <option value="Network Adapter" {% if filters.component_type == 'Network Adapter' %}selected{% endif %}>Network Adapter</option>
+                        <option value="CPU" {% if filters.component_type == 'CPU' %}selected{% endif %}>CPU</option>
+                        <option value="Keyboard" {% if filters.component_type == 'Keyboard' %}selected{% endif %}>Keyboard</option>
+                        <option value="Mouse" {% if filters.component_type == 'Mouse' %}selected{% endif %}>Mouse</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="filter-change-type">Change Type</label>
+                    <select id="filter-change-type" name="change_type" class="form-control form-control-sm">
+                        <option value="">All Types</option>
+                        <option value="ADDED" {% if filters.change_type == 'ADDED' %}selected{% endif %}>ADDED</option>
+                        <option value="REMOVED" {% if filters.change_type == 'REMOVED' %}selected{% endif %}>REMOVED</option>
+                        <option value="CHANGED" {% if filters.change_type == 'CHANGED' %}selected{% endif %}>CHANGED</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <label for="filter-date">Date</label>
+                    <input type="text" id="filter-date" name="date" value="{{ filters.date or '' }}" placeholder="YYYY-MM-DD" class="form-control form-control-sm">
+                </div>
+                <div class="filter-actions">
+                    <button type="submit" class="btn btn-primary btn-sm">Filter</button>
+                    <a href="{{ url_for('changes') }}" class="btn btn-outline btn-sm">Reset</a>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- Changes Table -->
+    <div class="content-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <h2 class="card-title">Change History Log</h2>
+                <span class="badge badge-neutral">{{ changes|length }} Event{{ 's' if changes|length != 1 else '' }}</span>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="data-table" id="changes-table">
+                <thead>
+                    <tr>
+                        <th>Date & Time</th>
+                        <th>Computer</th>
+                        <th>Component</th>
+                        <th>Change Type</th>
+                        <th>Previous Value</th>
+                        <th>Current Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for change in changes %}
+                    <tr>
+                        <td class="whitespace-nowrap">{{ change.date }}</td>
+                        <td>
+                            <a href="{{ url_for('pc_details', computer_name=change.computer_name) }}" class="asset-name-link">
+                                <strong>{{ change.computer_name }}</strong>
+                            </a>
+                        </td>
+                        <td><span class="cell-badge">{{ change.component_type }}</span></td>
+                        <td>
+                            <span class="activity-badge badge-change-{{ change.change_type|lower }}">
+                                {{ change.change_type }}
+                            </span>
+                        </td>
+                        <td class="text-muted"><small>{{ change.previous_value }}</small></td>
+                        <td><small><strong>{{ change.current_value }}</strong></small></td>
+                    </tr>
+                    {% else %}
+                    <tr>
+                        <td colspan="6" class="table-empty">
+                            <div class="empty-state">
+                                <span class="empty-icon">🔍</span>
+                                <h3>No hardware changes found</h3>
+                                <p>Hardware changes will appear here when subsequent snapshots for the same PC are uploaded.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

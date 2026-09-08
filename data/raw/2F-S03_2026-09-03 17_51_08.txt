@@ -1,0 +1,3067 @@
+WINDOWS COMPLETE HARDWARE SOFTWARE HEALTH CHECK
+================================================
+IP Address         : 1
+All IPv4 Addresses : 172.16.10.38
+Computer Name      : 2F-S03
+Report Date        : 2026-09-03 17:51:08
+Report File        : C:\healthcheck\1_2026-09-03_17-51-08.txt
+
+==========================================================================================
+ COMPUTER / OPERATING SYSTEM
+==========================================================================================
+Computer Name        : 2F-S03
+Manufacturer         : Dell Inc.
+Model                : OptiPlex 7060
+System Type          : x64-based PC
+Domain / Workgroup   : Vapscorp.com
+Logged On User       : 2F-S03\Admin
+Total Physical RAM   : 23.8 GB
+Operating System     : Microsoft Windows 11 Pro
+OS Version           : 10.0.26200
+OS Build             : 26200
+Architecture         : 64-bit
+Windows Serial       : 00330-80000-00000-AA886
+Install Date         : 05/20/2026 11:19:58
+Last Boot            : 08/28/2026 15:37:22
+
+==========================================================================================
+ CPU / PROCESSOR
+==========================================================================================
+CPU #1
+  Name               : Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+  Manufacturer       : GenuineIntel
+  Model              : Intel64 Family 6 Model 158 Stepping 10
+  Processor ID       : BFEBFBFF000906EA
+  Serial Number      : N/A
+  Socket             : U3E1
+  Current Speed      : 3192 MHz
+  Maximum Speed      : 3192 MHz
+  Cores              : 6
+  Threads            : 12
+  Architecture       : 9
+  Status             : OK
+
+
+==========================================================================================
+ RAM / MEMORY
+==========================================================================================
+Number of RAM Sticks : 2
+
+RAM STICK #1
+  Manufacturer       : 0000000080CE
+  Model / Part No    : DDR4 16GB 2666      
+  Serial Number      : 07070083
+  Capacity           : 16 GB
+  Speed              : 2666 MHz
+  Configured Speed   : 2666 MHz
+  Memory Type        : 26
+  Form Factor        : 8
+  Device Locator     : DIMM2
+  Bank Locator       : N/A
+
+RAM STICK #2
+  Manufacturer       : 80CE000080CE
+  Model / Part No    : M378A1K43DB2-CVF    
+  Serial Number      : 03BD5B51
+  Capacity           : 8 GB
+  Speed              : 2666 MHz
+  Configured Speed   : 2666 MHz
+  Memory Type        : 26
+  Form Factor        : 8
+  Device Locator     : DIMM4
+  Bank Locator       : N/A
+
+
+==========================================================================================
+ MOTHERBOARD
+==========================================================================================
+Manufacturer         : Dell Inc.
+Product / Model      : 0C96W1
+Version              : A03
+Serial Number        : /JJT3N62/CNWS20094S011D/
+Part Number          : N/A
+Status               : OK
+
+==========================================================================================
+ BIOS / UEFI
+==========================================================================================
+Manufacturer         : Dell Inc.
+BIOS Version         : 1.32.0
+BIOS Version 2       : DELL   - 1072009
+BIOS Serial Number   : JJT3N62
+Release Date         : 09/03/2024 05:30:00
+SMBIOS Major         : 3
+SMBIOS Minor         : 1
+
+==========================================================================================
+ PHYSICAL STORAGE / HDD / SSD
+==========================================================================================
+Number of Physical Disks : 2
+
+DISK #1
+  Device              : \\.\PHYSICALDRIVE0
+  Model               : TOSHIBA DT01ACA100
+  Manufacturer        : (Standard disk drives)
+  Serial Number       :            18CVHENNS
+  Firmware Revision   : MS2OA8K0
+  Interface           : IDE
+  Media Type          : Fixed hard disk media
+  Size                : 931.51 GB
+  Status              : OK
+  Partitions          : 4
+
+DISK #2
+  Device              : \\.\PHYSICALDRIVE1
+  Model               : EVM25/1TB
+  Manufacturer        : (Standard disk drives)
+  Serial Number       : ESDAN092300516
+  Firmware Revision   : W0724A0
+  Interface           : IDE
+  Media Type          : Fixed hard disk media
+  Size                : 953.86 GB
+  Status              : OK
+  Partitions          : 4
+
+
+==========================================================================================
+ STORAGE HEALTH
+==========================================================================================
+Disk
+  Friendly Name       : EVM25/1TB
+  Model               : EVM25/1TB
+  Manufacturer        : N/A
+  Serial Number       : ESDAN092300516
+  Media Type          : SSD
+  Bus Type            : SATA
+  Size                : 953.87 GB
+  Health Status       : Healthy
+  Operational Status  : OK
+
+Disk
+  Friendly Name       : TOSHIBA DT01ACA100
+  Model               : TOSHIBA DT01ACA100
+  Manufacturer        : N/A
+  Serial Number       : 18CVHENNS
+  Media Type          : HDD
+  Bus Type            : SATA
+  Size                : 931.51 GB
+  Health Status       : Healthy
+  Operational Status  : OK
+
+
+==========================================================================================
+ DRIVE / PARTITION SPACE
+==========================================================================================
+DRIVE: C:
+  Volume Name        : N/A
+  File System        : NTFS
+  Total Size         : 463.9 GB
+  Used Space         : 356.08 GB
+  Free Space         : 107.82 GB
+  Free Percentage    : 23.24 %
+
+DRIVE: D:
+  Volume Name        : New Volume
+  File System        : NTFS
+  Total Size         : 488.28 GB
+  Used Space         : 24.11 GB
+  Free Space         : 464.17 GB
+  Free Percentage    : 95.06 %
+
+DRIVE: E:
+  Volume Name        : N/A
+  File System        : NTFS
+  Total Size         : 292.97 GB
+  Used Space         : 125.37 GB
+  Free Space         : 167.59 GB
+  Free Percentage    : 57.21 %
+
+DRIVE: F:
+  Volume Name        : N/A
+  File System        : NTFS
+  Total Size         : 345.57 GB
+  Used Space         : 43.52 GB
+  Free Space         : 302.06 GB
+  Free Percentage    : 87.41 %
+
+DRIVE: G:
+  Volume Name        : New Volume
+  File System        : NTFS
+  Total Size         : 292.47 GB
+  Used Space         : 27.12 GB
+  Free Space         : 265.36 GB
+  Free Percentage    : 90.73 %
+
+
+==========================================================================================
+ PHYSICAL PARTITIONS
+==========================================================================================
+Partition
+  Disk Index          : 0
+  Partition Index     : 0
+  Name                : Disk #0, Partition #0
+  Type                : GPT: Basic Data
+  Size                : 292.47 GB
+  Boot Partition      : False
+  Primary Partition   : True
+
+Partition
+  Disk Index          : 0
+  Partition Index     : 1
+  Name                : Disk #0, Partition #1
+  Type                : GPT: Unknown
+  Size                : 0.49 GB
+  Boot Partition      : False
+  Primary Partition   : False
+
+Partition
+  Disk Index          : 0
+  Partition Index     : 2
+  Name                : Disk #0, Partition #2
+  Type                : GPT: Basic Data
+  Size                : 292.97 GB
+  Boot Partition      : False
+  Primary Partition   : True
+
+Partition
+  Disk Index          : 0
+  Partition Index     : 3
+  Name                : Disk #0, Partition #3
+  Type                : GPT: Basic Data
+  Size                : 345.57 GB
+  Boot Partition      : False
+  Primary Partition   : True
+
+Partition
+  Disk Index          : 1
+  Partition Index     : 0
+  Name                : Disk #1, Partition #0
+  Type                : GPT: System
+  Size                : 0.1 GB
+  Boot Partition      : True
+  Primary Partition   : True
+
+Partition
+  Disk Index          : 1
+  Partition Index     : 1
+  Name                : Disk #1, Partition #1
+  Type                : GPT: Basic Data
+  Size                : 463.9 GB
+  Boot Partition      : False
+  Primary Partition   : True
+
+Partition
+  Disk Index          : 1
+  Partition Index     : 2
+  Name                : Disk #1, Partition #2
+  Type                : GPT: Unknown
+  Size                : 0.83 GB
+  Boot Partition      : False
+  Primary Partition   : False
+
+Partition
+  Disk Index          : 1
+  Partition Index     : 3
+  Name                : Disk #1, Partition #3
+  Type                : GPT: Basic Data
+  Size                : 488.28 GB
+  Boot Partition      : False
+  Primary Partition   : True
+
+
+==========================================================================================
+ MONITOR / DISPLAY
+==========================================================================================
+MONITOR #1
+  Manufacturer       : LEN
+  Model               : L22-4e
+  Product Code        : 67D5
+  Serial Number       : UKHRRXTK
+
+
+==========================================================================================
+ GRAPHICS / GPU
+==========================================================================================
+GPU
+  Name                : Intel(R) UHD Graphics 630
+  Manufacturer        : Intel Corporation
+  Driver Version      : 30.0.100.9864
+  Video Memory        : 1 GB
+  Video Processor     : Intel(R) UHD Graphics Family
+  Resolution          : N/A x N/A
+  Refresh Rate        : N/A Hz
+
+GPU
+  Name                : NVIDIA GeForce GT 730
+  Manufacturer        : NVIDIA
+  Driver Version      : 23.21.13.8813
+  Video Memory        : 4 GB
+  Video Processor     : GeForce GT 730
+  Resolution          : 1920 x 1080
+  Refresh Rate        : 60 Hz
+
+
+==========================================================================================
+ KEYBOARD
+==========================================================================================
+Keyboard
+  Name                : Enhanced (101- or 102-key)
+  Description         : USB Input Device
+  Manufacturer        : N/A
+  Device ID           : USB\VID_17EF&PID_6190&MI_00\6&15ADB76F&0&0000
+  Status              : OK
+
+Note: Standard Windows WMI normally does not expose USB keyboard serial numbers.
+
+==========================================================================================
+ MOUSE / POINTING DEVICE
+==========================================================================================
+Mouse
+  Name                : USB Input Device
+  Description         : USB Input Device
+  Manufacturer        : (Standard system devices)
+  Device ID           : USB\VID_17EF&PID_608D\5&1E8FF073&0&9
+  Hardware Type       : USB Input Device
+  Status              : OK
+
+Note: Standard Windows WMI normally does not expose USB mouse serial numbers.
+
+==========================================================================================
+ USB DEVICES
+==========================================================================================
+USB Device
+  Name                : USB Composite Device
+  Manufacturer        : (Standard USB Host Controller)
+  Device ID           : USB\VID_04B8&PID_1331\584235353235373653
+  PNP Device ID       : USB\VID_04B8&PID_1331\584235353235373653
+  Status              : OK
+
+USB Device
+  Name                : USB Composite Device
+  Manufacturer        : (Standard USB Host Controller)
+  Device ID           : USB\VID_17EF&PID_6190\5&1E8FF073&0&6
+  PNP Device ID       : USB\VID_17EF&PID_6190\5&1E8FF073&0&6
+  Status              : OK
+
+USB Device
+  Name                : EPSON Utility
+  Manufacturer        : WinUsb Device
+  Device ID           : USB\VID_04B8&PID_1331&MI_01\6&16EF8F1&1&0001
+  PNP Device ID       : USB\VID_04B8&PID_1331&MI_01\6&16EF8F1&1&0001
+  Status              : OK
+
+USB Device
+  Name                : EPSON L8050 Series
+  Manufacturer        : Microsoft
+  Device ID           : USB\VID_04B8&PID_1331&MI_00\6&16EF8F1&1&0000
+  PNP Device ID       : USB\VID_04B8&PID_1331&MI_00\6&16EF8F1&1&0000
+  Status              : OK
+
+USB Device
+  Name                : USB Input Device
+  Manufacturer        : (Standard system devices)
+  Device ID           : USB\VID_17EF&PID_6190&MI_00\6&15ADB76F&0&0000
+  PNP Device ID       : USB\VID_17EF&PID_6190&MI_00\6&15ADB76F&0&0000
+  Status              : OK
+
+USB Device
+  Name                : USB Input Device
+  Manufacturer        : (Standard system devices)
+  Device ID           : USB\VID_17EF&PID_6190&MI_01\6&15ADB76F&0&0001
+  PNP Device ID       : USB\VID_17EF&PID_6190&MI_01\6&15ADB76F&0&0001
+  Status              : OK
+
+USB Device
+  Name                : USB Root Hub (USB 3.0)
+  Manufacturer        : (Standard USB HUBs)
+  Device ID           : USB\ROOT_HUB30\4&36898853&0&0
+  PNP Device ID       : USB\ROOT_HUB30\4&36898853&0&0
+  Status              : OK
+
+USB Device
+  Name                : USB Input Device
+  Manufacturer        : (Standard system devices)
+  Device ID           : USB\VID_17EF&PID_608D\5&1E8FF073&0&9
+  PNP Device ID       : USB\VID_17EF&PID_608D\5&1E8FF073&0&9
+  Status              : OK
+
+
+==========================================================================================
+ NETWORK ADAPTERS
+==========================================================================================
+Network Adapter
+  Name                : Intel(R) Ethernet Connection (7) I219-LM
+  Manufacturer        : Intel
+  MAC Address         : 8C:EC:4B:D6:AA:25
+  Adapter Type        : Ethernet 802.3
+  Speed               : 1000000000
+  Device ID           : 1
+  Status              : 2
+
+
+==========================================================================================
+ CURRENT PHYSICAL USER
+==========================================================================================
+Current Logged User : 2F-S03\Admin
+Username            : Admin
+User Profile        : C:\Users\Admin
+
+==========================================================================================
+ USER FOLDER DETAILS
+==========================================================================================
+Desktop
+  Path               : C:\Users\Admin\Desktop
+  File Count         : 1269
+  Total Size         : 59.54 GB
+
+Downloads
+  Path               : C:\Users\Admin\Downloads
+  File Count         : 690
+  Total Size         : 37.83 GB
+
+Pictures
+  Path               : C:\Users\Admin\Pictures
+  File Count         : 391
+  Total Size         : 0.17 GB
+
+Documents
+  Path               : C:\Users\Admin\Documents
+  File Count         : 859
+  Total Size         : 1.65 GB
+
+Videos
+  Path               : C:\Users\Admin\Videos
+  File Count         : 15
+  Total Size         : 1.01 GB
+
+Music
+  Path               : C:\Users\Admin\Music
+  File Count         : 1
+  Total Size         : 0 GB
+
+
+==========================================================================================
+ INSTALLED SOFTWARE / APPLICATIONS
+==========================================================================================
+Collecting installed software information...
+
+TOTAL INSTALLED SOFTWARE : 279
+
+SOFTWARE #1
+  Name               : Active Directory Authentication Library for SQL Server
+  Version            : 13.1.4001.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #2
+  Name               : Advanced IP Scanner 2.5.1
+  Version            : 2.5.4594.1
+  Publisher          : Famatech
+  Install Date       : 20260608
+  Install Location   : C:\Program Files (x86)\Advanced IP Scanner\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #3
+  Name               : Application Verifier x64 External Package
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #4
+  Name               : BarTender
+  Version            : 11.3.5
+  Publisher          : Seagull Scientific
+  Install Date       : 20260713
+  Install Location   : C:\Program Files\Seagull\BarTender 2022\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #5
+  Name               : BarTender 2022 R5
+  Version            : 11.3.5.197999
+  Publisher          : Seagull Scientific
+  Install Date       : N/A
+  Install Location   : C:\Program Files\Seagull\BarTender 2022\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #6
+  Name               : Bonjour
+  Version            : 3.0.0.10
+  Publisher          : Apple Inc.
+  Install Date       : 20260826
+  Install Location   : C:\Program Files (x86)\Bonjour\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #7
+  Name               : Bonjour Print Services
+  Version            : 2.0.2.0
+  Publisher          : Apple Inc.
+  Install Date       : 20260703
+  Install Location   : C:\Program Files\Bonjour Print Services\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #8
+  Name               : ClickOnce Bootstrapper Package for Microsoft .NET Framework
+  Version            : 4.7.04107
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #9
+  Name               : CyberLink PowerDirector 365
+  Version            : 24.0.1209.0
+  Publisher          : CyberLink Corp.
+  Install Date       : N/A
+  Install Location   : C:\Program Files\CyberLink\PowerDirector\24.0.1209.0
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #10
+  Name               : DiagnosticsHub_CollectionService
+  Version            : 15.9.36101
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #11
+  Name               : easyTimePro
+  Version            : 10.2
+  Publisher          : ZKTeco Inc
+  Install Date       : 20260821
+  Install Location   : C:\easytime\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #12
+  Name               : Entity Framework 6.2.0 Tools  for Visual Studio 2017
+  Version            : 6.2.61807.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #13
+  Name               : Epson Connect Printer Setup
+  Version            : 1.4.11
+  Publisher          : Seiko Epson Corporation
+  Install Date       : 20260521
+  Install Location   : C:\Program Files (x86)\Epson Software\ECPrinterSetup\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #14
+  Name               : EPSON L8050 Series Printer Uninstall
+  Version            : N/A
+  Publisher          : Seiko Epson Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #15
+  Name               : Epson Manuals
+  Version            : 2.0.4.0
+  Publisher          : Seiko Epson Corporation
+  Install Date       : 20260521
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #16
+  Name               : Epson Photo+
+  Version            : 4.0.4.0
+  Publisher          : Seiko Epson Corporation
+  Install Date       : 20260521
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #17
+  Name               : Epson Printer Connection Checker
+  Version            : 3.4.4.0
+  Publisher          : Seiko Epson Corporation
+  Install Date       : 20260521
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #18
+  Name               : Epson Software Updater
+  Version            : 5.1.0
+  Publisher          : Seiko Epson Corporation
+  Install Date       : 20260721
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #19
+  Name               : EpsonNet Print
+  Version            : 3.3.1.0
+  Publisher          : Seiko Epson Corporation
+  Install Date       : 20260521
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #20
+  Name               : Google Chrome
+  Version            : 152.0.7977.75
+  Publisher          : Google LLC
+  Install Date       : 20260902
+  Install Location   : C:\Program Files\Google\Chrome\Application
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #21
+  Name               : HCWebControl
+  Version            : 3.0.0.0
+  Publisher          : Hangzhou Hikvision Digital Technology Co., Ltd.
+  Install Date       : 20260828
+  Install Location   : C:\Program Files\HCWebControl\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #22
+  Name               : icecap_collection_neutral
+  Version            : 15.8.27906
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #23
+  Name               : icecap_collection_x64
+  Version            : 15.8.27906
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #24
+  Name               : icecap_collectionresources
+  Version            : 15.8.27924
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #25
+  Name               : icecap_collectionresourcesx64
+  Version            : 15.8.27924
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #26
+  Name               : IIS 10.0 Express
+  Version            : 10.0.08608
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #27
+  Name               : IIS Express Application Compatibility Database for x64
+  Version            : N/A
+  Publisher          : N/A
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #28
+  Name               : IIS Express Application Compatibility Database for x86
+  Version            : N/A
+  Publisher          : N/A
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #29
+  Name               : IntelliTraceProfilerProxy
+  Version            : 15.0.17289.01
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #30
+  Name               : iVMS-4200
+  Version            : 3.14.0.6
+  Publisher          : Hangzhou Hikvision Digital Technology Co., Ltd.
+  Install Date       : N/A
+  Install Location   : C:\Program Files (x86)
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #31
+  Name               : Kits Configuration Installer
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #32
+  Name               : LocalServiceComponents
+  Version            : 1.0.0.82
+  Publisher          : N/A
+  Install Date       : 20260608
+  Install Location   : C:\Program Files (x86)\LocalServiceComponents\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #33
+  Name               : Microsoft .NET 10.0 Templates 10.0.300 x86
+  Version            : 40.11.2206
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #34
+  Name               : Microsoft .NET 5.0.11 - Windows Server Hosting
+  Version            : 5.0.11.21476
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #35
+  Name               : Microsoft .NET 8.0.3 - Windows Server Hosting
+  Version            : 8.0.3.24116
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #36
+  Name               : Microsoft .NET AppHost Pack - 10.0.8 (x86)
+  Version            : 80.32.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #37
+  Name               : Microsoft .NET Framework 4 Multi-Targeting Pack
+  Version            : 4.0.30319
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #38
+  Name               : Microsoft .NET Framework 4.5 Multi-Targeting Pack
+  Version            : 4.5.50710
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #39
+  Name               : Microsoft .NET Framework 4.5.1 Multi-Targeting Pack
+  Version            : 4.5.50932
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #40
+  Name               : Microsoft .NET Framework 4.5.2 Multi-Targeting Pack
+  Version            : 4.5.51209
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #41
+  Name               : Microsoft .NET Framework 4.6 Targeting Pack
+  Version            : 4.6.00081
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #42
+  Name               : Microsoft .NET Framework 4.6.1 SDK
+  Version            : 4.6.01055
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #43
+  Name               : Microsoft .NET Framework 4.6.1 Targeting Pack
+  Version            : 4.6.01055
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #44
+  Name               : Microsoft .NET Framework Cumulative Intellisense Pack for Visual Studio (ENU)
+  Version            : 4.7.02558
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #45
+  Name               : Microsoft .NET Host - 10.0.8 (x86)
+  Version            : 80.32.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #46
+  Name               : Microsoft .NET Host - 5.0.11 (x64)
+  Version            : 40.44.30523
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #47
+  Name               : Microsoft .NET Host - 5.0.11 (x86)
+  Version            : 40.44.30523
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #48
+  Name               : Microsoft .NET Host - 8.0.3 (x64)
+  Version            : 64.12.10343
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #49
+  Name               : Microsoft .NET Host - 8.0.3 (x86)
+  Version            : 64.12.10343
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #50
+  Name               : Microsoft .NET Host FX Resolver - 10.0.8 (x86)
+  Version            : 80.32.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #51
+  Name               : Microsoft .NET Host FX Resolver - 5.0.11 (x64)
+  Version            : 40.44.30523
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #52
+  Name               : Microsoft .NET Host FX Resolver - 5.0.11 (x86)
+  Version            : 40.44.30523
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #53
+  Name               : Microsoft .NET Host FX Resolver - 8.0.3 (x64)
+  Version            : 64.12.10343
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #54
+  Name               : Microsoft .NET Host FX Resolver - 8.0.3 (x86)
+  Version            : 64.12.10343
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #55
+  Name               : Microsoft .NET Runtime - 10.0.8 (x86)
+  Version            : 80.32.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #56
+  Name               : Microsoft .NET Runtime - 5.0.11 (x64)
+  Version            : 40.44.30523
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #57
+  Name               : Microsoft .NET Runtime - 5.0.11 (x64)
+  Version            : 5.0.11.30523
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #58
+  Name               : Microsoft .NET Runtime - 5.0.11 (x86)
+  Version            : 40.44.30523
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #59
+  Name               : Microsoft .NET Runtime - 5.0.11 (x86)
+  Version            : 5.0.11.30523
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #60
+  Name               : Microsoft .NET Runtime - 8.0.3 (x64)
+  Version            : 64.12.10343
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #61
+  Name               : Microsoft .NET Runtime - 8.0.3 (x64)
+  Version            : 8.0.3.33414
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #62
+  Name               : Microsoft .NET Runtime - 8.0.3 (x86)
+  Version            : 64.12.10343
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #63
+  Name               : Microsoft .NET Runtime - 8.0.3 (x86)
+  Version            : 8.0.3.33414
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #64
+  Name               : Microsoft .NET SDK 10.0.300 (x86)
+  Version            : 10.3.26.23102
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #65
+  Name               : Microsoft .NET Targeting Pack - 10.0.8 (x86)
+  Version            : 80.32.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #66
+  Name               : Microsoft .NET Toolset 10.0.300 (x86)
+  Version            : 40.11.2206
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #67
+  Name               : Microsoft 365 Apps for business - en-us
+  Version            : 16.0.20326.20112
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : C:\Program Files\Microsoft Office
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #68
+  Name               : Microsoft ASP.NET Core 5.0.11 - Shared Framework (x64)
+  Version            : 5.0.11.21476
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #69
+  Name               : Microsoft ASP.NET Core 5.0.11 - Shared Framework (x86)
+  Version            : 5.0.11.21476
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #70
+  Name               : Microsoft ASP.NET Core 5.0.11 Shared Framework (x64)
+  Version            : 5.0.11.21476
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #71
+  Name               : Microsoft ASP.NET Core 5.0.11 Shared Framework (x86)
+  Version            : 5.0.11.21476
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #72
+  Name               : Microsoft ASP.NET Core 8.0.3 - Shared Framework (x64)
+  Version            : 8.0.3.24116
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #73
+  Name               : Microsoft ASP.NET Core 8.0.3 - Shared Framework (x86)
+  Version            : 8.0.3.24116
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #74
+  Name               : Microsoft ASP.NET Core 8.0.3 Hosting Bundle Options
+  Version            : 8.0.3.24116
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #75
+  Name               : Microsoft ASP.NET Core 8.0.3 Shared Framework (x64)
+  Version            : 8.0.3.24116
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #76
+  Name               : Microsoft ASP.NET Core 8.0.3 Shared Framework (x86)
+  Version            : 8.0.3.24116
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #77
+  Name               : Microsoft ASP.NET Core Module for IIS Express
+  Version            : 12.2.18292.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #78
+  Name               : Microsoft ASP.NET Core Module V2 for IIS Express
+  Version            : 12.2.18292.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #79
+  Name               : Microsoft ASP.NET Core Runtime - 10.0.8 (x86)
+  Version            : 80.32.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #80
+  Name               : Microsoft ASP.NET Core Targeting Pack - 10.0.8 (x86)
+  Version            : 80.32.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #81
+  Name               : Microsoft ASP.NET Diagnostic Pack for Visual Studio
+  Version            : 15.9.40092.17061
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #82
+  Name               : Microsoft ASP.NET Web Tools Packages 15.0 - ENU
+  Version            : 1.0.30615.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #83
+  Name               : Microsoft Azure Authoring Tools - v2.9.6
+  Version            : 2.9.8899.26
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #84
+  Name               : Microsoft Azure Compute Emulator - v2.9.6
+  Version            : 2.9.8899.26
+  Publisher          : Microsoft Corporation
+  Install Date       : 8/28/2026
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #85
+  Name               : Microsoft Azure Libraries for .NET � v2.9
+  Version            : 3.0.2310.23
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #86
+  Name               : Microsoft Azure Mobile App SDK V3.0
+  Version            : 3.0.50407.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #87
+  Name               : Microsoft Azure PowerShell - April 2018
+  Version            : 5.7.0.18831
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #88
+  Name               : Microsoft Azure Storage Emulator - v5.7
+  Version            : 5.7.18218.1723
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #89
+  Name               : Microsoft Edge
+  Version            : 152.0.4191.53
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260830
+  Install Location   : C:\Program Files (x86)\Microsoft\Edge\Application
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #90
+  Name               : Microsoft Edge WebView2 Runtime
+  Version            : 152.0.4191.53
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260902
+  Install Location   : C:\Program Files (x86)\Microsoft\EdgeWebView\Application
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #91
+  Name               : Microsoft NetStandard SDK
+  Version            : 15.0.51105
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #92
+  Name               : Microsoft Office Home and Business 2024 - en-us
+  Version            : 16.0.20326.20112
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : C:\Program Files\Microsoft Office
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #93
+  Name               : Microsoft OneDrive
+  Version            : 26.153.0809.0004
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #94
+  Name               : Microsoft Portable Library Multi-Targeting Pack
+  Version            : 15.0.26621.02
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #95
+  Name               : Microsoft Portable Library Multi-Targeting Pack Language Pack - enu
+  Version            : 15.0.26621.02
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #96
+  Name               : Microsoft SQL Server 2008 Setup Support Files 
+  Version            : 10.1.2731.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #97
+  Name               : Microsoft SQL Server 2012 (64-bit)
+  Version            : N/A
+  Publisher          : N/A
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #98
+  Name               : Microsoft SQL Server 2012 (64-bit)
+  Version            : N/A
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #99
+  Name               : Microsoft SQL Server 2012 Command Line Utilities 
+  Version            : 11.3.6020.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #100
+  Name               : Microsoft SQL Server 2012 Native Client 
+  Version            : 11.3.6518.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #101
+  Name               : Microsoft SQL Server 2012 RsFx Driver
+  Version            : 11.0.2100.60
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #102
+  Name               : Microsoft SQL Server 2012 Setup (English)
+  Version            : 11.0.2100.60
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #103
+  Name               : Microsoft SQL Server 2012 Transact-SQL ScriptDom 
+  Version            : 11.0.2100.60
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #104
+  Name               : Microsoft SQL Server 2014 Express LocalDB 
+  Version            : 12.3.6024.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #105
+  Name               : Microsoft SQL Server 2016 LocalDB 
+  Version            : 13.3.7037.1
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #106
+  Name               : Microsoft SQL Server Compact 3.5 SP2 ENU
+  Version            : 3.5.8080.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : C:\Program Files (x86)\Microsoft SQL Server Compact Edition\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #107
+  Name               : Microsoft SQL Server Compact 3.5 SP2 x64 ENU
+  Version            : 3.5.8080.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : C:\Program Files\Microsoft SQL Server Compact Edition\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #108
+  Name               : Microsoft SQL Server Compact 4.0 SP1 x64 ENU
+  Version            : 4.0.8876.1
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260704
+  Install Location   : C:\Program Files\Microsoft SQL Server Compact Edition\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #109
+  Name               : Microsoft System CLR Types for SQL Server vNext CTP1.6
+  Version            : 15.0.600.33
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #110
+  Name               : Microsoft Teams Meeting Add-in for Microsoft Office
+  Version            : 1.26.20101
+  Publisher          : Microsoft
+  Install Date       : 20260827
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #111
+  Name               : Microsoft TestPlatform SDK Local Feed
+  Version            : 15.9.0.2096950
+  Publisher          : Microsoft
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #112
+  Name               : Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161
+  Version            : 9.0.30729.6161
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #113
+  Name               : Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161
+  Version            : 9.0.30729.6161
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #114
+  Name               : Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219
+  Version            : 10.0.40219
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #115
+  Name               : Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219
+  Version            : 10.0.40219
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #116
+  Name               : Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030
+  Version            : 11.0.61030.0
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #117
+  Name               : Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030
+  Version            : 11.0.61030
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260703
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #118
+  Name               : Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030
+  Version            : 11.0.61030
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260703
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #119
+  Name               : Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501
+  Version            : 12.0.30501.0
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #120
+  Name               : Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664
+  Version            : 12.0.40664.0
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #121
+  Name               : Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501
+  Version            : 12.0.30501.0
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #122
+  Name               : Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664
+  Version            : 12.0.40664
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260518
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #123
+  Name               : Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664
+  Version            : 12.0.40664
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260518
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #124
+  Name               : Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005
+  Version            : 12.0.21005
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #125
+  Name               : Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005
+  Version            : 12.0.21005
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #126
+  Name               : Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.51.36231
+  Version            : 14.51.36231.0
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #127
+  Name               : Microsoft Visual C++ 2017 X64 Debug Runtime - 14.16.27052
+  Version            : 14.16.27052
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #128
+  Name               : Microsoft Visual C++ 2017 X86 Debug Runtime - 14.16.27052
+  Version            : 14.16.27052
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #129
+  Name               : Microsoft Visual C++ 2022 X64 Additional Runtime - 14.51.36231
+  Version            : 14.51.36231
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260518
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #130
+  Name               : Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.51.36231
+  Version            : 14.51.36231
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260518
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #131
+  Name               : Microsoft Visual C++ 2022 X86 Additional Runtime - 14.50.35719
+  Version            : 14.50.35719
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260824
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #132
+  Name               : Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.50.35719
+  Version            : 14.50.35719
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260824
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #133
+  Name               : Microsoft Visual C++ v14 Redistributable (x86) - 14.50.35719
+  Version            : 14.50.35719.0
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #134
+  Name               : Microsoft Visual Studio Installer
+  Version            : 4.9.50.62957
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : "C:\Program Files (x86)\Microsoft Visual Studio\Installer"
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #135
+  Name               : Microsoft Visual Studio Setup Configuration
+  Version            : 3.7.2182.35401
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #136
+  Name               : Microsoft Visual Studio Setup WMI Provider
+  Version            : 3.7.2182.35401
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #137
+  Name               : Microsoft Visual Studio Team Foundation Server 2017 Update 9 Office Integration (x64)
+  Version            : 15.129.37529
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #138
+  Name               : Microsoft Visual Studio Team Foundation Server 2017 Update 9 Office Integration Language Pack (x64) - ENU
+  Version            : 15.129.37529
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #139
+  Name               : Microsoft VSS Writer for SQL Server 2012
+  Version            : 11.0.2100.60
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #140
+  Name               : Microsoft Web Deploy 4.0
+  Version            : 10.0.8215
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #141
+  Name               : Microsoft Windows Application Compatibility Fix Database
+  Version            : N/A
+  Publisher          : N/A
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #142
+  Name               : Microsoft Windows Communication Foundation Diagnostic Pack for x86
+  Version            : 15.0.27005
+  Publisher          : Microsoft
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #143
+  Name               : Microsoft Windows Desktop Runtime - 10.0.8 (x86)
+  Version            : 80.32.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #144
+  Name               : Microsoft Windows Desktop Targeting Pack - 10.0.8 (x86)
+  Version            : 80.32.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #145
+  Name               : Microsoft.NET.Sdk.Android.Manifest-10.0.100 (x86)
+  Version            : 36.1.2
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #146
+  Name               : Microsoft.NET.Sdk.iOS.Manifest-10.0.100 (x86)
+  Version            : 26.0.11017
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #147
+  Name               : Microsoft.NET.Sdk.MacCatalyst.Manifest-10.0.100 (x86)
+  Version            : 26.0.11017
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #148
+  Name               : Microsoft.NET.Sdk.macOS.Manifest-10.0.100 (x86)
+  Version            : 26.0.11017
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #149
+  Name               : Microsoft.NET.Sdk.Maui.Manifest-10.0.100 (x86)
+  Version            : 10.0.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #150
+  Name               : Microsoft.NET.Sdk.tvOS.Manifest-10.0.100 (x86)
+  Version            : 26.0.11017
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #151
+  Name               : Microsoft.NET.Workload.Emscripten.Current.Manifest-10.0.100 (x86)
+  Version            : 81.176.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #152
+  Name               : Microsoft.NET.Workload.Emscripten.net6.Manifest-10.0.100 (x86)
+  Version            : 81.176.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #153
+  Name               : Microsoft.NET.Workload.Emscripten.net7.Manifest-10.0.100 (x86)
+  Version            : 81.176.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #154
+  Name               : Microsoft.NET.Workload.Emscripten.net8.Manifest-10.0.100 (x86)
+  Version            : 81.176.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #155
+  Name               : Microsoft.NET.Workload.Emscripten.net9.Manifest-10.0.100 (x86)
+  Version            : 81.176.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #156
+  Name               : Microsoft.NET.Workload.Mono.Toolchain.Current.Manifest-10.0.100 (x86)
+  Version            : 81.176.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #157
+  Name               : Microsoft.NET.Workload.Mono.Toolchain.net6.Manifest-10.0.100 (x86)
+  Version            : 81.176.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #158
+  Name               : Microsoft.NET.Workload.Mono.Toolchain.net7.Manifest-10.0.100 (x86)
+  Version            : 81.176.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #159
+  Name               : Microsoft.NET.Workload.Mono.Toolchain.net8.Manifest-10.0.100 (x86)
+  Version            : 81.176.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #160
+  Name               : Microsoft.NET.Workload.Mono.Toolchain.net9.Manifest-10.0.100 (x86)
+  Version            : 81.176.52183
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260603
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #161
+  Name               : MSI Development Tools
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #162
+  Name               : MyEpson Portal
+  Version            : N/A
+  Publisher          : Seiko Epson Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #163
+  Name               : MyEpson Portal
+  Version            : 1.1.3.6
+  Publisher          : SEIKO EPSON CORPORATION
+  Install Date       : 20260521
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #164
+  Name               : NVIDIA 3D Vision Driver 388.13
+  Version            : 388.13
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260520
+  Install Location   : C:\Program Files (x86)\NVIDIA Corporation\3D Vision
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #165
+  Name               : NVIDIA Ansel
+  Version            : 391.35
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260520
+  Install Location   : C:\Program Files\NVIDIA Corporation\Ansel
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #166
+  Name               : NVIDIA Control Panel 388.13
+  Version            : 388.13
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260520
+  Install Location   : C:\Program Files\NVIDIA Corporation\Control Panel Client
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #167
+  Name               : NVIDIA Display Container
+  Version            : 1.2
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260520
+  Install Location   : C:\Program Files\NVIDIA Corporation\Display.NvContainer
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #168
+  Name               : NVIDIA Display Container LS
+  Version            : 1.2
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260520
+  Install Location   : C:\Program Files\NVIDIA Corporation\Installer2\NVDisplayContainerLS.{6B1F5887-EDCA-4A1F-A400-4088D1C3E19D}
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #169
+  Name               : NVIDIA Display Session Container
+  Version            : 1.2
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260520
+  Install Location   : C:\Program Files\NVIDIA Corporation\Installer2\NVDisplaySessionContainer.{E4A9A37D-8BE4-4E89-8752-2F814045AC51}
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #170
+  Name               : NVIDIA Display Watchdog Plugin
+  Version            : 1.2
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260520
+  Install Location   : C:\Program Files\NVIDIA Corporation\Installer2\NVDisplayPluginWatchdog.{633B03C0-2BD1-434D-8213-5C28A2C21CA1}
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #171
+  Name               : NVIDIA Graphics Driver 388.13
+  Version            : 388.13
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260520
+  Install Location   : C:\Program Files\NVIDIA Corporation\Installer2\Display.Driver.{6F6A0516-84E4-4ACA-81AD-B589F284D2D2}
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #172
+  Name               : NVIDIA Install Application
+  Version            : 2.1002.275.2323
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260520
+  Install Location   : C:\Program Files\NVIDIA Corporation\Installer2\InstallerCore
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #173
+  Name               : NVIDIA Stereoscopic 3D Driver
+  Version            : 7.17.13.7500
+  Publisher          : NVIDIA Corporation
+  Install Date       : N/A
+  Install Location   : C:\Program Files (x86)\NVIDIA Corporation\3D Vision
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #174
+  Name               : Office 16 Click-to-Run Extensibility Component
+  Version            : 16.0.20326.20072
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260824
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #175
+  Name               : PVMS 1.01
+  Version            : 1.01
+  Publisher          : Panasonic
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #176
+  Name               : RAV Network Protection
+  Version            : 7.8.0
+  Publisher          : Reason Cybersecurity Inc.
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #177
+  Name               : SADP
+  Version            : 3.1.4.5
+  Publisher          : Hangzhou Hikvision Digital Technology Co., Ltd.
+  Install Date       : N/A
+  Install Location   : C:\Program Files (x86)\SADP\SADP
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #178
+  Name               : SDK ARM Additions
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #179
+  Name               : SDK ARM Redistributables
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #180
+  Name               : SQL Server 2012 Common Files
+  Version            : 11.0.2100.60
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #181
+  Name               : SQL Server 2012 Database Engine Services
+  Version            : 11.0.2100.60
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #182
+  Name               : SQL Server 2012 Database Engine Shared
+  Version            : 11.0.2100.60
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #183
+  Name               : SQL Server Browser for SQL Server 2012
+  Version            : 11.0.2100.60
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #184
+  Name               : Sql Server Customer Experience Improvement Program
+  Version            : 11.0.2100.60
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #185
+  Name               : Trassir 4.9.2.0-1294781-64-Release client
+  Version            : 4.9.2.0-1294781-64-Release
+  Publisher          : DSSL
+  Install Date       : 20260521
+  Install Location   : C:\DSSL\Trassir-4.9.2.0-1294781-64-Release-client\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #186
+  Name               : TypeScript SDK
+  Version            : 3.1.7.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #187
+  Name               : UltraViewer version 6.6.124
+  Version            : 6.6.124
+  Publisher          : DucFabulous
+  Install Date       : 20260520
+  Install Location   : C:\Program Files (x86)\UltraViewer\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #188
+  Name               : Universal CRT Extension SDK
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #189
+  Name               : Universal CRT Headers Libraries and Sources
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #190
+  Name               : Universal CRT Redistributable
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #191
+  Name               : Universal CRT Tools x64
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #192
+  Name               : Universal CRT Tools x86
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #193
+  Name               : Universal General MIDI DLS Extension SDK
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #194
+  Name               : Update for  (KB2504637)
+  Version            : 1
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #195
+  Name               : vcpp_crt.redist.clickonce
+  Version            : 14.16.27052
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #196
+  Name               : Visual Studio Professional 2017
+  Version            : 15.9.82
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #197
+  Name               : VLC media player
+  Version            : 3.0.23
+  Publisher          : VideoLAN
+  Install Date       : N/A
+  Install Location   : C:\Program Files\VideoLAN\VLC
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #198
+  Name               : VS Immersive Activate Helper
+  Version            : 16.0.95.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #199
+  Name               : VS JIT Debugger
+  Version            : 16.0.95.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #200
+  Name               : VS Script Debugging Common
+  Version            : 16.0.95.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #201
+  Name               : VS WCF Debugging
+  Version            : 16.0.95.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #202
+  Name               : vs_BlendMsi
+  Version            : 15.0.27205
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #203
+  Name               : vs_clickoncebootstrappermsi
+  Version            : 15.0.27005
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #204
+  Name               : vs_clickoncebootstrappermsires
+  Version            : 15.0.27005
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #205
+  Name               : vs_clickoncesigntoolmsi
+  Version            : 15.0.27005
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #206
+  Name               : vs_communitymsi
+  Version            : 15.9.34829
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #207
+  Name               : vs_communitymsires
+  Version            : 15.0.26621
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #208
+  Name               : vs_devenvmsi
+  Version            : 15.0.26621
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #209
+  Name               : vs_filehandler_amd64
+  Version            : 15.9.28302
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #210
+  Name               : vs_filehandler_x86
+  Version            : 15.9.28302
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #211
+  Name               : vs_FileTracker_Singleton
+  Version            : 15.9.28128
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #212
+  Name               : vs_Graphics_Singletonx64
+  Version            : 15.8.27729
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #213
+  Name               : vs_Graphics_Singletonx86
+  Version            : 15.8.27729
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #214
+  Name               : vs_minshellinteropmsi
+  Version            : 15.8.27825
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #215
+  Name               : vs_minshellmsi
+  Version            : 15.9.34829
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #216
+  Name               : vs_minshellmsires
+  Version            : 15.0.26621
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #217
+  Name               : vs_professionalmsi
+  Version            : 15.0.26621
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #218
+  Name               : vs_SQLClickOnceBootstrappermsi
+  Version            : 15.0.27005
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #219
+  Name               : vs_tipsmsi
+  Version            : 15.0.27005
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #220
+  Name               : Vulkan Run Time Libraries 1.0.61.0
+  Version            : 1.0.61.0
+  Publisher          : LunarG, Inc.
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #221
+  Name               : Web Components
+  Version            : 3.0.8.34
+  Publisher          : N/A
+  Install Date       : 20260608
+  Install Location   : C:\Program Files (x86)\Web Components\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #222
+  Name               : WinAppDeploy
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #223
+  Name               : WinDirStat
+  Version            : 2.6.2
+  Publisher          : WinDirStat Team
+  Install Date       : 20260603
+  Install Location   : C:\Program Files\WinDirStat\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #224
+  Name               : Windows App Certification Kit Native Components
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #225
+  Name               : Windows App Certification Kit SupportedApiList x86
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #226
+  Name               : Windows App Certification Kit x64
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #227
+  Name               : Windows Desktop Extension SDK
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #228
+  Name               : Windows Desktop Extension SDK Contracts
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #229
+  Name               : Windows IoT Extension SDK
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #230
+  Name               : Windows IoT Extension SDK Contracts
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #231
+  Name               : Windows Mobile Extension SDK
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #232
+  Name               : Windows Mobile Extension SDK Contracts
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #233
+  Name               : Windows Phone SDK 8.0 Assemblies for Visual Studio 2017
+  Version            : 15.0.28302
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #234
+  Name               : Windows SDK
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #235
+  Name               : Windows SDK AddOn
+  Version            : 10.1.0.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #236
+  Name               : Windows SDK ARM Desktop Tools
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #237
+  Name               : Windows SDK Desktop Headers arm
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #238
+  Name               : Windows SDK Desktop Headers arm64
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #239
+  Name               : Windows SDK Desktop Headers x64
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #240
+  Name               : Windows SDK Desktop Headers x86
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #241
+  Name               : Windows SDK Desktop Libs arm
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #242
+  Name               : Windows SDK Desktop Libs arm64
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #243
+  Name               : Windows SDK Desktop Libs x64
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #244
+  Name               : Windows SDK Desktop Libs x86
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #245
+  Name               : Windows SDK Desktop Tools arm64
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #246
+  Name               : Windows SDK Desktop Tools x64
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #247
+  Name               : Windows SDK Desktop Tools x86
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #248
+  Name               : Windows SDK DirectX x64 Remote
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #249
+  Name               : Windows SDK DirectX x86 Remote
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #250
+  Name               : Windows SDK EULA
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporations
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #251
+  Name               : Windows SDK Facade Windows WinMD Versioned
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #252
+  Name               : Windows SDK for Windows Store Apps
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #253
+  Name               : Windows SDK for Windows Store Apps Contracts
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #254
+  Name               : Windows SDK for Windows Store Apps DirectX x86 Remote
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #255
+  Name               : Windows SDK for Windows Store Apps Headers
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #256
+  Name               : Windows SDK for Windows Store Apps Libs
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #257
+  Name               : Windows SDK for Windows Store Apps Metadata
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #258
+  Name               : Windows SDK for Windows Store Apps Tools
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #259
+  Name               : Windows SDK for Windows Store Managed Apps Libs
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #260
+  Name               : Windows SDK Modern Non-Versioned Developer Tools
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #261
+  Name               : Windows SDK Modern Versioned Developer Tools
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #262
+  Name               : Windows SDK Redistributables
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #263
+  Name               : Windows SDK Signing Tools
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #264
+  Name               : Windows Software Development Kit - Windows 10.0.19041.5609
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #265
+  Name               : Windows Subsystem for Linux
+  Version            : 2.7.3.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #266
+  Name               : Windows Team Extension SDK
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #267
+  Name               : Windows Team Extension SDK Contracts
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #268
+  Name               : windows_exporter
+  Version            : 0.16.0
+  Publisher          : prometheus-community
+  Install Date       : 20260520
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #269
+  Name               : WinPcap 4.1.3
+  Version            : 4.1.0.2980
+  Publisher          : Riverbed Technology, Inc.
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #270
+  Name               : WinRAR 7.22 (64-bit)
+  Version            : 7.22.0
+  Publisher          : win.rar GmbH
+  Install Date       : N/A
+  Install Location   : C:\Program Files\WinRAR
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #271
+  Name               : WinRT Intellisense Desktop - en-us
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #272
+  Name               : WinRT Intellisense Desktop - Other Languages
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #273
+  Name               : WinRT Intellisense IoT - en-us
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #274
+  Name               : WinRT Intellisense IoT - Other Languages
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #275
+  Name               : WinRT Intellisense Mobile - en-us
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #276
+  Name               : WinRT Intellisense PPI - en-us
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #277
+  Name               : WinRT Intellisense PPI - Other Languages
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #278
+  Name               : WinRT Intellisense UAP - en-us
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #279
+  Name               : WinRT Intellisense UAP - Other Languages
+  Version            : 10.1.19041.5609
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260828
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE PUBLISHER SUMMARY
+--------------------------
+Microsoft Corporation : 227
+NVIDIA Corporation : 10
+Seiko Epson Corporation : 9
+Unknown : 6
+Microsoft : 5
+Hangzhou Hikvision Digital Technology Co., Ltd. : 3
+Seagull Scientific : 2
+Apple Inc. : 2
+LunarG, Inc. : 1
+VideoLAN : 1
+WinDirStat Team : 1
+Microsoft Corporations : 1
+win.rar GmbH : 1
+Riverbed Technology, Inc. : 1
+prometheus-community : 1
+DucFabulous : 1
+Google LLC : 1
+ZKTeco Inc : 1
+CyberLink Corp. : 1
+Famatech : 1
+DSSL : 1
+Reason Cybersecurity Inc. : 1
+Panasonic : 1
+
+==========================================================================================
+ TEMPORARY FILES
+==========================================================================================
+Path       : C:\Users\Admin\AppData\Local\Temp
+File Count : 83
+Size       : 0.08 GB
+
+Path       : C:\Windows\Temp
+File Count : 2
+Size       : 0 GB
+
+Path       : C:\Windows\Prefetch
+File Count : 25
+Size       : 0 GB
+
+
+==========================================================================================
+ TEMP / PREFETCH CLEANUP
+==========================================================================================
+Cleanup attempted : C:\Users\Admin\AppData\Local\Temp
+Cleanup attempted : C:\Windows\Temp
+Cleanup attempted : C:\Windows\Prefetch
+
+Locked files may remain because they are currently in use.
+
+==========================================================================================
+ SYSTEM UPTIME
+==========================================================================================
+Last Boot Time      : 08/28/2026 15:37:22
+Uptime Days         : 6
+Uptime Hours        : 2
+Uptime Minutes      : 14
+
+==========================================================================================
+ IMPORTANT WINDOWS SERVICES
+==========================================================================================
+Service              : WinRM
+Display Name         : Windows Remote Management (WS-Management)
+Status               : Running
+Startup Type         : Automatic
+
+Service              : Spooler
+Display Name         : Print Spooler
+Status               : Running
+Startup Type         : Automatic
+
+Service              : wuauserv
+Display Name         : Windows Update
+Status               : Stopped
+Startup Type         : Automatic
+
+Service              : BITS
+Display Name         : Background Intelligent Transfer Service
+Status               : Stopped
+Startup Type         : Manual
+
+Service              : LanmanServer
+Display Name         : Server
+Status               : Running
+Startup Type         : Automatic
+
+Service              : LanmanWorkstation
+Display Name         : Workstation
+Status               : Running
+Startup Type         : Automatic
+
+
+==========================================================================================
+ HEALTH CHECK COMPLETED
+==========================================================================================
+IP Address           : 1
+Computer Name        : 2F-S03
+Total Software       : 279
+Report File          : C:\healthcheck\1_2026-09-03_17-51-08.txt
+Completed             : 2026-09-03 17:51:38
+
+TEMP CLEANUP         : ATTEMPTED
+PREFETCH CLEANUP     : ATTEMPTED
+
+END OF REPORT
+==========================================================================================

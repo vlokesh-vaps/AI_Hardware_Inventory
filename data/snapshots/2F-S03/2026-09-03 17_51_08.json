@@ -1,0 +1,2521 @@
+{
+  "asset": {
+    "computer_name": "2F-S03",
+    "ip_address": "172.16.10.38",
+    "all_ip_addresses": "172.16.10.38",
+    "manufacturer": "Dell Inc.",
+    "model": "OptiPlex 7060",
+    "system_type": "x64-based PC",
+    "domain_workgroup": "Vapscorp.com",
+    "logged_user": "2F-S03\\Admin",
+    "report_date": "2026-09-03 17:51:08",
+    "report_file": "C:\\healthcheck\\1_2026-09-03_17-51-08.txt",
+    "original_filename": "1_2026-09-03_17-51-08.txt"
+  },
+  "os": {
+    "name": "Microsoft Windows 11 Pro",
+    "version": "10.0.26200",
+    "build": "26200",
+    "architecture": "64-bit",
+    "serial": "00330-80000-00000-AA886",
+    "install_date": "05/20/2026 11:19:58",
+    "last_boot": "08/28/2026 15:37:22"
+  },
+  "cpu": [
+    {
+      "name": "Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz",
+      "manufacturer": "GenuineIntel",
+      "model": "Intel64 Family 6 Model 158 Stepping 10",
+      "processor_id": "BFEBFBFF000906EA",
+      "serial_number": "N/A",
+      "socket": "U3E1",
+      "current_speed_mhz": 3192,
+      "maximum_speed_mhz": 3192,
+      "cores": 6,
+      "threads": 12,
+      "architecture": "9",
+      "status": "OK"
+    }
+  ],
+  "ram": [
+    {
+      "manufacturer": "0000000080CE",
+      "model": "DDR4 16GB 2666",
+      "serial_number": "07070083",
+      "capacity_gb": 16.0,
+      "speed_mhz": 2666,
+      "configured_speed_mhz": 2666,
+      "device_locator": "DIMM2",
+      "bank_locator": "N/A",
+      "memory_type": "26",
+      "form_factor": "8"
+    },
+    {
+      "manufacturer": "80CE000080CE",
+      "model": "M378A1K43DB2-CVF",
+      "serial_number": "03BD5B51",
+      "capacity_gb": 8.0,
+      "speed_mhz": 2666,
+      "configured_speed_mhz": 2666,
+      "device_locator": "DIMM4",
+      "bank_locator": "N/A",
+      "memory_type": "26",
+      "form_factor": "8"
+    }
+  ],
+  "total_ram_gb": 23.8,
+  "storage": [
+    {
+      "device": "\\\\.\\PHYSICALDRIVE0",
+      "model": "TOSHIBA DT01ACA100",
+      "manufacturer": "(Standard disk drives)",
+      "serial_number": "18CVHENNS",
+      "media_type": "HDD",
+      "bus_type": "SATA",
+      "size_gb": 931.51,
+      "health_status": "Healthy",
+      "operational_status": "OK",
+      "partitions_count": 4
+    },
+    {
+      "device": "\\\\.\\PHYSICALDRIVE1",
+      "model": "EVM25/1TB",
+      "manufacturer": "(Standard disk drives)",
+      "serial_number": "ESDAN092300516",
+      "media_type": "SSD",
+      "bus_type": "SATA",
+      "size_gb": 953.87,
+      "health_status": "Healthy",
+      "operational_status": "OK",
+      "partitions_count": 4
+    }
+  ],
+  "drives": [
+    {
+      "drive_letter": "C:",
+      "volume_name": "N/A",
+      "file_system": "NTFS",
+      "total_size_gb": 463.9,
+      "used_space_gb": 356.08,
+      "free_space_gb": 107.82,
+      "free_percentage": 23.24,
+      "status": "NORMAL"
+    },
+    {
+      "drive_letter": "D:",
+      "volume_name": "New Volume",
+      "file_system": "NTFS",
+      "total_size_gb": 488.28,
+      "used_space_gb": 24.11,
+      "free_space_gb": 464.17,
+      "free_percentage": 95.06,
+      "status": "NORMAL"
+    },
+    {
+      "drive_letter": "E:",
+      "volume_name": "N/A",
+      "file_system": "NTFS",
+      "total_size_gb": 292.97,
+      "used_space_gb": 125.37,
+      "free_space_gb": 167.59,
+      "free_percentage": 57.21,
+      "status": "NORMAL"
+    },
+    {
+      "drive_letter": "F:",
+      "volume_name": "N/A",
+      "file_system": "NTFS",
+      "total_size_gb": 345.57,
+      "used_space_gb": 43.52,
+      "free_space_gb": 302.06,
+      "free_percentage": 87.41,
+      "status": "NORMAL"
+    },
+    {
+      "drive_letter": "G:",
+      "volume_name": "New Volume",
+      "file_system": "NTFS",
+      "total_size_gb": 292.47,
+      "used_space_gb": 27.12,
+      "free_space_gb": 265.36,
+      "free_percentage": 90.73,
+      "status": "NORMAL"
+    }
+  ],
+  "gpu": [
+    {
+      "name": "Intel(R) UHD Graphics 630",
+      "manufacturer": "Intel Corporation",
+      "driver_version": "30.0.100.9864",
+      "video_memory": "1 GB",
+      "video_processor": "Intel(R) UHD Graphics Family",
+      "resolution": "N/A x N/A",
+      "refresh_rate": "N/A Hz"
+    },
+    {
+      "name": "NVIDIA GeForce GT 730",
+      "manufacturer": "NVIDIA",
+      "driver_version": "23.21.13.8813",
+      "video_memory": "4 GB",
+      "video_processor": "GeForce GT 730",
+      "resolution": "1920 x 1080",
+      "refresh_rate": "60 Hz"
+    }
+  ],
+  "monitors": [
+    {
+      "manufacturer": "LEN",
+      "model": "L22-4e",
+      "product_code": "67D5",
+      "serial_number": "UKHRRXTK"
+    }
+  ],
+  "keyboards": [
+    {
+      "name": "Enhanced (101- or 102-key)",
+      "description": "USB Input Device",
+      "manufacturer": "N/A",
+      "device_id": "USB\\VID_17EF&PID_6190&MI_00\\6&15ADB76F&0&0000",
+      "status": "OK"
+    }
+  ],
+  "mice": [
+    {
+      "name": "USB Input Device",
+      "description": "USB Input Device",
+      "manufacturer": "(Standard system devices)",
+      "device_id": "USB\\VID_17EF&PID_608D\\5&1E8FF073&0&9",
+      "hardware_type": "USB Input Device",
+      "status": "OK"
+    }
+  ],
+  "usb_devices": [
+    {
+      "name": "USB Composite Device",
+      "manufacturer": "(Standard USB Host Controller)",
+      "device_id": "USB\\VID_04B8&PID_1331\\584235353235373653",
+      "pnp_device_id": "USB\\VID_04B8&PID_1331\\584235353235373653",
+      "status": "OK"
+    },
+    {
+      "name": "USB Composite Device",
+      "manufacturer": "(Standard USB Host Controller)",
+      "device_id": "USB\\VID_17EF&PID_6190\\5&1E8FF073&0&6",
+      "pnp_device_id": "USB\\VID_17EF&PID_6190\\5&1E8FF073&0&6",
+      "status": "OK"
+    },
+    {
+      "name": "EPSON Utility",
+      "manufacturer": "WinUsb Device",
+      "device_id": "USB\\VID_04B8&PID_1331&MI_01\\6&16EF8F1&1&0001",
+      "pnp_device_id": "USB\\VID_04B8&PID_1331&MI_01\\6&16EF8F1&1&0001",
+      "status": "OK"
+    },
+    {
+      "name": "EPSON L8050 Series",
+      "manufacturer": "Microsoft",
+      "device_id": "USB\\VID_04B8&PID_1331&MI_00\\6&16EF8F1&1&0000",
+      "pnp_device_id": "USB\\VID_04B8&PID_1331&MI_00\\6&16EF8F1&1&0000",
+      "status": "OK"
+    },
+    {
+      "name": "USB Input Device",
+      "manufacturer": "(Standard system devices)",
+      "device_id": "USB\\VID_17EF&PID_6190&MI_00\\6&15ADB76F&0&0000",
+      "pnp_device_id": "USB\\VID_17EF&PID_6190&MI_00\\6&15ADB76F&0&0000",
+      "status": "OK"
+    },
+    {
+      "name": "USB Input Device",
+      "manufacturer": "(Standard system devices)",
+      "device_id": "USB\\VID_17EF&PID_6190&MI_01\\6&15ADB76F&0&0001",
+      "pnp_device_id": "USB\\VID_17EF&PID_6190&MI_01\\6&15ADB76F&0&0001",
+      "status": "OK"
+    },
+    {
+      "name": "USB Root Hub (USB 3.0)",
+      "manufacturer": "(Standard USB HUBs)",
+      "device_id": "USB\\ROOT_HUB30\\4&36898853&0&0",
+      "pnp_device_id": "USB\\ROOT_HUB30\\4&36898853&0&0",
+      "status": "OK"
+    },
+    {
+      "name": "USB Input Device",
+      "manufacturer": "(Standard system devices)",
+      "device_id": "USB\\VID_17EF&PID_608D\\5&1E8FF073&0&9",
+      "pnp_device_id": "USB\\VID_17EF&PID_608D\\5&1E8FF073&0&9",
+      "status": "OK"
+    }
+  ],
+  "network_adapters": [
+    {
+      "name": "Intel(R) Ethernet Connection (7) I219-LM",
+      "manufacturer": "Intel",
+      "mac_address": "8C:EC:4B:D6:AA:25",
+      "adapter_type": "Ethernet 802.3",
+      "speed": "1000000000",
+      "device_id": "1",
+      "status": "2"
+    }
+  ],
+  "motherboard": {
+    "manufacturer": "Dell Inc.",
+    "model": "0C96W1",
+    "version": "A03",
+    "serial_number": "/JJT3N62/CNWS20094S011D/",
+    "part_number": "N/A",
+    "status": "OK"
+  },
+  "bios": {
+    "manufacturer": "Dell Inc.",
+    "bios_version": "1.32.0",
+    "bios_version_2": "DELL   - 1072009",
+    "serial_number": "JJT3N62",
+    "release_date": "09/03/2024 05:30:00",
+    "smbios_major": "3",
+    "smbios_minor": "1"
+  },
+  "software_count": 279,
+  "installed_software": [
+    {
+      "name": "Active Directory Authentication Library for SQL Server",
+      "version": "13.1.4001.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Advanced IP Scanner 2.5.1",
+      "version": "2.5.4594.1",
+      "publisher": "Famatech",
+      "install_date": "20260608",
+      "install_location": "C:\\Program Files (x86)\\Advanced IP Scanner\\",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Application Verifier x64 External Package",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "BarTender",
+      "version": "11.3.5",
+      "publisher": "Seagull Scientific",
+      "install_date": "20260713",
+      "install_location": "C:\\Program Files\\Seagull\\BarTender 2022\\",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "BarTender 2022 R5",
+      "version": "11.3.5.197999",
+      "publisher": "Seagull Scientific",
+      "install_date": "N/A",
+      "install_location": "C:\\Program Files\\Seagull\\BarTender 2022\\",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Bonjour",
+      "version": "3.0.0.10",
+      "publisher": "Apple Inc.",
+      "install_date": "20260826",
+      "install_location": "C:\\Program Files (x86)\\Bonjour\\",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Bonjour Print Services",
+      "version": "2.0.2.0",
+      "publisher": "Apple Inc.",
+      "install_date": "20260703",
+      "install_location": "C:\\Program Files\\Bonjour Print Services\\",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "ClickOnce Bootstrapper Package for Microsoft .NET Framework",
+      "version": "4.7.04107",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "CyberLink PowerDirector 365",
+      "version": "24.0.1209.0",
+      "publisher": "CyberLink Corp.",
+      "install_date": "N/A",
+      "install_location": "C:\\Program Files\\CyberLink\\PowerDirector\\24.0.1209.0",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "DiagnosticsHub_CollectionService",
+      "version": "15.9.36101",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "easyTimePro",
+      "version": "10.2",
+      "publisher": "ZKTeco Inc",
+      "install_date": "20260821",
+      "install_location": "C:\\easytime\\",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Entity Framework 6.2.0 Tools  for Visual Studio 2017",
+      "version": "6.2.61807.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Epson Connect Printer Setup",
+      "version": "1.4.11",
+      "publisher": "Seiko Epson Corporation",
+      "install_date": "20260521",
+      "install_location": "C:\\Program Files (x86)\\Epson Software\\ECPrinterSetup\\",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "EPSON L8050 Series Printer Uninstall",
+      "version": "N/A",
+      "publisher": "Seiko Epson Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Epson Manuals",
+      "version": "2.0.4.0",
+      "publisher": "Seiko Epson Corporation",
+      "install_date": "20260521",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Epson Photo+",
+      "version": "4.0.4.0",
+      "publisher": "Seiko Epson Corporation",
+      "install_date": "20260521",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Epson Printer Connection Checker",
+      "version": "3.4.4.0",
+      "publisher": "Seiko Epson Corporation",
+      "install_date": "20260521",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Epson Software Updater",
+      "version": "5.1.0",
+      "publisher": "Seiko Epson Corporation",
+      "install_date": "20260721",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "EpsonNet Print",
+      "version": "3.3.1.0",
+      "publisher": "Seiko Epson Corporation",
+      "install_date": "20260521",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Google Chrome",
+      "version": "152.0.7977.75",
+      "publisher": "Google LLC",
+      "install_date": "20260902",
+      "install_location": "C:\\Program Files\\Google\\Chrome\\Application",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "HCWebControl",
+      "version": "3.0.0.0",
+      "publisher": "Hangzhou Hikvision Digital Technology Co., Ltd.",
+      "install_date": "20260828",
+      "install_location": "C:\\Program Files\\HCWebControl\\",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "icecap_collection_neutral",
+      "version": "15.8.27906",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "icecap_collection_x64",
+      "version": "15.8.27906",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "icecap_collectionresources",
+      "version": "15.8.27924",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "icecap_collectionresourcesx64",
+      "version": "15.8.27924",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "IIS 10.0 Express",
+      "version": "10.0.08608",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "IIS Express Application Compatibility Database for x64",
+      "version": "N/A",
+      "publisher": "N/A",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "IIS Express Application Compatibility Database for x86",
+      "version": "N/A",
+      "publisher": "N/A",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "IntelliTraceProfilerProxy",
+      "version": "15.0.17289.01",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "iVMS-4200",
+      "version": "3.14.0.6",
+      "publisher": "Hangzhou Hikvision Digital Technology Co., Ltd.",
+      "install_date": "N/A",
+      "install_location": "C:\\Program Files (x86)",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Kits Configuration Installer",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "LocalServiceComponents",
+      "version": "1.0.0.82",
+      "publisher": "N/A",
+      "install_date": "20260608",
+      "install_location": "C:\\Program Files (x86)\\LocalServiceComponents\\",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET 10.0 Templates 10.0.300 x86",
+      "version": "40.11.2206",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET 5.0.11 - Windows Server Hosting",
+      "version": "5.0.11.21476",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET 8.0.3 - Windows Server Hosting",
+      "version": "8.0.3.24116",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET AppHost Pack - 10.0.8 (x86)",
+      "version": "80.32.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Framework 4 Multi-Targeting Pack",
+      "version": "4.0.30319",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Framework 4.5 Multi-Targeting Pack",
+      "version": "4.5.50710",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Framework 4.5.1 Multi-Targeting Pack",
+      "version": "4.5.50932",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Framework 4.5.2 Multi-Targeting Pack",
+      "version": "4.5.51209",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Framework 4.6 Targeting Pack",
+      "version": "4.6.00081",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Framework 4.6.1 SDK",
+      "version": "4.6.01055",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Framework 4.6.1 Targeting Pack",
+      "version": "4.6.01055",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Framework Cumulative Intellisense Pack for Visual Studio (ENU)",
+      "version": "4.7.02558",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Host - 10.0.8 (x86)",
+      "version": "80.32.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Host - 5.0.11 (x64)",
+      "version": "40.44.30523",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft .NET Host - 5.0.11 (x86)",
+      "version": "40.44.30523",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Host - 8.0.3 (x64)",
+      "version": "64.12.10343",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft .NET Host - 8.0.3 (x86)",
+      "version": "64.12.10343",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Host FX Resolver - 10.0.8 (x86)",
+      "version": "80.32.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Host FX Resolver - 5.0.11 (x64)",
+      "version": "40.44.30523",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft .NET Host FX Resolver - 5.0.11 (x86)",
+      "version": "40.44.30523",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Host FX Resolver - 8.0.3 (x64)",
+      "version": "64.12.10343",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft .NET Host FX Resolver - 8.0.3 (x86)",
+      "version": "64.12.10343",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Runtime - 10.0.8 (x86)",
+      "version": "80.32.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Runtime - 5.0.11 (x64)",
+      "version": "40.44.30523",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft .NET Runtime - 5.0.11 (x64)",
+      "version": "5.0.11.30523",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Runtime - 5.0.11 (x86)",
+      "version": "40.44.30523",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Runtime - 5.0.11 (x86)",
+      "version": "5.0.11.30523",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Runtime - 8.0.3 (x64)",
+      "version": "64.12.10343",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft .NET Runtime - 8.0.3 (x64)",
+      "version": "8.0.3.33414",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Runtime - 8.0.3 (x86)",
+      "version": "64.12.10343",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Runtime - 8.0.3 (x86)",
+      "version": "8.0.3.33414",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET SDK 10.0.300 (x86)",
+      "version": "10.3.26.23102",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Targeting Pack - 10.0.8 (x86)",
+      "version": "80.32.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft .NET Toolset 10.0.300 (x86)",
+      "version": "40.11.2206",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft 365 Apps for business - en-us",
+      "version": "16.0.20326.20112",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "C:\\Program Files\\Microsoft Office",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core 5.0.11 - Shared Framework (x64)",
+      "version": "5.0.11.21476",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core 5.0.11 - Shared Framework (x86)",
+      "version": "5.0.11.21476",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core 5.0.11 Shared Framework (x64)",
+      "version": "5.0.11.21476",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core 5.0.11 Shared Framework (x86)",
+      "version": "5.0.11.21476",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core 8.0.3 - Shared Framework (x64)",
+      "version": "8.0.3.24116",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core 8.0.3 - Shared Framework (x86)",
+      "version": "8.0.3.24116",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core 8.0.3 Hosting Bundle Options",
+      "version": "8.0.3.24116",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core 8.0.3 Shared Framework (x64)",
+      "version": "8.0.3.24116",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core 8.0.3 Shared Framework (x86)",
+      "version": "8.0.3.24116",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core Module for IIS Express",
+      "version": "12.2.18292.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core Module V2 for IIS Express",
+      "version": "12.2.18292.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core Runtime - 10.0.8 (x86)",
+      "version": "80.32.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Core Targeting Pack - 10.0.8 (x86)",
+      "version": "80.32.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Diagnostic Pack for Visual Studio",
+      "version": "15.9.40092.17061",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft ASP.NET Web Tools Packages 15.0 - ENU",
+      "version": "1.0.30615.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Azure Authoring Tools - v2.9.6",
+      "version": "2.9.8899.26",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Azure Compute Emulator - v2.9.6",
+      "version": "2.9.8899.26",
+      "publisher": "Microsoft Corporation",
+      "install_date": "8/28/2026",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Azure Libraries for .NET \ufffd v2.9",
+      "version": "3.0.2310.23",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Azure Mobile App SDK V3.0",
+      "version": "3.0.50407.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Azure PowerShell - April 2018",
+      "version": "5.7.0.18831",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Azure Storage Emulator - v5.7",
+      "version": "5.7.18218.1723",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Edge",
+      "version": "152.0.4191.53",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260830",
+      "install_location": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Edge WebView2 Runtime",
+      "version": "152.0.4191.53",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260902",
+      "install_location": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft NetStandard SDK",
+      "version": "15.0.51105",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Office Home and Business 2024 - en-us",
+      "version": "16.0.20326.20112",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "C:\\Program Files\\Microsoft Office",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft OneDrive",
+      "version": "26.153.0809.0004",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Portable Library Multi-Targeting Pack",
+      "version": "15.0.26621.02",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Portable Library Multi-Targeting Pack Language Pack - enu",
+      "version": "15.0.26621.02",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft SQL Server 2008 Setup Support Files",
+      "version": "10.1.2731.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft SQL Server 2012 (64-bit)",
+      "version": "N/A",
+      "publisher": "N/A",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft SQL Server 2012 (64-bit)",
+      "version": "N/A",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft SQL Server 2012 Command Line Utilities",
+      "version": "11.3.6020.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft SQL Server 2012 Native Client",
+      "version": "11.3.6518.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft SQL Server 2012 RsFx Driver",
+      "version": "11.0.2100.60",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft SQL Server 2012 Setup (English)",
+      "version": "11.0.2100.60",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft SQL Server 2012 Transact-SQL ScriptDom",
+      "version": "11.0.2100.60",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft SQL Server 2014 Express LocalDB",
+      "version": "12.3.6024.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft SQL Server 2016 LocalDB",
+      "version": "13.3.7037.1",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft SQL Server Compact 3.5 SP2 ENU",
+      "version": "3.5.8080.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "C:\\Program Files (x86)\\Microsoft SQL Server Compact Edition\\",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft SQL Server Compact 3.5 SP2 x64 ENU",
+      "version": "3.5.8080.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "C:\\Program Files\\Microsoft SQL Server Compact Edition\\",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft SQL Server Compact 4.0 SP1 x64 ENU",
+      "version": "4.0.8876.1",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260704",
+      "install_location": "C:\\Program Files\\Microsoft SQL Server Compact Edition\\",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft System CLR Types for SQL Server vNext CTP1.6",
+      "version": "15.0.600.33",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Teams Meeting Add-in for Microsoft Office",
+      "version": "1.26.20101",
+      "publisher": "Microsoft",
+      "install_date": "20260827",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft TestPlatform SDK Local Feed",
+      "version": "15.9.0.2096950",
+      "publisher": "Microsoft",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161",
+      "version": "9.0.30729.6161",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161",
+      "version": "9.0.30729.6161",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219",
+      "version": "10.0.40219",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219",
+      "version": "10.0.40219",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030",
+      "version": "11.0.61030.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030",
+      "version": "11.0.61030",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260703",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030",
+      "version": "11.0.61030",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260703",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.30501",
+      "version": "12.0.30501.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40664",
+      "version": "12.0.40664.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501",
+      "version": "12.0.30501.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664",
+      "version": "12.0.40664",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260518",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40664",
+      "version": "12.0.40664",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260518",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005",
+      "version": "12.0.21005",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005",
+      "version": "12.0.21005",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.51.36231",
+      "version": "14.51.36231.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2017 X64 Debug Runtime - 14.16.27052",
+      "version": "14.16.27052",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2017 X86 Debug Runtime - 14.16.27052",
+      "version": "14.16.27052",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.51.36231",
+      "version": "14.51.36231",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260518",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.51.36231",
+      "version": "14.51.36231",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260518",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2022 X86 Additional Runtime - 14.50.35719",
+      "version": "14.50.35719",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260824",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.50.35719",
+      "version": "14.50.35719",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260824",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual C++ v14 Redistributable (x86) - 14.50.35719",
+      "version": "14.50.35719.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual Studio Installer",
+      "version": "4.9.50.62957",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\"",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Visual Studio Setup Configuration",
+      "version": "3.7.2182.35401",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual Studio Setup WMI Provider",
+      "version": "3.7.2182.35401",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Visual Studio Team Foundation Server 2017 Update 9 Office Integration (x64)",
+      "version": "15.129.37529",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Visual Studio Team Foundation Server 2017 Update 9 Office Integration Language Pack (x64) - ENU",
+      "version": "15.129.37529",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft VSS Writer for SQL Server 2012",
+      "version": "11.0.2100.60",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Web Deploy 4.0",
+      "version": "10.0.8215",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Windows Application Compatibility Fix Database",
+      "version": "N/A",
+      "publisher": "N/A",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Microsoft Windows Communication Foundation Diagnostic Pack for x86",
+      "version": "15.0.27005",
+      "publisher": "Microsoft",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Windows Desktop Runtime - 10.0.8 (x86)",
+      "version": "80.32.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft Windows Desktop Targeting Pack - 10.0.8 (x86)",
+      "version": "80.32.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Sdk.Android.Manifest-10.0.100 (x86)",
+      "version": "36.1.2",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Sdk.iOS.Manifest-10.0.100 (x86)",
+      "version": "26.0.11017",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Sdk.MacCatalyst.Manifest-10.0.100 (x86)",
+      "version": "26.0.11017",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Sdk.macOS.Manifest-10.0.100 (x86)",
+      "version": "26.0.11017",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Sdk.Maui.Manifest-10.0.100 (x86)",
+      "version": "10.0.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Sdk.tvOS.Manifest-10.0.100 (x86)",
+      "version": "26.0.11017",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Workload.Emscripten.Current.Manifest-10.0.100 (x86)",
+      "version": "81.176.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Workload.Emscripten.net6.Manifest-10.0.100 (x86)",
+      "version": "81.176.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Workload.Emscripten.net7.Manifest-10.0.100 (x86)",
+      "version": "81.176.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Workload.Emscripten.net8.Manifest-10.0.100 (x86)",
+      "version": "81.176.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Workload.Emscripten.net9.Manifest-10.0.100 (x86)",
+      "version": "81.176.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Workload.Mono.Toolchain.Current.Manifest-10.0.100 (x86)",
+      "version": "81.176.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Workload.Mono.Toolchain.net6.Manifest-10.0.100 (x86)",
+      "version": "81.176.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Workload.Mono.Toolchain.net7.Manifest-10.0.100 (x86)",
+      "version": "81.176.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Workload.Mono.Toolchain.net8.Manifest-10.0.100 (x86)",
+      "version": "81.176.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Microsoft.NET.Workload.Mono.Toolchain.net9.Manifest-10.0.100 (x86)",
+      "version": "81.176.52183",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260603",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "MSI Development Tools",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "MyEpson Portal",
+      "version": "N/A",
+      "publisher": "Seiko Epson Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "MyEpson Portal",
+      "version": "1.1.3.6",
+      "publisher": "SEIKO EPSON CORPORATION",
+      "install_date": "20260521",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "NVIDIA 3D Vision Driver 388.13",
+      "version": "388.13",
+      "publisher": "NVIDIA Corporation",
+      "install_date": "20260520",
+      "install_location": "C:\\Program Files (x86)\\NVIDIA Corporation\\3D Vision",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "NVIDIA Ansel",
+      "version": "391.35",
+      "publisher": "NVIDIA Corporation",
+      "install_date": "20260520",
+      "install_location": "C:\\Program Files\\NVIDIA Corporation\\Ansel",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "NVIDIA Control Panel 388.13",
+      "version": "388.13",
+      "publisher": "NVIDIA Corporation",
+      "install_date": "20260520",
+      "install_location": "C:\\Program Files\\NVIDIA Corporation\\Control Panel Client",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "NVIDIA Display Container",
+      "version": "1.2",
+      "publisher": "NVIDIA Corporation",
+      "install_date": "20260520",
+      "install_location": "C:\\Program Files\\NVIDIA Corporation\\Display.NvContainer",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "NVIDIA Display Container LS",
+      "version": "1.2",
+      "publisher": "NVIDIA Corporation",
+      "install_date": "20260520",
+      "install_location": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NVDisplayContainerLS.{6B1F5887-EDCA-4A1F-A400-4088D1C3E19D}",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "NVIDIA Display Session Container",
+      "version": "1.2",
+      "publisher": "NVIDIA Corporation",
+      "install_date": "20260520",
+      "install_location": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NVDisplaySessionContainer.{E4A9A37D-8BE4-4E89-8752-2F814045AC51}",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "NVIDIA Display Watchdog Plugin",
+      "version": "1.2",
+      "publisher": "NVIDIA Corporation",
+      "install_date": "20260520",
+      "install_location": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NVDisplayPluginWatchdog.{633B03C0-2BD1-434D-8213-5C28A2C21CA1}",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "NVIDIA Graphics Driver 388.13",
+      "version": "388.13",
+      "publisher": "NVIDIA Corporation",
+      "install_date": "20260520",
+      "install_location": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\Display.Driver.{6F6A0516-84E4-4ACA-81AD-B589F284D2D2}",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "NVIDIA Install Application",
+      "version": "2.1002.275.2323",
+      "publisher": "NVIDIA Corporation",
+      "install_date": "20260520",
+      "install_location": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\InstallerCore",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "NVIDIA Stereoscopic 3D Driver",
+      "version": "7.17.13.7500",
+      "publisher": "NVIDIA Corporation",
+      "install_date": "N/A",
+      "install_location": "C:\\Program Files (x86)\\NVIDIA Corporation\\3D Vision",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Office 16 Click-to-Run Extensibility Component",
+      "version": "16.0.20326.20072",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260824",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "PVMS 1.01",
+      "version": "1.01",
+      "publisher": "Panasonic",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "RAV Network Protection",
+      "version": "7.8.0",
+      "publisher": "Reason Cybersecurity Inc.",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "SADP",
+      "version": "3.1.4.5",
+      "publisher": "Hangzhou Hikvision Digital Technology Co., Ltd.",
+      "install_date": "N/A",
+      "install_location": "C:\\Program Files (x86)\\SADP\\SADP",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "SDK ARM Additions",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "SDK ARM Redistributables",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "SQL Server 2012 Common Files",
+      "version": "11.0.2100.60",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "SQL Server 2012 Database Engine Services",
+      "version": "11.0.2100.60",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "SQL Server 2012 Database Engine Shared",
+      "version": "11.0.2100.60",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "SQL Server Browser for SQL Server 2012",
+      "version": "11.0.2100.60",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Sql Server Customer Experience Improvement Program",
+      "version": "11.0.2100.60",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Trassir 4.9.2.0-1294781-64-Release client",
+      "version": "4.9.2.0-1294781-64-Release",
+      "publisher": "DSSL",
+      "install_date": "20260521",
+      "install_location": "C:\\DSSL\\Trassir-4.9.2.0-1294781-64-Release-client\\",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "TypeScript SDK",
+      "version": "3.1.7.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "UltraViewer version 6.6.124",
+      "version": "6.6.124",
+      "publisher": "DucFabulous",
+      "install_date": "20260520",
+      "install_location": "C:\\Program Files (x86)\\UltraViewer\\",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Universal CRT Extension SDK",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Universal CRT Headers Libraries and Sources",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Universal CRT Redistributable",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Universal CRT Tools x64",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Universal CRT Tools x86",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Universal General MIDI DLS Extension SDK",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Update for  (KB2504637)",
+      "version": "1",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vcpp_crt.redist.clickonce",
+      "version": "14.16.27052",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Visual Studio Professional 2017",
+      "version": "15.9.82",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Professional",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "VLC media player",
+      "version": "3.0.23",
+      "publisher": "VideoLAN",
+      "install_date": "N/A",
+      "install_location": "C:\\Program Files\\VideoLAN\\VLC",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "VS Immersive Activate Helper",
+      "version": "16.0.95.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "VS JIT Debugger",
+      "version": "16.0.95.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "VS Script Debugging Common",
+      "version": "16.0.95.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "VS WCF Debugging",
+      "version": "16.0.95.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "vs_BlendMsi",
+      "version": "15.0.27205",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_clickoncebootstrappermsi",
+      "version": "15.0.27005",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_clickoncebootstrappermsires",
+      "version": "15.0.27005",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_clickoncesigntoolmsi",
+      "version": "15.0.27005",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_communitymsi",
+      "version": "15.9.34829",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_communitymsires",
+      "version": "15.0.26621",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_devenvmsi",
+      "version": "15.0.26621",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_filehandler_amd64",
+      "version": "15.9.28302",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_filehandler_x86",
+      "version": "15.9.28302",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_FileTracker_Singleton",
+      "version": "15.9.28128",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_Graphics_Singletonx64",
+      "version": "15.8.27729",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "vs_Graphics_Singletonx86",
+      "version": "15.8.27729",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_minshellinteropmsi",
+      "version": "15.8.27825",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_minshellmsi",
+      "version": "15.9.34829",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_minshellmsires",
+      "version": "15.0.26621",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_professionalmsi",
+      "version": "15.0.26621",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_SQLClickOnceBootstrappermsi",
+      "version": "15.0.27005",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "vs_tipsmsi",
+      "version": "15.0.27005",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Vulkan Run Time Libraries 1.0.61.0",
+      "version": "1.0.61.0",
+      "publisher": "LunarG, Inc.",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Web Components",
+      "version": "3.0.8.34",
+      "publisher": "N/A",
+      "install_date": "20260608",
+      "install_location": "C:\\Program Files (x86)\\Web Components\\",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "WinAppDeploy",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "WinDirStat",
+      "version": "2.6.2",
+      "publisher": "WinDirStat Team",
+      "install_date": "20260603",
+      "install_location": "C:\\Program Files\\WinDirStat\\",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Windows App Certification Kit Native Components",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Windows App Certification Kit SupportedApiList x86",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows App Certification Kit x64",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows Desktop Extension SDK",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows Desktop Extension SDK Contracts",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows IoT Extension SDK",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows IoT Extension SDK Contracts",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows Mobile Extension SDK",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows Mobile Extension SDK Contracts",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows Phone SDK 8.0 Assemblies for Visual Studio 2017",
+      "version": "15.0.28302",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK AddOn",
+      "version": "10.1.0.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK ARM Desktop Tools",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Desktop Headers arm",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Desktop Headers arm64",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Desktop Headers x64",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Desktop Headers x86",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Desktop Libs arm",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Desktop Libs arm64",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Desktop Libs x64",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Desktop Libs x86",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Desktop Tools arm64",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Desktop Tools x64",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Desktop Tools x86",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK DirectX x64 Remote",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Windows SDK DirectX x86 Remote",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK EULA",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporations",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Facade Windows WinMD Versioned",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK for Windows Store Apps",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK for Windows Store Apps Contracts",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK for Windows Store Apps DirectX x86 Remote",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK for Windows Store Apps Headers",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK for Windows Store Apps Libs",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK for Windows Store Apps Metadata",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK for Windows Store Apps Tools",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK for Windows Store Managed Apps Libs",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Modern Non-Versioned Developer Tools",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Modern Versioned Developer Tools",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Redistributables",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows SDK Signing Tools",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows Software Development Kit - Windows 10.0.19041.5609",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows Subsystem for Linux",
+      "version": "2.7.3.0",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "Windows Team Extension SDK",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "Windows Team Extension SDK Contracts",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "windows_exporter",
+      "version": "0.16.0",
+      "publisher": "prometheus-community",
+      "install_date": "20260520",
+      "install_location": "N/A",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "WinPcap 4.1.3",
+      "version": "4.1.0.2980",
+      "publisher": "Riverbed Technology, Inc.",
+      "install_date": "N/A",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "WinRAR 7.22 (64-bit)",
+      "version": "7.22.0",
+      "publisher": "win.rar GmbH",
+      "install_date": "N/A",
+      "install_location": "C:\\Program Files\\WinRAR",
+      "architecture": "64-bit"
+    },
+    {
+      "name": "WinRT Intellisense Desktop - en-us",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "WinRT Intellisense Desktop - Other Languages",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "WinRT Intellisense IoT - en-us",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "WinRT Intellisense IoT - Other Languages",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "WinRT Intellisense Mobile - en-us",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "WinRT Intellisense PPI - en-us",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "WinRT Intellisense PPI - Other Languages",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "WinRT Intellisense UAP - en-us",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    },
+    {
+      "name": "WinRT Intellisense UAP - Other Languages",
+      "version": "10.1.19041.5609",
+      "publisher": "Microsoft Corporation",
+      "install_date": "20260828",
+      "install_location": "N/A",
+      "architecture": "32-bit"
+    }
+  ],
+  "health": {
+    "overall": "HEALTHY",
+    "issues": [],
+    "warnings": [],
+    "storage_alert_count": 0,
+    "upgrade_required_count": 0,
+    "recommendations": []
+  }
+}
