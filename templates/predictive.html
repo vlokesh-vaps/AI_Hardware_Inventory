@@ -1,0 +1,355 @@
+{% extends "base.html" %}
+
+{% block title %}Predictive Analysis & AI Insights | Hardware Inventory{% endblock %}
+
+{% block content %}
+<div class="page-container predictive-page">
+    <!-- Header Section -->
+    <div class="page-header predictive-header">
+        <div class="header-titles">
+            <div class="badge-tag-ai">
+                <span class="ai-sparkle-icon">✨</span> NVIDIA NIM &bull; Mistral-Nemotron
+            </div>
+            <h1 class="page-title">Predictive Fleet Analysis & AI Insights</h1>
+            <p class="page-subtitle">Multi-factor hardware failure scoring, storage depletion runways, and autonomous infrastructure diagnostics.</p>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-ai-primary" id="btn-refresh-ai" onclick="refreshAIInsights()">
+                <span class="btn-spinner" id="ai-spinner" style="display:none;">⏳</span>
+                <span class="btn-icon">⚡</span>
+                <span id="ai-btn-text">Refresh AI Insights</span>
+            </button>
+            <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">
+                <span>←</span> Back to Dashboard
+            </a>
+        </div>
+    </div>
+
+    <!-- Predictive Metric Summary Cards -->
+    <div class="predictive-metrics-grid">
+        <div class="p-card p-card-danger">
+            <div class="p-card-header">
+                <span class="p-card-title">Top At-Risk Systems</span>
+                <span class="p-card-icon">🚨</span>
+            </div>
+            <div class="p-card-body">
+                <div class="p-card-value">{{ at_risk_systems|length }}</div>
+                <div class="p-card-trend text-danger">
+                    {% set crit_high = at_risk_systems | selectattr('risk_tier', 'in', ['CRITICAL', 'HIGH']) | list | length %}
+                    <strong>{{ crit_high }}</strong> in Critical / High failure tier
+                </div>
+            </div>
+        </div>
+
+        <div class="p-card p-card-warning">
+            <div class="p-card-header">
+                <span class="p-card-title">Storage Runway Alerts</span>
+                <span class="p-card-icon">⏳</span>
+            </div>
+            <div class="p-card-body">
+                <div class="p-card-value">{{ runway_projections.critical_count + runway_projections.warning_count }}</div>
+                <div class="p-card-trend text-warning">
+                    <strong>{{ runway_projections.critical_count }}</strong> drives &lt; 14 days runway
+                </div>
+            </div>
+        </div>
+
+        <div class="p-card p-card-info">
+            <div class="p-card-header">
+                <span class="p-card-title">Fleet Monitored Drives</span>
+                <span class="p-card-icon">💾</span>
+            </div>
+            <div class="p-card-body">
+                <div class="p-card-value">{{ runway_projections.total_monitored_drives }}</div>
+                <div class="p-card-trend text-info">Partition capacity runways tracked</div>
+            </div>
+        </div>
+
+        <div class="p-card p-card-ai">
+            <div class="p-card-header">
+                <span class="p-card-title">AI Engine Model</span>
+                <span class="p-card-icon">🧠</span>
+            </div>
+            <div class="p-card-body">
+                <div class="p-card-value p-card-model">{{ ai_insights.model.split('/')[-1] if ai_insights and ai_insights.model else 'mistral-nemotron' }}</div>
+                <div class="p-card-trend text-ai">
+                    Generated: <span id="ai-timestamp">{{ ai_insights.generated_at if ai_insights else 'Just now' }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 1: Top At-Risk Systems Spotlight -->
+    <div class="content-card section-card" id="at-risk-section">
+        <div class="card-header">
+            <div class="card-title-group">
+                <h2 class="card-title">Top At-Risk Systems</h2>
+                <span class="badge badge-danger">{{ at_risk_systems|length }} prioritized</span>
+            </div>
+            <div class="header-legend">
+                <span class="legend-dot dot-critical"></span> Critical (75-100)
+                <span class="legend-dot dot-high"></span> High (50-74)
+                <span class="legend-dot dot-mod"></span> Moderate (25-49)
+                <span class="legend-dot dot-low"></span> Low (0-24)
+            </div>
+        </div>
+
+        {% if at_risk_systems %}
+        <div class="at-risk-grid">
+            {% for sys in at_risk_systems %}
+            <div class="at-risk-card tier-{{ sys.risk_tier|lower }}">
+                <div class="risk-card-top">
+                    <div class="risk-system-meta">
+                        <h3 class="risk-pc-name">
+                            <a href="{{ url_for('pc_details', computer_name=sys.computer_name) }}">{{ sys.computer_name }}</a>
+                        </h3>
+                        <div class="risk-pc-sub">{{ sys.model }} &bull; {{ sys.ip_address }}</div>
+                    </div>
+                    <div class="risk-gauge-container">
+                        <div class="risk-score-circle risk-color-{{ sys.badge_color }}">
+                            <span class="risk-number">{{ sys.risk_score }}</span>
+                            <span class="risk-max">/100</span>
+                        </div>
+                        <span class="badge badge-{{ sys.badge_color }} risk-tier-badge">{{ sys.risk_tier }} RISK</span>
+                    </div>
+                </div>
+
+                <div class="failure-prob-bar-group">
+                    <div class="prob-labels">
+                        <span class="prob-title">Estimated Failure Probability</span>
+                        <span class="prob-pct font-bold">{{ sys.failure_probability }}%</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill fill-{{ sys.badge_color }}" style="width: {{ sys.failure_probability }}%;"></div>
+                    </div>
+                </div>
+
+                <div class="risk-vectors-list">
+                    <div class="vectors-title">Detected Risk Drivers:</div>
+                    <div class="vector-tags">
+                        {% for vec in sys.failure_vectors %}
+                        <span class="vector-tag tag-{{ sys.badge_color }}">{{ vec }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <div class="risk-factors-breakdown">
+                    <ul class="risk-factors-ul">
+                        {% for rf in sys.risk_factors[:3] %}
+                        <li>
+                            <span class="rf-badge rf-{{ rf.severity|lower }}">+{{ rf.impact_points }}</span>
+                            <span class="rf-desc">{{ rf.description }}</span>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+
+                <div class="risk-action-box">
+                    <span class="action-icon">💡</span>
+                    <span class="action-text">{{ sys.recommended_action }}</span>
+                </div>
+
+                <div class="risk-card-footer">
+                    <a href="{{ url_for('pc_details', computer_name=sys.computer_name) }}" class="btn btn-sm btn-outline-primary">
+                        View Hardware Specs &rarr;
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="empty-state">
+            <div class="empty-icon">✅</div>
+            <h3>No High-Risk Systems Detected</h3>
+            <p>All monitored assets are operating within acceptable threshold limits.</p>
+        </div>
+        {% endif %}
+    </div>
+
+    <!-- Section 2: Health Status Over Time & Storage Runway Charts -->
+    <div class="charts-row">
+        <!-- Chart 1: Health Status Over Time -->
+        <div class="content-card chart-card">
+            <div class="card-header">
+                <div class="card-title-group">
+                    <h2 class="card-title">Health Status Over Time</h2>
+                    <span class="badge badge-neutral">Historical Snapshots</span>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="healthTimelineChart"></canvas>
+            </div>
+            <div class="chart-caption">
+                Timeline captures transition states across recorded inventory snapshots.
+            </div>
+        </div>
+
+        <!-- Chart 2: Storage Depletion Runway -->
+        <div class="content-card chart-card">
+            <div class="card-header">
+                <div class="card-title-group">
+                    <h2 class="card-title">Storage Depletion Runway</h2>
+                    <span class="badge badge-warning">Days Until 100% Full</span>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="storageRunwayChart"></canvas>
+            </div>
+            <div class="chart-caption">
+                Linear consumption extrapolation identifies volumes nearing capacity exhaustion.
+            </div>
+        </div>
+    </div>
+
+    <!-- Storage Runway Projections Table -->
+    <div class="content-card section-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <h2 class="card-title">Drive Capacity Exhaustion Projections</h2>
+                <span class="badge badge-neutral">{{ runway_projections.projections|length }} Volumes</span>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Computer</th>
+                        <th>Drive</th>
+                        <th>Total Size</th>
+                        <th>Used / Free</th>
+                        <th>Free %</th>
+                        <th>Est. Daily Burn</th>
+                        <th>Runway Remaining</th>
+                        <th>Projected Full Date</th>
+                        <th>Urgency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for p in runway_projections.projections %}
+                    <tr>
+                        <td class="cell-primary">
+                            <a href="{{ url_for('pc_details', computer_name=p.computer_name) }}">{{ p.computer_name }}</a>
+                        </td>
+                        <td><code>{{ p.drive_letter }}</code> <span class="text-muted">{{ p.volume_name }}</span></td>
+                        <td>{{ p.total_size_gb }} GB</td>
+                        <td>{{ p.used_space_gb }} GB / <strong>{{ p.free_space_gb }} GB</strong></td>
+                        <td>
+                            <div class="mini-progress">
+                                <div class="mini-progress-fill fill-{{ p.status_badge }}" style="width: {{ 100 - p.free_percentage }}%;"></div>
+                            </div>
+                            <span>{{ p.free_percentage }}% free</span>
+                        </td>
+                        <td>~{{ p.daily_burn_gb }} GB/day</td>
+                        <td>
+                            <span class="runway-days days-{{ p.status_badge }}">
+                                {% if p.days_remaining < 999 %}
+                                    {{ p.days_remaining }} days
+                                {% else %}
+                                    &gt; 1 year
+                                {% endif %}
+                            </span>
+                        </td>
+                        <td>{{ p.estimated_exhaustion_date }}</td>
+                        <td>
+                            <span class="badge badge-{{ p.status_badge }}">{{ p.urgency }}</span>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Section 3: Autonomous AI Insights (NVIDIA Nemotron) -->
+    <div class="ai-insights-panel" id="ai-insights-section">
+        <div class="ai-panel-header">
+            <div class="ai-panel-title-group">
+                <div class="ai-chip">
+                    <span class="ai-pulse"></span>
+                    <span>NVIDIA NIM &bull; {{ ai_insights.model if ai_insights else 'mistralai/mistral-nemotron' }}</span>
+                </div>
+                <h2 class="ai-panel-title">Autonomous Infrastructure Diagnostic Report</h2>
+                <div class="ai-meta-text">
+                    Analyzed {{ at_risk_systems|length }} systems &bull; Execution time: <span id="ai-elapsed">{{ ai_insights.elapsed_seconds if ai_insights else '0.0' }}s</span>
+                </div>
+            </div>
+            <div class="ai-panel-actions">
+                <button class="btn btn-secondary btn-sm" onclick="copyAIReport()" id="btn-copy-ai">
+                    📋 Copy Markdown
+                </button>
+            </div>
+        </div>
+
+        <div class="ai-panel-body">
+            <div class="ai-content-box" id="ai-report-content">
+                {{ ai_insights.content if ai_insights and ai_insights.content else 'Generating diagnostic assessment...' }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: Interactive Ask AI Hardware Specialist -->
+    <div class="content-card section-card ai-qa-card">
+        <div class="card-header">
+            <div class="card-title-group">
+                <h2 class="card-title">
+                    <span class="ai-sparkle-icon">💬</span> Ask NVIDIA Nemotron Infrastructure AI
+                </h2>
+                <span class="badge badge-ai">Interactive Diagnostic Assistant</span>
+            </div>
+        </div>
+
+        <div class="ai-qa-container">
+            <div class="ai-qa-intro">
+                Query hardware risks, upgrade ROI, drive expansion timelines, or specific PC reliability vectors:
+            </div>
+
+            <!-- Suggestion Chips -->
+            <div class="qa-chips">
+                <button class="qa-chip" onclick="setQuickQuestion('Which system is at greatest risk of hardware or storage failure and why?')">
+                    🚨 Highest failure risk?
+                </button>
+                <button class="qa-chip" onclick="setQuickQuestion('Which computers need an urgent RAM or CPU upgrade to meet enterprise standards?')">
+                    ⚡ RAM/CPU upgrade candidates?
+                </button>
+                <button class="qa-chip" onclick="setQuickQuestion('What is the projected storage exhaustion timeline for 2F-S03?')">
+                    💾 2F-S03 storage timeline?
+                </button>
+                <button class="qa-chip" onclick="setQuickQuestion('Generate a 3-point action plan for the IT team to prevent outages this month.')">
+                    🎯 3-Point preventative plan?
+                </button>
+            </div>
+
+            <form id="ai-ask-form" onsubmit="submitAIQuestion(event)">
+                <div class="qa-input-wrapper">
+                    <input type="text" id="ai-question-input" class="qa-input" placeholder="Type your infrastructure question (e.g. Which drive will fail first?)..." required>
+                    <button type="submit" class="btn btn-ai-primary" id="btn-ask-submit">
+                        <span id="ask-btn-text">Ask AI</span>
+                        <span class="btn-spinner" id="ask-spinner" style="display:none;">⏳</span>
+                    </button>
+                </div>
+            </form>
+
+            <div class="qa-response-area" id="qa-response-area" style="display:none;">
+                <div class="qa-question-echo" id="qa-question-echo"></div>
+                <div class="qa-answer-box" id="qa-answer-box"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<!-- Chart.js and Marked.js from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="{{ url_for('static', filename='js/predictive.js') }}"></script>
+<script>
+    // Initialize charts with server-provided timeline and runway data
+    const initialHealthTimeline = {{ health_timeline | tojson | safe }};
+    const initialRunway = {{ runway_projections | tojson | safe }};
+    document.addEventListener('DOMContentLoaded', () => {
+        initPredictiveCharts(initialHealthTimeline, initialRunway);
+        renderInitialMarkdown();
+    });
+</script>
+{% endblock %}

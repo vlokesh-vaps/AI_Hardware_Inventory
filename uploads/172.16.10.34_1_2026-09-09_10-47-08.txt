@@ -1,0 +1,1775 @@
+WINDOWS COMPLETE HARDWARE SOFTWARE HEALTH CHECK
+================================================
+IP Address         : 1
+All IPv4 Addresses : 172.16.10.34
+Computer Name      : DESKTOP-L033S5N
+Report Date        : 2026-09-09 10:47:08
+Report File        : C:\healthcheck\1_2026-09-09_10-47-08.txt
+
+==========================================================================================
+ COMPUTER / OPERATING SYSTEM
+==========================================================================================
+Computer Name        : DESKTOP-L033S5N
+Manufacturer         : LENOVO
+Model                : 10SRS03D00
+System Type          : x64-based PC
+Domain / Workgroup   : WORKGROUP
+Logged On User       : DESKTOP-L033S5N\admin
+Total Physical RAM   : 19.87 GB
+Operating System     : Microsoft Windows 11 Pro
+OS Version           : 10.0.26200
+OS Build             : 26200
+Architecture         : 64-bit
+Windows Serial       : 00330-80000-00000-AA881
+Install Date         : 08/10/2026 19:12:35
+Last Boot            : 09/07/2026 09:56:13
+
+==========================================================================================
+ CPU / PROCESSOR
+==========================================================================================
+CPU #1
+  Name               : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+  Manufacturer       : GenuineIntel
+  Model              : Intel64 Family 6 Model 158 Stepping 10
+  Processor ID       : BFEBFBFF000906EA
+  Serial Number      : To Be Filled By O.E.M.
+  Socket             : U3E1
+  Current Speed      : 2808 MHz
+  Maximum Speed      : 2808 MHz
+  Cores              : 6
+  Threads            : 6
+  Architecture       : 9
+  Status             : OK
+
+
+==========================================================================================
+ RAM / MEMORY
+==========================================================================================
+Number of RAM Sticks : 4
+
+RAM STICK #1
+  Manufacturer       : 0000
+  Model / Part No    :                     
+  Serial Number      : 08192001
+  Capacity           : 8 GB
+  Speed              : 2400 MHz
+  Configured Speed   : 2400 MHz
+  Memory Type        : 26
+  Form Factor        : 8
+  Device Locator     : ChannelA-DIMM0
+  Bank Locator       : BANK 0
+
+RAM STICK #2
+  Manufacturer       : 859B
+  Model / Part No    : CB4GU2400.C8BT      
+  Serial Number      : E2407BA9
+  Capacity           : 4 GB
+  Speed              : 2400 MHz
+  Configured Speed   : 2400 MHz
+  Memory Type        : 26
+  Form Factor        : 8
+  Device Locator     : ChannelA-DIMM1
+  Bank Locator       : BANK 1
+
+RAM STICK #3
+  Manufacturer       : 04CB
+  Model / Part No    : AM2P24HC4U1-B9QS    
+  Serial Number      : EB180200
+  Capacity           : 4 GB
+  Speed              : 2400 MHz
+  Configured Speed   : 2400 MHz
+  Memory Type        : 26
+  Form Factor        : 8
+  Device Locator     : ChannelB-DIMM0
+  Bank Locator       : BANK 2
+
+RAM STICK #4
+  Manufacturer       : 859B
+  Model / Part No    : CB4GU2400.C8BT      
+  Serial Number      : E2407BC5
+  Capacity           : 4 GB
+  Speed              : 2400 MHz
+  Configured Speed   : 2400 MHz
+  Memory Type        : 26
+  Form Factor        : 8
+  Device Locator     : ChannelB-DIMM1
+  Bank Locator       : BANK 3
+
+
+==========================================================================================
+ MOTHERBOARD
+==========================================================================================
+Manufacturer         : LENOVO
+Product / Model      : 312A
+Version              : NOK
+Serial Number        :                     
+Part Number          : N/A
+Status               : OK
+
+==========================================================================================
+ BIOS / UEFI
+==========================================================================================
+Manufacturer         : LENOVO
+BIOS Version         : M1UKT79A
+BIOS Version 2       : LENOVO - 1790
+BIOS Serial Number   : PG01NM7V
+Release Date         : 03/12/2026 05:30:00
+SMBIOS Major         : 3
+SMBIOS Minor         : 2
+
+==========================================================================================
+ PHYSICAL STORAGE / HDD / SSD
+==========================================================================================
+Number of Physical Disks : 2
+
+DISK #1
+  Device              : \\.\PHYSICALDRIVE1
+  Model               : WDC WD10EZEX-08WN4A0
+  Manufacturer        : (Standard disk drives)
+  Serial Number       :      WD-WCC6Y3AL628C
+  Firmware Revision   : 02.01A02
+  Interface           : SCSI
+  Media Type          : Fixed hard disk media
+  Size                : 931.51 GB
+  Status              : OK
+  Partitions          : 4
+
+DISK #2
+  Device              : \\.\PHYSICALDRIVE0
+  Model               : ESSENCORE SATA SSD
+  Manufacturer        : (Standard disk drives)
+  Serial Number       : ESS3C1P13CNA05394
+  Firmware Revision   : HP2818E3
+  Interface           : SCSI
+  Media Type          : Fixed hard disk media
+  Size                : 476.94 GB
+  Status              : OK
+  Partitions          : 3
+
+
+==========================================================================================
+ STORAGE HEALTH
+==========================================================================================
+Disk
+  Friendly Name       : WDC WD10EZEX-08WN4A0
+  Model               : WDC WD10EZEX-08WN4A0
+  Manufacturer        : N/A
+  Serial Number       : WD-WCC6Y3AL628C
+  Media Type          : HDD
+  Bus Type            : RAID
+  Size                : 931.51 GB
+  Health Status       : Healthy
+  Operational Status  : OK
+
+Disk
+  Friendly Name       : ESSENCORE SATA SSD
+  Model               : ESSENCORE SATA SSD
+  Manufacturer        : N/A
+  Serial Number       : ESS3C1P13CNA05394
+  Media Type          : SSD
+  Bus Type            : RAID
+  Size                : 476.94 GB
+  Health Status       : Healthy
+  Operational Status  : OK
+
+
+==========================================================================================
+ DRIVE / PARTITION SPACE
+==========================================================================================
+DRIVE: C:
+  Volume Name        : N/A
+  File System        : NTFS
+  Total Size         : 475.99 GB
+  Used Space         : 168.88 GB
+  Free Space         : 307.11 GB
+  Free Percentage    : 64.52 %
+
+DRIVE: D:
+  Volume Name        : N/A
+  File System        : NTFS
+  Total Size         : 438.65 GB
+  Used Space         : 100.99 GB
+  Free Space         : 337.66 GB
+  Free Percentage    : 76.98 %
+
+DRIVE: E:
+  Volume Name        : N/A
+  File System        : NTFS
+  Total Size         : 492.06 GB
+  Used Space         : 41.15 GB
+  Free Space         : 450.91 GB
+  Free Percentage    : 91.64 %
+
+
+==========================================================================================
+ PHYSICAL PARTITIONS
+==========================================================================================
+Partition
+  Disk Index          : 1
+  Partition Index     : 0
+  Name                : Disk #1, Partition #0
+  Type                : GPT: System
+  Size                : 0.1 GB
+  Boot Partition      : True
+  Primary Partition   : True
+
+Partition
+  Disk Index          : 1
+  Partition Index     : 1
+  Name                : Disk #1, Partition #1
+  Type                : GPT: Basic Data
+  Size                : 438.65 GB
+  Boot Partition      : False
+  Primary Partition   : True
+
+Partition
+  Disk Index          : 1
+  Partition Index     : 2
+  Name                : Disk #1, Partition #2
+  Type                : GPT: Unknown
+  Size                : 0.68 GB
+  Boot Partition      : False
+  Primary Partition   : False
+
+Partition
+  Disk Index          : 1
+  Partition Index     : 3
+  Name                : Disk #1, Partition #3
+  Type                : GPT: Basic Data
+  Size                : 492.06 GB
+  Boot Partition      : False
+  Primary Partition   : True
+
+Partition
+  Disk Index          : 0
+  Partition Index     : 0
+  Name                : Disk #0, Partition #0
+  Type                : GPT: System
+  Size                : 0.1 GB
+  Boot Partition      : True
+  Primary Partition   : True
+
+Partition
+  Disk Index          : 0
+  Partition Index     : 1
+  Name                : Disk #0, Partition #1
+  Type                : GPT: Basic Data
+  Size                : 475.99 GB
+  Boot Partition      : False
+  Primary Partition   : True
+
+Partition
+  Disk Index          : 0
+  Partition Index     : 2
+  Name                : Disk #0, Partition #2
+  Type                : GPT: Unknown
+  Size                : 0.83 GB
+  Boot Partition      : False
+  Primary Partition   : False
+
+
+==========================================================================================
+ MONITOR / DISPLAY
+==========================================================================================
+MONITOR #1
+  Manufacturer       : LEN
+  Model               : L22-4e
+  Product Code        : 67D5
+  Serial Number       : UKHRRXTD
+
+
+==========================================================================================
+ GRAPHICS / GPU
+==========================================================================================
+GPU
+  Name                : NVIDIA GeForce GT 730
+  Manufacturer        : NVIDIA
+  Driver Version      : 23.21.13.9135
+  Video Memory        : 4 GB
+  Video Processor     : GeForce GT 730
+  Resolution          : 1920 x 1080
+  Refresh Rate        : 60 Hz
+
+GPU
+  Name                : Intel(R) UHD Graphics 630
+  Manufacturer        : Intel Corporation
+  Driver Version      : 31.0.101.2115
+  Video Memory        : 1 GB
+  Video Processor     : Intel(R) UHD Graphics Family
+  Resolution          : N/A x N/A
+  Refresh Rate        : N/A Hz
+
+
+==========================================================================================
+ KEYBOARD
+==========================================================================================
+Keyboard
+  Name                : Enhanced (101- or 102-key)
+  Description         : USB Input Device
+  Manufacturer        : N/A
+  Device ID           : USB\VID_17EF&PID_6190&MI_00\6&324A5375&0&0000
+  Status              : OK
+
+Note: Standard Windows WMI normally does not expose USB keyboard serial numbers.
+
+==========================================================================================
+ MOUSE / POINTING DEVICE
+==========================================================================================
+Mouse
+  Name                : USB Input Device
+  Description         : USB Input Device
+  Manufacturer        : (Standard system devices)
+  Device ID           : USB\VID_17EF&PID_608D\5&361D8BD8&0&6
+  Hardware Type       : USB Input Device
+  Status              : OK
+
+Note: Standard Windows WMI normally does not expose USB mouse serial numbers.
+
+==========================================================================================
+ USB DEVICES
+==========================================================================================
+USB Device
+  Name                : USB Input Device
+  Manufacturer        : (Standard system devices)
+  Device ID           : USB\VID_17EF&PID_608D\5&361D8BD8&0&6
+  PNP Device ID       : USB\VID_17EF&PID_608D\5&361D8BD8&0&6
+  Status              : OK
+
+USB Device
+  Name                : USB Input Device
+  Manufacturer        : (Standard system devices)
+  Device ID           : USB\VID_17EF&PID_6190&MI_01\6&324A5375&0&0001
+  PNP Device ID       : USB\VID_17EF&PID_6190&MI_01\6&324A5375&0&0001
+  Status              : OK
+
+USB Device
+  Name                : USB Composite Device
+  Manufacturer        : (Standard USB Host Controller)
+  Device ID           : USB\VID_17EF&PID_6190\5&361D8BD8&0&7
+  PNP Device ID       : USB\VID_17EF&PID_6190\5&361D8BD8&0&7
+  Status              : OK
+
+USB Device
+  Name                : USB Root Hub (USB 3.0)
+  Manufacturer        : (Standard USB HUBs)
+  Device ID           : USB\ROOT_HUB30\4&1FE21D53&0&0
+  PNP Device ID       : USB\ROOT_HUB30\4&1FE21D53&0&0
+  Status              : OK
+
+USB Device
+  Name                : USB Input Device
+  Manufacturer        : (Standard system devices)
+  Device ID           : USB\VID_17EF&PID_6190&MI_00\6&324A5375&0&0000
+  PNP Device ID       : USB\VID_17EF&PID_6190&MI_00\6&324A5375&0&0000
+  Status              : OK
+
+
+==========================================================================================
+ NETWORK ADAPTERS
+==========================================================================================
+Network Adapter
+  Name                : Intel(R) Ethernet Connection (7) I219-V
+  Manufacturer        : Intel
+  MAC Address         : 00:D8:61:66:C5:FD
+  Adapter Type        : Ethernet 802.3
+  Speed               : 1000000000
+  Device ID           : 0
+  Status              : 2
+
+
+==========================================================================================
+ CURRENT PHYSICAL USER
+==========================================================================================
+Current Logged User : DESKTOP-L033S5N\admin
+Username            : admin
+User Profile        : C:\Users\admin
+
+==========================================================================================
+ USER FOLDER DETAILS
+==========================================================================================
+Desktop
+  Path               : C:\Users\admin\Desktop
+  File Count         : 11
+  Total Size         : 0 GB
+
+Downloads
+  Path               : C:\Users\admin\Downloads
+  File Count         : 1311
+  Total Size         : 0.88 GB
+
+Pictures
+  Path               : C:\Users\admin\Pictures
+  File Count         : 127
+  Total Size         : 0.04 GB
+
+Documents
+  Path               : C:\Users\admin\Documents
+  File Count         : 15068
+  Total Size         : 0.27 GB
+
+Videos
+  Path               : C:\Users\admin\Videos
+  File Count         : 6
+  Total Size         : 0.48 GB
+
+Music
+  Path               : C:\Users\admin\Music
+  File Count         : 23
+  Total Size         : 3.14 GB
+
+
+==========================================================================================
+ INSTALLED SOFTWARE / APPLICATIONS
+==========================================================================================
+Collecting installed software information...
+
+TOTAL INSTALLED SOFTWARE : 139
+
+SOFTWARE #1
+  Name               : Application Verifier x64 External Package (DesktopEditions)
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #2
+  Name               : Application Verifier x64 External Package (OnecoreUAP)
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #3
+  Name               : Copilot
+  Version            : 152.0.4191.66
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260906
+  Install Location   : C:\Program Files (x86)\Microsoft\Copilot\Application
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #4
+  Name               : Git
+  Version            : 2.55.0.3
+  Publisher          : The Git Development Community
+  Install Date       : 20260811
+  Install Location   : C:\Program Files\Git\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #5
+  Name               : Google Chrome
+  Version            : 152.0.7977.82
+  Publisher          : Google LLC
+  Install Date       : 20260904
+  Install Location   : C:\Program Files\Google\Chrome\Application
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #6
+  Name               : Kits Configuration Installer
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #7
+  Name               : Microsoft Edge
+  Version            : 152.0.4191.66
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260906
+  Install Location   : C:\Program Files (x86)\Microsoft\Edge\Application
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #8
+  Name               : Microsoft Edge WebView2 Runtime
+  Version            : 152.0.4191.66
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260906
+  Install Location   : C:\Program Files (x86)\Microsoft\EdgeWebView\Application
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #9
+  Name               : Microsoft ODBC Driver 18 for SQL Server
+  Version            : 18.6.2.1
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #10
+  Name               : Microsoft Teams Meeting Add-in for Microsoft Office
+  Version            : 1.26.18801
+  Publisher          : Microsoft
+  Install Date       : 20260813
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #11
+  Name               : Microsoft Visual C++ 2022 X64 Additional Runtime - 14.51.36247
+  Version            : 14.51.36247
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #12
+  Name               : Microsoft Visual C++ 2022 X64 Debug Runtime - 14.51.36247
+  Version            : 14.51.36247
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #13
+  Name               : Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.51.36247
+  Version            : 14.51.36247
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #14
+  Name               : Microsoft Visual C++ 2022 X86 Additional Runtime - 14.51.36247
+  Version            : 14.51.36247
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #15
+  Name               : Microsoft Visual C++ 2022 X86 Debug Runtime - 14.51.36247
+  Version            : 14.51.36247
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #16
+  Name               : Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.51.36247
+  Version            : 14.51.36247
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #17
+  Name               : Microsoft Visual C++ v14 Redistributable (x64) - 14.51.36247
+  Version            : 14.51.36247.0
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #18
+  Name               : Microsoft Visual C++ v14 Redistributable (x86) - 14.51.36247
+  Version            : 14.51.36247.0
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #19
+  Name               : Microsoft Visual Studio Installer
+  Version            : 4.8.60.55523
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : "C:\Program Files (x86)\Microsoft Visual Studio\Installer"
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #20
+  Name               : Microsoft Visual Studio Setup Configuration
+  Version            : 4.8.41.48107
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #21
+  Name               : Microsoft Visual Studio Setup WMI Provider
+  Version            : 4.8.41.48107
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #22
+  Name               : Microsoft Windows Application Compatibility Fix Database
+  Version            : N/A
+  Publisher          : N/A
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #23
+  Name               : MSI Development Tools
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #24
+  Name               : Node.js
+  Version            : 24.15.0
+  Publisher          : Node.js Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #25
+  Name               : NVIDIA 3D Vision Driver 391.35
+  Version            : 391.35
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260810
+  Install Location   : C:\Program Files (x86)\NVIDIA Corporation\3D Vision
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #26
+  Name               : NVIDIA Ansel
+  Version            : 391.35
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260810
+  Install Location   : C:\Program Files\NVIDIA Corporation\Ansel
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #27
+  Name               : NVIDIA Control Panel 391.35
+  Version            : 391.35
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260810
+  Install Location   : C:\Program Files\NVIDIA Corporation\Control Panel Client
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #28
+  Name               : NVIDIA Display Container
+  Version            : 1.2
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260810
+  Install Location   : C:\Program Files\NVIDIA Corporation\Display.NvContainer
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #29
+  Name               : NVIDIA Display Container LS
+  Version            : 1.2
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260810
+  Install Location   : C:\Program Files\NVIDIA Corporation\Installer2\NVDisplayContainerLS.{B9393CB3-14C3-4919-B1F4-6029818CA953}
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #30
+  Name               : NVIDIA Display Session Container
+  Version            : 1.2
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260810
+  Install Location   : C:\Program Files\NVIDIA Corporation\Installer2\NVDisplaySessionContainer.{E0D5DC15-6365-467D-A0F7-DEB2977D2995}
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #31
+  Name               : NVIDIA Display Watchdog Plugin
+  Version            : 1.2
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260810
+  Install Location   : C:\Program Files\NVIDIA Corporation\Installer2\NVDisplayPluginWatchdog.{8B82FF5F-10D6-43B3-BCE5-E57A42E4B17B}
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #32
+  Name               : NVIDIA Graphics Driver 391.35
+  Version            : 391.35
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260810
+  Install Location   : C:\Program Files\NVIDIA Corporation\Installer2\Display.Driver.{9516FBE0-B146-4127-A928-95F2519A8CB1}
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #33
+  Name               : NVIDIA HD Audio Driver 1.3.36.6
+  Version            : 1.3.36.6
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260810
+  Install Location   : C:\Program Files\NVIDIA Corporation\Installer2\HDAudio.Driver.{C41126E3-6E5A-4CD4-9424-057423AF920E}
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #34
+  Name               : NVIDIA Install Application
+  Version            : 2.1002.275.2323
+  Publisher          : NVIDIA Corporation
+  Install Date       : 20260810
+  Install Location   : C:\Program Files\NVIDIA Corporation\Installer2\InstallerCore
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #35
+  Name               : NVIDIA Stereoscopic 3D Driver
+  Version            : 7.17.13.7500
+  Publisher          : NVIDIA Corporation
+  Install Date       : N/A
+  Install Location   : C:\Program Files (x86)\NVIDIA Corporation\3D Vision
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #36
+  Name               : PyCharm 2026.2.1
+  Version            : 262.9437.214
+  Publisher          : JetBrains s.r.o.
+  Install Date       : N/A
+  Install Location   : C:\Program Files\JetBrains\PyCharm 2026.2.0.1
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #37
+  Name               : Python 3.10.11 Add to Path (64-bit)
+  Version            : 3.10.11150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #38
+  Name               : Python 3.10.11 Core Interpreter (64-bit)
+  Version            : 3.10.11150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #39
+  Name               : Python 3.10.11 Development Libraries (64-bit)
+  Version            : 3.10.11150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #40
+  Name               : Python 3.10.11 Documentation (64-bit)
+  Version            : 3.10.11150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #41
+  Name               : Python 3.10.11 Executables (64-bit)
+  Version            : 3.10.11150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #42
+  Name               : Python 3.10.11 pip Bootstrap (64-bit)
+  Version            : 3.10.11150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #43
+  Name               : Python 3.10.11 Standard Library (64-bit)
+  Version            : 3.10.11150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #44
+  Name               : Python 3.10.11 Tcl/Tk Support (64-bit)
+  Version            : 3.10.11150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #45
+  Name               : Python 3.10.11 Test Suite (64-bit)
+  Version            : 3.10.11150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #46
+  Name               : Python 3.10.11 Utility Scripts (64-bit)
+  Version            : 3.10.11150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #47
+  Name               : Python 3.11.9 Add to Path (64-bit)
+  Version            : 3.11.9150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #48
+  Name               : Python 3.11.9 Core Interpreter (64-bit)
+  Version            : 3.11.9150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #49
+  Name               : Python 3.11.9 Development Libraries (64-bit)
+  Version            : 3.11.9150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #50
+  Name               : Python 3.11.9 Documentation (64-bit)
+  Version            : 3.11.9150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #51
+  Name               : Python 3.11.9 Executables (64-bit)
+  Version            : 3.11.9150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #52
+  Name               : Python 3.11.9 pip Bootstrap (64-bit)
+  Version            : 3.11.9150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #53
+  Name               : Python 3.11.9 Standard Library (64-bit)
+  Version            : 3.11.9150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #54
+  Name               : Python 3.11.9 Tcl/Tk Support (64-bit)
+  Version            : 3.11.9150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #55
+  Name               : Python 3.11.9 Test Suite (64-bit)
+  Version            : 3.11.9150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #56
+  Name               : Python 3.11.9 Utility Scripts (64-bit)
+  Version            : 3.11.9150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #57
+  Name               : Python 3.12.10 Add to Path (64-bit)
+  Version            : 3.12.10150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #58
+  Name               : Python 3.12.10 Core Interpreter (64-bit)
+  Version            : 3.12.10150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #59
+  Name               : Python 3.12.10 Development Libraries (64-bit)
+  Version            : 3.12.10150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #60
+  Name               : Python 3.12.10 Documentation (64-bit)
+  Version            : 3.12.10150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #61
+  Name               : Python 3.12.10 Executables (64-bit)
+  Version            : 3.12.10150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #62
+  Name               : Python 3.12.10 pip Bootstrap (64-bit)
+  Version            : 3.12.10150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #63
+  Name               : Python 3.12.10 Standard Library (64-bit)
+  Version            : 3.12.10150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #64
+  Name               : Python 3.12.10 Tcl/Tk Support (64-bit)
+  Version            : 3.12.10150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #65
+  Name               : Python 3.12.10 Test Suite (64-bit)
+  Version            : 3.12.10150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #66
+  Name               : Python Launcher
+  Version            : 3.12.10150.0
+  Publisher          : Python Software Foundation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #67
+  Name               : RustDesk
+  Version            : 1.4.9
+  Publisher          : RustDesk
+  Install Date       : N/A
+  Install Location   : C:\Program Files\RustDesk
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #68
+  Name               : SDK ARM64 Additions
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #69
+  Name               : SDK ARM64 Redistributables
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #70
+  Name               : UltraViewer version 6.6.124
+  Version            : 6.6.124
+  Publisher          : DucFabulous
+  Install Date       : 20260811
+  Install Location   : C:\Program Files (x86)\UltraViewer\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #71
+  Name               : Universal CRT Extension SDK
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #72
+  Name               : Universal CRT Headers Libraries and Sources
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #73
+  Name               : Universal CRT Redistributable
+  Version            : 10.0.26624
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #74
+  Name               : Universal CRT Redistributable
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #75
+  Name               : Universal CRT Tools x64
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #76
+  Name               : Universal CRT Tools x86
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #77
+  Name               : Universal General MIDI DLS Extension SDK
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #78
+  Name               : vcpp_crt.redist.clickonce
+  Version            : 14.51.36247
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #79
+  Name               : Visual Studio Build Tools 2026
+  Version            : 18.8.2
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : C:\Program Files (x86)\Microsoft Visual Studio\18\BuildTools
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #80
+  Name               : vs_FileTracker_Singleton
+  Version            : 18.8.11829
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #81
+  Name               : vs_githubprotocolhandlermsi
+  Version            : 18.8.11829
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #82
+  Name               : vs_vswebprotocolselectormsi
+  Version            : 18.8.11829
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #83
+  Name               : Vulkan Run Time Libraries 1.0.65.1
+  Version            : 1.0.65.1
+  Publisher          : LunarG, Inc.
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #84
+  Name               : WinAppDeploy
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #85
+  Name               : Windows App Certification Kit Native Components
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #86
+  Name               : Windows App Certification Kit SupportedApiList x86
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #87
+  Name               : Windows App Certification Kit x64
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #88
+  Name               : Windows App Certification Kit x64 (OnecoreUAP)
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #89
+  Name               : Windows Desktop Extension SDK
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #90
+  Name               : Windows Desktop Extension SDK Contracts
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #91
+  Name               : Windows IoT Extension SDK
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #92
+  Name               : Windows IoT Extension SDK Contracts
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #93
+  Name               : Windows Mobile Extension SDK
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #94
+  Name               : Windows Mobile Extension SDK Contracts
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #95
+  Name               : Windows SDK
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #96
+  Name               : Windows SDK AddOn
+  Version            : 10.1.0.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #97
+  Name               : Windows SDK ARM64 Desktop Tools
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #98
+  Name               : Windows SDK Desktop Headers arm64
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #99
+  Name               : Windows SDK Desktop Headers x64
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #100
+  Name               : Windows SDK Desktop Headers x86
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #101
+  Name               : Windows SDK Desktop Libs arm64
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #102
+  Name               : Windows SDK Desktop Libs x64
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #103
+  Name               : Windows SDK Desktop Libs x86
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #104
+  Name               : Windows SDK Desktop Tools arm64
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #105
+  Name               : Windows SDK Desktop Tools x64
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #106
+  Name               : Windows SDK Desktop Tools x86
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #107
+  Name               : Windows SDK DirectX x64 Remote
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #108
+  Name               : Windows SDK DirectX x86 Remote
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #109
+  Name               : Windows SDK EULA
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporations
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #110
+  Name               : Windows SDK Facade Windows WinMD Versioned
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #111
+  Name               : Windows SDK for Windows Store Apps
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #112
+  Name               : Windows SDK for Windows Store Apps Contracts
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #113
+  Name               : Windows SDK for Windows Store Apps DirectX x86 Remote
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #114
+  Name               : Windows SDK for Windows Store Apps Headers
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #115
+  Name               : Windows SDK for Windows Store Apps Headers OnecoreUap
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #116
+  Name               : Windows SDK for Windows Store Apps Libs
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #117
+  Name               : Windows SDK for Windows Store Apps Metadata
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #118
+  Name               : Windows SDK for Windows Store Apps Tools
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #119
+  Name               : Windows SDK for Windows Store Managed Apps Libs
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #120
+  Name               : Windows SDK Modern Non-Versioned Developer Tools
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #121
+  Name               : Windows SDK Modern Versioned Developer Tools
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #122
+  Name               : Windows SDK OnecoreUap Headers arm64
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #123
+  Name               : Windows SDK OnecoreUap Headers x64
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #124
+  Name               : Windows SDK OnecoreUap Headers x86
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #125
+  Name               : Windows SDK Redistributables
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #126
+  Name               : Windows SDK Signing Tools
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #127
+  Name               : Windows Software Development Kit - Windows 10.0.26100.8249
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #128
+  Name               : Windows Subsystem for Linux
+  Version            : 2.7.11.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #129
+  Name               : Windows Team Extension SDK
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #130
+  Name               : Windows Team Extension SDK Contracts
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #131
+  Name               : WinRT Intellisense Desktop - en-us
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #132
+  Name               : WinRT Intellisense Desktop - Other Languages
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #133
+  Name               : WinRT Intellisense IoT - en-us
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #134
+  Name               : WinRT Intellisense IoT - Other Languages
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #135
+  Name               : WinRT Intellisense Mobile - en-us
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #136
+  Name               : WinRT Intellisense PPI - en-us
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #137
+  Name               : WinRT Intellisense PPI - Other Languages
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #138
+  Name               : WinRT Intellisense UAP - en-us
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #139
+  Name               : WinRT Intellisense UAP - Other Languages
+  Version            : 10.1.26100.8249
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260811
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE PUBLISHER SUMMARY
+--------------------------
+Microsoft Corporation : 85
+Python Software Foundation : 30
+NVIDIA Corporation : 11
+Microsoft : 4
+DucFabulous : 1
+RustDesk : 1
+Microsoft Corporations : 1
+LunarG, Inc. : 1
+The Git Development Community : 1
+Node.js Foundation : 1
+Unknown : 1
+JetBrains s.r.o. : 1
+Google LLC : 1
+
+==========================================================================================
+ TEMPORARY FILES
+==========================================================================================
+Path       : C:\Users\admin\AppData\Local\Temp
+File Count : 176
+Size       : 0.15 GB
+
+Path       : C:\Windows\Temp
+File Count : 0
+Size       : 0 GB
+
+Path       : C:\Windows\Prefetch
+File Count : 6
+Size       : 0 GB
+
+
+==========================================================================================
+ TEMP / PREFETCH CLEANUP
+==========================================================================================
+Cleanup attempted : C:\Users\admin\AppData\Local\Temp
+Cleanup attempted : C:\Windows\Temp
+Cleanup attempted : C:\Windows\Prefetch
+
+Locked files may remain because they are currently in use.
+
+==========================================================================================
+ SYSTEM UPTIME
+==========================================================================================
+Last Boot Time      : 09/07/2026 09:56:13
+Uptime Days         : 2
+Uptime Hours        : 0
+Uptime Minutes      : 51
+
+==========================================================================================
+ IMPORTANT WINDOWS SERVICES
+==========================================================================================
+Service              : WinRM
+Display Name         : Windows Remote Management (WS-Management)
+Status               : Stopped
+Startup Type         : Manual
+
+Service              : Spooler
+Display Name         : Print Spooler
+Status               : Running
+Startup Type         : Automatic
+
+Service              : wuauserv
+Display Name         : Windows Update
+Status               : Stopped
+Startup Type         : Manual
+
+Service              : BITS
+Display Name         : Background Intelligent Transfer Service
+Status               : Stopped
+Startup Type         : Manual
+
+Service              : LanmanServer
+Display Name         : Server
+Status               : Running
+Startup Type         : Automatic
+
+Service              : LanmanWorkstation
+Display Name         : Workstation
+Status               : Running
+Startup Type         : Automatic
+
+
+==========================================================================================
+ HEALTH CHECK COMPLETED
+==========================================================================================
+IP Address           : 1
+Computer Name        : DESKTOP-L033S5N
+Total Software       : 139
+Report File          : C:\healthcheck\1_2026-09-09_10-47-08.txt
+Completed             : 2026-09-09 10:47:17
+
+TEMP CLEANUP         : ATTEMPTED
+PREFETCH CLEANUP     : ATTEMPTED
+
+END OF REPORT
+==========================================================================================

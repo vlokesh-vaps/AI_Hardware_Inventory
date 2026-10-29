@@ -22,10 +22,14 @@ from config import (
     UPLOADS_DIR,
     app_logger,
     monitoring_logger,
+    predictive_logger,
+    ai_logger,
     error_logger
 )
 from services.inventory_service import InventoryService
 from services.monitoring_service import MonitoringService
+from services.predictive_service import PredictiveService
+from services.ai_insight_service import AIInsightService
 from services.prometheus_client import PrometheusClientError
 
 def create_app() -> Flask:
@@ -36,6 +40,15 @@ def create_app() -> Flask:
 
     inventory_service = InventoryService()
     monitoring_service = MonitoringService()
+    predictive_service = PredictiveService(
+        inventory_service=inventory_service,
+        monitoring_service=monitoring_service
+    )
+    ai_insight_service = AIInsightService(
+        inventory_service=inventory_service,
+        predictive_service=predictive_service,
+        monitoring_service=monitoring_service
+    )
 
     def allowed_file(filename: str) -> bool:
         return "." in filename and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -72,12 +85,13 @@ def create_app() -> Flask:
                 kpis=kpis,
                 recent_changes=recent_changes,
                 storage_alerts=storage_alerts,
-                monitoring_map=monitoring_map
+                monitoring_map=monitoring_map,
+                at_risk_systems=predictive_service.get_top_at_risk_systems(limit=3)
             )
         except Exception as e:
             error_logger.exception("Error rendering dashboard")
             flash(f"Error loading dashboard: {str(e)}", "error")
-            return render_template("dashboard.html", assets=[], kpis={}, recent_changes=[], storage_alerts=[], monitoring_map={})
+            return render_template("dashboard.html", assets=[], kpis={}, recent_changes=[], storage_alerts=[], monitoring_map={}, at_risk_systems=[])
 
     @app.route("/pc/<computer_name>")
     def pc_details(computer_name: str):
@@ -290,6 +304,33 @@ def create_app() -> Flask:
         )
         return redirect(url_for("dashboard"))
 
+    @app.route("/predictive")
+    def predictive_dashboard():
+        """Predictive Analysis & AI Insights Dashboard."""
+        try:
+            at_risk_systems = predictive_service.get_top_at_risk_systems(limit=10)
+            health_timeline = predictive_service.get_health_status_over_time()
+            runway_projections = predictive_service.get_storage_runway_projections()
+            ai_insights = ai_insight_service.generate_fleet_insights(force_refresh=False)
+
+            return render_template(
+                "predictive.html",
+                at_risk_systems=at_risk_systems,
+                health_timeline=health_timeline,
+                runway_projections=runway_projections,
+                ai_insights=ai_insights
+            )
+        except Exception as e:
+            error_logger.exception("Error rendering predictive dashboard")
+            flash(f"Error loading predictive dashboard: {str(e)}", "error")
+            return render_template(
+                "predictive.html",
+                at_risk_systems=[],
+                health_timeline={"dates": [], "healthy_series": [], "warning_series": [], "critical_series": [], "unknown_series": [], "timeline": []},
+                runway_projections={"critical_count": 0, "warning_count": 0, "total_monitored_drives": 0, "projections": []},
+                ai_insights={"content": "AI Insights are currently compiling or temporarily unavailable.", "model": "N/A", "generated_at": "N/A"}
+            )
+
     # -------------------------------------------------------------
     # REST API ENDPOINTS
     # -------------------------------------------------------------
@@ -478,6 +519,72 @@ def create_app() -> Flask:
                     "message": "Failed to retrieve historical monitoring metrics"
                 }
             }), 500
+
+    # -------------------------------------------------------------
+    # PREDICTIVE ANALYSIS & AI INSIGHTS REST APIs
+    # -------------------------------------------------------------
+
+    @app.route("/api/predictive/at-risk", methods=["GET"])
+    def api_predictive_at_risk():
+        """Returns top at-risk systems ranked by composite failure risk score."""
+        try:
+            limit = int(request.args.get("limit", 10))
+            systems = predictive_service.get_top_at_risk_systems(limit=limit)
+            return jsonify({
+                "count": len(systems),
+                "systems": systems
+            })
+        except Exception as e:
+            predictive_logger.exception("Error in /api/predictive/at-risk")
+            return jsonify({"error": str(e)}), 500
+
+    @app.route("/api/predictive/timeline", methods=["GET"])
+    def api_predictive_timeline():
+        """Returns fleet health history timeline and storage exhaustion runway projections."""
+        try:
+            timeline = predictive_service.get_health_status_over_time()
+            runway = predictive_service.get_storage_runway_projections()
+            return jsonify({
+                "health_timeline": timeline,
+                "storage_runway": runway
+            })
+        except Exception as e:
+            predictive_logger.exception("Error in /api/predictive/timeline")
+            return jsonify({"error": str(e)}), 500
+
+    @app.route("/api/ai/insights", methods=["GET", "POST"])
+    def api_ai_insights():
+        """Generates or retrieves cached AI insights via NVIDIA Nemotron."""
+        try:
+            force_refresh = False
+            if request.method == "POST":
+                data = request.get_json(silent=True) or {}
+                force_refresh = bool(data.get("refresh", False)) or (request.args.get("refresh", "").lower() in ("1", "true"))
+            else:
+                force_refresh = request.args.get("refresh", "").lower() in ("1", "true")
+
+            insights = ai_insight_service.generate_fleet_insights(force_refresh=force_refresh)
+            return jsonify(insights)
+        except Exception as e:
+            ai_logger.exception("Error in /api/ai/insights")
+            return jsonify({"error": str(e)}), 500
+
+    @app.route("/api/ai/ask", methods=["POST"])
+    def api_ai_ask():
+        """Answers ad-hoc administrator inquiries regarding fleet health via NVIDIA Nemotron."""
+        try:
+            payload = request.get_json(silent=True) or {}
+            question = payload.get("question", "").strip()
+            system_filter = payload.get("system", "").strip() or None
+
+            if not question:
+                return jsonify({"error": "Question parameter is required"}), 400
+
+            result = ai_insight_service.ask_ai_question(question, system_context_filter=system_filter)
+            return jsonify(result)
+        except Exception as e:
+            ai_logger.exception("Error in /api/ai/ask")
+            return jsonify({"error": str(e)}), 500
 
     # -------------------------------------------------------------
     # ERROR HANDLERS

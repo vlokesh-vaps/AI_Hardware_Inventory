@@ -1,0 +1,1116 @@
+WINDOWS COMPLETE HARDWARE SOFTWARE HEALTH CHECK
+================================================
+IP Address         : 1
+All IPv4 Addresses : 172.16.10.157
+Computer Name      : DESKTOP-CVVL4H6
+Report Date        : 2026-09-04 11:15:36
+Report File        : C:\healthcheck\1_2026-09-04_11-15-36.txt
+
+==========================================================================================
+ COMPUTER / OPERATING SYSTEM
+==========================================================================================
+Computer Name        : DESKTOP-CVVL4H6
+Manufacturer         : Acer
+Model                : Veriton M200-H110
+System Type          : x64-based PC
+Domain / Workgroup   : Vapscorp.com
+Logged On User       : DESKTOP-CVVL4H6\Administrator
+Total Physical RAM   : 7.82 GB
+Operating System     : Microsoft Windows 10 Pro
+OS Version           : 10.0.19045
+OS Build             : 19045
+Architecture         : 64-bit
+Windows Serial       : 00331-20024-42299-AA812
+Install Date         : 11/24/2020 10:05:37
+Last Boot            : 08/19/2026 09:48:55
+
+==========================================================================================
+ CPU / PROCESSOR
+==========================================================================================
+CPU #1
+  Name               : Intel(R) Core(TM) i5-6400 CPU @ 2.70GHz
+  Manufacturer       : GenuineIntel
+  Model              : Intel64 Family 6 Model 94 Stepping 3
+  Processor ID       : BFEBFBFF000506E3
+  Serial Number      : To Be Filled By O.E.M.
+  Socket             : U3E1
+  Current Speed      : 2701 MHz
+  Maximum Speed      : 2701 MHz
+  Cores              : 4
+  Threads            : 4
+  Architecture       : 9
+  Status             : OK
+
+
+==========================================================================================
+ RAM / MEMORY
+==========================================================================================
+Number of RAM Sticks : 2
+
+RAM STICK #1
+  Manufacturer       : Transcend
+  Model / Part No    : JM2400HLH-4G        
+  Serial Number      : 00153B99
+  Capacity           : 4 GB
+  Speed              : 2400 MHz
+  Configured Speed   : 2133 MHz
+  Memory Type        : 26
+  Form Factor        : 8
+  Device Locator     : ChannelA-DIMM0
+  Bank Locator       : BANK 0
+
+RAM STICK #2
+  Manufacturer       : 04CB
+  Model / Part No    : AM2P24HC4R1-BUPS    
+  Serial Number      : 91EA0400
+  Capacity           : 4 GB
+  Speed              : 2400 MHz
+  Configured Speed   : 2133 MHz
+  Memory Type        : 26
+  Form Factor        : 8
+  Device Locator     : ChannelB-DIMM0
+  Bank Locator       : BANK 2
+
+
+==========================================================================================
+ MOTHERBOARD
+==========================================================================================
+Manufacturer         : Acer
+Product / Model      : H110M4-C2H
+Version              : P21-A0
+Serial Number        : 00000000
+Part Number          : N/A
+Status               : OK
+
+==========================================================================================
+ BIOS / UEFI
+==========================================================================================
+Manufacturer         : Acer
+BIOS Version         : P21-A0
+BIOS Version 2       : ACRSYS - 1072009
+BIOS Serial Number   : UXB1JSI188H3094534
+Release Date         : 02/21/2017 05:30:00
+SMBIOS Major         : 3
+SMBIOS Minor         : 0
+
+==========================================================================================
+ PHYSICAL STORAGE / HDD / SSD
+==========================================================================================
+Number of Physical Disks : 
+
+DISK #1
+  Device              : \\.\PHYSICALDRIVE0
+  Model               : TOSHIBA DT01ACA100
+  Manufacturer        : (Standard disk drives)
+  Serial Number       :            674SXJPNS
+  Firmware Revision   : MS2OA8K0
+  Interface           : IDE
+  Media Type          : Fixed hard disk media
+  Size                : 931.51 GB
+  Status              : OK
+  Partitions          : 4
+
+
+==========================================================================================
+ STORAGE HEALTH
+==========================================================================================
+Disk
+  Friendly Name       : TOSHIBA DT01ACA100
+  Model               : TOSHIBA DT01ACA100
+  Manufacturer        : N/A
+  Serial Number       : 674SXJPNS
+  Media Type          : HDD
+  Bus Type            : SATA
+  Size                : 931.51 GB
+  Health Status       : Healthy
+  Operational Status  : OK
+
+
+==========================================================================================
+ DRIVE / PARTITION SPACE
+==========================================================================================
+DRIVE: C:
+  Volume Name        : N/A
+  File System        : NTFS
+  Total Size         : 293.41 GB
+  Used Space         : 94.44 GB
+  Free Space         : 198.97 GB
+  Free Percentage    : 67.81 %
+
+DRIVE: E:
+  Volume Name        : N/A
+  File System        : NTFS
+  Total Size         : 292.48 GB
+  Used Space         : 58.09 GB
+  Free Space         : 234.39 GB
+  Free Percentage    : 80.14 %
+
+DRIVE: F:
+  Volume Name        : N/A
+  File System        : NTFS
+  Total Size         : 345.57 GB
+  Used Space         : 2.59 GB
+  Free Space         : 342.98 GB
+  Free Percentage    : 99.25 %
+
+
+==========================================================================================
+ PHYSICAL PARTITIONS
+==========================================================================================
+Partition
+  Disk Index          : 0
+  Partition Index     : 0
+  Name                : Disk #0, Partition #0
+  Type                : Installable File System
+  Size                : 0.05 GB
+  Boot Partition      : True
+  Primary Partition   : True
+
+Partition
+  Disk Index          : 0
+  Partition Index     : 1
+  Name                : Disk #0, Partition #1
+  Type                : Installable File System
+  Size                : 293.41 GB
+  Boot Partition      : False
+  Primary Partition   : True
+
+Partition
+  Disk Index          : 0
+  Partition Index     : 2
+  Name                : Disk #0, Partition #2
+  Type                : Extended w/Extended Int 13
+  Size                : 292.48 GB
+  Boot Partition      : False
+  Primary Partition   : False
+
+Partition
+  Disk Index          : 0
+  Partition Index     : 3
+  Name                : Disk #0, Partition #3
+  Type                : Installable File System
+  Size                : 345.57 GB
+  Boot Partition      : False
+  Primary Partition   : True
+
+
+==========================================================================================
+ MONITOR / DISPLAY
+==========================================================================================
+MONITOR #1
+  Manufacturer       : ACR
+  Model               : V196HQL
+  Product Code        : 033D
+  Serial Number       : LY0SS0048507
+
+
+==========================================================================================
+ GRAPHICS / GPU
+==========================================================================================
+GPU
+  Name                : Intel(R) HD Graphics 530
+  Manufacturer        : Intel Corporation
+  Driver Version      : 25.20.100.6617
+  Video Memory        : 1 GB
+  Video Processor     : Intel(R) HD Graphics Family
+  Resolution          : 1366 x 768
+  Refresh Rate        : 59 Hz
+
+
+==========================================================================================
+ KEYBOARD
+==========================================================================================
+Keyboard
+  Name                : Enhanced (101- or 102-key)
+  Description         : USB Input Device
+  Manufacturer        : N/A
+  Device ID           : USB\VID_0461&PID_0010&MI_00\6&257F3C01&0&0000
+  Status              : OK
+
+Note: Standard Windows WMI normally does not expose USB keyboard serial numbers.
+
+==========================================================================================
+ MOUSE / POINTING DEVICE
+==========================================================================================
+Mouse
+  Name                : USB Input Device
+  Description         : USB Input Device
+  Manufacturer        : (Standard system devices)
+  Device ID           : USB\VID_0461&PID_4E98\5&396D75D&0&5
+  Hardware Type       : USB Input Device
+  Status              : OK
+
+Note: Standard Windows WMI normally does not expose USB mouse serial numbers.
+
+==========================================================================================
+ USB DEVICES
+==========================================================================================
+USB Device
+  Name                : USB Composite Device
+  Manufacturer        : (Standard USB Host Controller)
+  Device ID           : USB\VID_0461&PID_0010\5&396D75D&0&2
+  PNP Device ID       : USB\VID_0461&PID_0010\5&396D75D&0&2
+  Status              : OK
+
+USB Device
+  Name                : USB Input Device
+  Manufacturer        : (Standard system devices)
+  Device ID           : USB\VID_0461&PID_0010&MI_00\6&257F3C01&0&0000
+  PNP Device ID       : USB\VID_0461&PID_0010&MI_00\6&257F3C01&0&0000
+  Status              : OK
+
+USB Device
+  Name                : USB Input Device
+  Manufacturer        : (Standard system devices)
+  Device ID           : USB\VID_0461&PID_0010&MI_01\6&257F3C01&0&0001
+  PNP Device ID       : USB\VID_0461&PID_0010&MI_01\6&257F3C01&0&0001
+  Status              : OK
+
+USB Device
+  Name                : USB Input Device
+  Manufacturer        : (Standard system devices)
+  Device ID           : USB\VID_0461&PID_4E98\5&396D75D&0&5
+  PNP Device ID       : USB\VID_0461&PID_4E98\5&396D75D&0&5
+  Status              : OK
+
+USB Device
+  Name                : USB Root Hub (USB 3.0)
+  Manufacturer        : (Standard USB HUBs)
+  Device ID           : USB\ROOT_HUB30\4&B9EB813&0&0
+  PNP Device ID       : USB\ROOT_HUB30\4&B9EB813&0&0
+  Status              : OK
+
+
+==========================================================================================
+ NETWORK ADAPTERS
+==========================================================================================
+Network Adapter
+  Name                : Realtek PCIe GbE Family Controller
+  Manufacturer        : Realtek
+  MAC Address         : F4:4D:30:AA:44:A4
+  Adapter Type        : Ethernet 802.3
+  Speed               : 1000000000
+  Device ID           : 1
+  Status              : 2
+
+
+==========================================================================================
+ CURRENT PHYSICAL USER
+==========================================================================================
+Current Logged User : DESKTOP-CVVL4H6\Administrator
+Username            : Administrator
+User Profile        : C:\Users\Administrator
+
+==========================================================================================
+ USER FOLDER DETAILS
+==========================================================================================
+Desktop
+  Path               : C:\Users\Administrator\Desktop
+  File Count         : 222
+  Total Size         : 0.1 GB
+
+Downloads
+  Path               : C:\Users\Administrator\Downloads
+  File Count         : 564
+  Total Size         : 0.44 GB
+
+Pictures
+  Path               : C:\Users\Administrator\Pictures
+  File Count         : 123
+  Total Size         : 0.02 GB
+
+Documents
+  Path               : C:\Users\Administrator\Documents
+  File Count         : 10
+  Total Size         : 0 GB
+
+Videos
+  Path               : C:\Users\Administrator\Videos
+  File Count         : 2
+  Total Size         : 0 GB
+
+Music
+  Path               : C:\Users\Administrator\Music
+  File Count         : 2
+  Total Size         : 0 GB
+
+
+==========================================================================================
+ INSTALLED SOFTWARE / APPLICATIONS
+==========================================================================================
+Collecting installed software information...
+
+TOTAL INSTALLED SOFTWARE : 75
+
+SOFTWARE #1
+  Name               : Adobe Acrobat Reader
+  Version            : 23.001.20064
+  Publisher          : Adobe Systems Incorporated
+  Install Date       : 20260725
+  Install Location   : C:\Program Files (x86)\Adobe\Acrobat Reader DC\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #2
+  Name               : Adobe Refresh Manager
+  Version            : 1.8.0
+  Publisher          : Adobe Systems Incorporated
+  Install Date       : 20260714
+  Install Location   : C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #3
+  Name               : AppLogLibSetup
+  Version            : 1.0.3.0
+  Publisher          : Brother Industries Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #4
+  Name               : BrLauncher
+  Version            : 2.0.36.0
+  Publisher          : Brother Industries Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #5
+  Name               : BrLogRx
+  Version            : 1.0.5.0
+  Publisher          : Brother Industries Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #6
+  Name               : Brother Printer Driver
+  Version            : 1.7.0.0
+  Publisher          : Brother Industries Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #7
+  Name               : Brother Scanner Driver
+  Version            : 1.0.19.1
+  Publisher          : Brother Industries Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #8
+  Name               : Brother Scanner Driver
+  Version            : 1.0.23.1
+  Publisher          : Brother Industries Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #9
+  Name               : BrSupportTools
+  Version            : 1.0.44.0
+  Publisher          : Brother Industries Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #10
+  Name               : Copilot
+  Version            : 152.0.4191.53
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260901
+  Install Location   : C:\Program Files (x86)\Microsoft\Copilot\Application
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #11
+  Name               : CrystalDiskInfo 9.9.2
+  Version            : 9.9.2
+  Publisher          : Crystal Dew World
+  Install Date       : 20260819
+  Install Location   : C:\Program Files\CrystalDiskInfo\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #12
+  Name               : Epson Event Manager
+  Version            : 3.11.79
+  Publisher          : Seiko Epson Corporation
+  Install Date       : 20240918
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #13
+  Name               : EPSON L3250 Series Printer Uninstall
+  Version            : N/A
+  Publisher          : Seiko Epson Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #14
+  Name               : EPSON L5290 Series Printer Uninstall
+  Version            : N/A
+  Publisher          : Seiko Epson Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #15
+  Name               : EPSON L565 Series Printer Uninstall
+  Version            : N/A
+  Publisher          : SEIKO EPSON Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #16
+  Name               : EPSON Scan
+  Version            : N/A
+  Publisher          : Seiko Epson Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #17
+  Name               : Epson Scan 2
+  Version            : N/A
+  Publisher          : Seiko Epson Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #18
+  Name               : Epson ScanSmart
+  Version            : 3.7.12
+  Publisher          : Seiko Epson Corporation
+  Install Date       : 20240918
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #19
+  Name               : Epson Software Updater
+  Version            : 5.1.0
+  Publisher          : Seiko Epson Corporation
+  Install Date       : 20260703
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #20
+  Name               : EPSON Universal Print Driver Printer Uninstall
+  Version            : N/A
+  Publisher          : SEIKO EPSON Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #21
+  Name               : Google Chrome
+  Version            : 152.0.7977.76
+  Publisher          : Google LLC
+  Install Date       : 20260904
+  Install Location   : C:\Program Files\Google\Chrome\Application
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #22
+  Name               : HowToGuide
+  Version            : 1.0.3.0
+  Publisher          : Brother Industries Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #23
+  Name               : HttpToUsbBridge
+  Version            : 2.6.121.1
+  Publisher          : Brother Industries Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #24
+  Name               : Microsoft .NET 8.0.12 - Windows Server Hosting
+  Version            : 8.0.12.24603
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #25
+  Name               : Microsoft .NET Host - 8.0.12 (x64)
+  Version            : 64.48.26165
+  Publisher          : Microsoft Corporation
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #26
+  Name               : Microsoft .NET Host - 8.0.12 (x86)
+  Version            : 64.48.26165
+  Publisher          : Microsoft Corporation
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #27
+  Name               : Microsoft .NET Host FX Resolver - 8.0.12 (x64)
+  Version            : 64.48.26165
+  Publisher          : Microsoft Corporation
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #28
+  Name               : Microsoft .NET Host FX Resolver - 8.0.12 (x86)
+  Version            : 64.48.26165
+  Publisher          : Microsoft Corporation
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #29
+  Name               : Microsoft .NET Runtime - 8.0.12 (x64)
+  Version            : 64.48.26165
+  Publisher          : Microsoft Corporation
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #30
+  Name               : Microsoft .NET Runtime - 8.0.12 (x86)
+  Version            : 64.48.26165
+  Publisher          : Microsoft Corporation
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #31
+  Name               : Microsoft ASP.NET Core 8.0.12 Hosting Bundle Options
+  Version            : 8.0.12.24603
+  Publisher          : Microsoft Corporation
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #32
+  Name               : Microsoft ASP.NET Core 8.0.12 Shared Framework (x64)
+  Version            : 8.0.12.24603
+  Publisher          : Microsoft Corporation
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #33
+  Name               : Microsoft ASP.NET Core 8.0.12 Shared Framework (x86)
+  Version            : 8.0.12.24603
+  Publisher          : Microsoft Corporation
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #34
+  Name               : Microsoft Edge
+  Version            : 152.0.4191.53
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260831
+  Install Location   : C:\Program Files (x86)\Microsoft\Edge\Application
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #35
+  Name               : Microsoft Edge WebView2 Runtime
+  Version            : 152.0.4191.53
+  Publisher          : Microsoft Corporation
+  Install Date       : 20260902
+  Install Location   : C:\Program Files (x86)\Microsoft\EdgeWebView\Application
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #36
+  Name               : Microsoft Office Access MUI (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #37
+  Name               : Microsoft Office Access Setup Metadata MUI (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #38
+  Name               : Microsoft Office Excel MUI (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #39
+  Name               : Microsoft Office InfoPath MUI (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #40
+  Name               : Microsoft Office Office 64-bit Components 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #41
+  Name               : Microsoft Office Outlook MUI (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #42
+  Name               : Microsoft Office PowerPoint MUI (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #43
+  Name               : Microsoft Office Professional Plus 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #44
+  Name               : Microsoft Office Proof (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #45
+  Name               : Microsoft Office Proof (French) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #46
+  Name               : Microsoft Office Proof (Spanish) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #47
+  Name               : Microsoft Office Proofing (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #48
+  Name               : Microsoft Office Publisher MUI (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #49
+  Name               : Microsoft Office Shared 64-bit MUI (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #50
+  Name               : Microsoft Office Shared 64-bit Setup Metadata MUI (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #51
+  Name               : Microsoft Office Shared MUI (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #52
+  Name               : Microsoft Office Shared Setup Metadata MUI (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #53
+  Name               : Microsoft Office Word MUI (English) 2007
+  Version            : 12.0.4518.1014
+  Publisher          : Microsoft Corporation
+  Install Date       : 20201124
+  Install Location   : C:\Program Files (x86)\Microsoft Office\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #54
+  Name               : Microsoft Update Health Tools
+  Version            : 3.74.0.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20231111
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #55
+  Name               : Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219
+  Version            : 10.0.40219
+  Publisher          : Microsoft Corporation
+  Install Date       : 20230605
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #56
+  Name               : Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219
+  Version            : 10.0.40219
+  Publisher          : Microsoft Corporation
+  Install Date       : 20230605
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #57
+  Name               : Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.38.33135
+  Version            : 14.38.33135.0
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #58
+  Name               : Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.34.31931
+  Version            : 14.34.31931.0
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #59
+  Name               : Microsoft Visual C++ 2022 X64 Additional Runtime - 14.38.33135
+  Version            : 14.38.33135
+  Publisher          : Microsoft Corporation
+  Install Date       : 20240224
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #60
+  Name               : Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.38.33135
+  Version            : 14.38.33135
+  Publisher          : Microsoft Corporation
+  Install Date       : 20240224
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #61
+  Name               : Microsoft Visual C++ 2022 X86 Additional Runtime - 14.34.31931
+  Version            : 14.34.31931
+  Publisher          : Microsoft Corporation
+  Install Date       : 20240918
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #62
+  Name               : Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.34.31931
+  Version            : 14.34.31931
+  Publisher          : Microsoft Corporation
+  Install Date       : 20240918
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #63
+  Name               : Microsoft Windows Desktop Runtime - 8.0.12 (x86)
+  Version            : 64.48.26178
+  Publisher          : Microsoft Corporation
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #64
+  Name               : Microsoft Windows Desktop Runtime - 8.0.12 (x86)
+  Version            : 8.0.12.34404
+  Publisher          : Microsoft Corporation
+  Install Date       : N/A
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #65
+  Name               : NAPS2
+  Version            : 8.1.4
+  Publisher          : NAPS2 Software
+  Install Date       : 20250602
+  Install Location   : C:\Program Files\NAPS2\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #66
+  Name               : NetworkRepairTool
+  Version            : 1.2.29.0
+  Publisher          : Brother Industries, Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #67
+  Name               : ScannerUtilityInstaller
+  Version            : 1.20.0.1
+  Publisher          : Brother
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #68
+  Name               : SoftwareUpdateNotification
+  Version            : 1.0.26.0
+  Publisher          : Brother Industries, Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #69
+  Name               : StatusMonitor
+  Version            : 1.42.0.0
+  Publisher          : Brother Industries, Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #70
+  Name               : TallyPrime
+  Version            : Series A 7.1.0 Build 29327
+  Publisher          : Tally Solutions Pvt. Ltd.
+  Install Date       : 20260630
+  Install Location   : E:\Tally Prime
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #71
+  Name               : UltraViewer version 6.6.124
+  Version            : 6.6.124
+  Publisher          : DucFabulous
+  Install Date       : 20260616
+  Install Location   : C:\Program Files (x86)\UltraViewer\
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #72
+  Name               : Update for x64-based Windows Systems (KB5001716)
+  Version            : 8.94.0.0
+  Publisher          : Microsoft Corporation
+  Install Date       : 20250627
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #73
+  Name               : UsbRepairTool
+  Version            : 1.4.0.0
+  Publisher          : Brother Industries, Ltd.
+  Install Date       : 20250912
+  Install Location   : N/A
+  Architecture       : 32-bit
+  Scope              : All Users
+
+SOFTWARE #74
+  Name               : windows_exporter
+  Version            : 0.16.0
+  Publisher          : prometheus-community
+  Install Date       : 20260714
+  Install Location   : N/A
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE #75
+  Name               : WinRAR 5.91 (64-bit)
+  Version            : 5.91.0
+  Publisher          : win.rar GmbH
+  Install Date       : N/A
+  Install Location   : C:\Program Files\WinRAR\
+  Architecture       : 64-bit
+  Scope              : All Users
+
+SOFTWARE PUBLISHER SUMMARY
+--------------------------
+Microsoft Corporation : 43
+Brother Industries Ltd. : 9
+Seiko Epson Corporation : 9
+Brother Industries, Ltd. : 4
+Adobe Systems Incorporated : 2
+win.rar GmbH : 1
+Tally Solutions Pvt. Ltd. : 1
+prometheus-community : 1
+DucFabulous : 1
+Google LLC : 1
+Crystal Dew World : 1
+Brother : 1
+NAPS2 Software : 1
+
+==========================================================================================
+ TEMPORARY FILES
+==========================================================================================
+Path       : C:\Users\Administrator\AppData\Local\Temp
+File Count : 18
+Size       : 0 GB
+
+Path       : C:\Windows\Temp
+File Count : 5
+Size       : 0 GB
+
+Path       : C:\Windows\Prefetch
+File Count : 71
+Size       : 0.01 GB
+
+
+==========================================================================================
+ TEMP / PREFETCH CLEANUP
+==========================================================================================
+Cleanup attempted : C:\Users\Administrator\AppData\Local\Temp
+Cleanup attempted : C:\Windows\Temp
+Cleanup attempted : C:\Windows\Prefetch
+
+Locked files may remain because they are currently in use.
+
+==========================================================================================
+ SYSTEM UPTIME
+==========================================================================================
+Last Boot Time      : 08/19/2026 09:48:55
+Uptime Days         : 16
+Uptime Hours        : 1
+Uptime Minutes      : 27
+
+==========================================================================================
+ IMPORTANT WINDOWS SERVICES
+==========================================================================================
+Service              : WinRM
+Display Name         : Windows Remote Management (WS-Management)
+Status               : Stopped
+Startup Type         : Manual
+
+Service              : Spooler
+Display Name         : Print Spooler
+Status               : Running
+Startup Type         : Automatic
+
+Service              : wuauserv
+Display Name         : Windows Update
+Status               : Running
+Startup Type         : Manual
+
+Service              : BITS
+Display Name         : Background Intelligent Transfer Service
+Status               : Stopped
+Startup Type         : Manual
+
+Service              : LanmanServer
+Display Name         : Server
+Status               : Running
+Startup Type         : Automatic
+
+Service              : LanmanWorkstation
+Display Name         : Workstation
+Status               : Running
+Startup Type         : Automatic
+
+
+==========================================================================================
+ HEALTH CHECK COMPLETED
+==========================================================================================
+IP Address           : 1
+Computer Name        : DESKTOP-CVVL4H6
+Total Software       : 75
+Report File          : C:\healthcheck\1_2026-09-04_11-15-36.txt
+Completed             : 2026-09-04 11:15:56
+
+TEMP CLEANUP         : ATTEMPTED
+PREFETCH CLEANUP     : ATTEMPTED
+
+END OF REPORT
+==========================================================================================

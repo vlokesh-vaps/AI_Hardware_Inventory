@@ -1,0 +1,11 @@
+WINDOWS COMPLETE HARDWARE SOFTWARE HEALTH CHECK
+
+==========================================================================================
+ RAM / MEMORY
+==========================================================================================
+Number of RAM Sticks : 2
+Disk
+Cleanup attempted : C:\Windows\Prefetch
+
+Locked files may remain because they are currently in use.
+

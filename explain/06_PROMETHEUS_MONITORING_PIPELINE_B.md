@@ -1,4 +1,4 @@
-# 📡 Pipeline B: Live Prometheus Monitoring Guide
+/sta# 📡 Pipeline B: Live Prometheus Monitoring Guide
 
 This document explains the architecture, design, and implementation of **Pipeline B (Live Hardware Monitoring)** integrated into the Hardware Inventory platform.
 
@@ -65,8 +65,10 @@ All telemetry is queried directly through the Prometheus HTTP API (`/api/v1/quer
 
 ### Target Discovery
 ```promql
-up{job="windows"}
+up{instance=~".*:9182"}
 ```
+- Windows Exporter targets are identified by port `9182`.
+- The Prometheus `job` label is organization-specific (`1F`, `2F`, `3F`, `4F`, `GF`, `HP Latop`, or `Vaps Laptop`), so target discovery must not assume `job="windows"`.
 - `up == 1`: Target is online and scraping succeeds.
 - `up == 0`: Scrape failed or machine is unreachable. **Rule:** Classified as `OFFLINE / UNREACHABLE`, not hardware failure.
 

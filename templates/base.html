@@ -26,6 +26,9 @@
                 <a href="{{ url_for('monitoring_dashboard') }}" class="nav-item {% if request.endpoint == 'monitoring_dashboard' %}active{% endif %}" id="nav-monitoring">
                     <span class="live-dot-nav">●</span> Live Monitoring
                 </a>
+                <a href="{{ url_for('predictive_dashboard') }}" class="nav-item nav-ai {% if request.endpoint == 'predictive_dashboard' %}active{% endif %}" id="nav-predictive">
+                    <span class="ai-sparkle-icon">✨</span> Predictive & AI
+                </a>
                 <a href="{{ url_for('changes') }}" class="nav-item {% if request.endpoint == 'changes' %}active{% endif %}" id="nav-changes">Hardware Changes</a>
                 <a href="{{ url_for('alerts') }}" class="nav-item {% if request.endpoint == 'alerts' %}active{% endif %}" id="nav-alerts">Storage & Alerts</a>
                 <a href="{{ url_for('upload_page') }}" class="nav-item nav-btn {% if request.endpoint == 'upload_page' %}active{% endif %}" id="nav-upload">+ Upload Report</a>

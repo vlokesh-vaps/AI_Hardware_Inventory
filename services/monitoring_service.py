@@ -71,7 +71,12 @@ class MonitoringService:
 
     def get_targets(self, bypass_cache: bool = False) -> List[Dict[str, Any]]:
         """
-        Dynamically discovers Windows targets from Prometheus using up{job="windows"}.
+        Dynamically discovers Windows Exporter targets from Prometheus.
+
+        The Prometheus server groups these targets by floor/team job names
+        (for example, 1F, 2F, GF, and HP Latop), rather than a single
+        ``windows`` job. Windows Exporter listens on port 9182, so the
+        instance label is the stable selector for target discovery.
         """
         now = time.time()
         if not bypass_cache and self._targets_cache:
@@ -79,7 +84,7 @@ class MonitoringService:
             if (now - cache_time) < self.cache_ttl:
                 return data
 
-        promql = 'up{job="windows"}'
+        promql = 'up{instance=~".*:9182"}'
         result = self.client.query(promql)
         raw_results = result.get("data", {}).get("result", [])
 

@@ -55,6 +55,20 @@ MONITORED_PROCESSES = [
     p.strip() for p in os.environ.get("MONITORED_PROCESSES", "chrome.exe,sqlservr.exe,postgres.exe").split(",") if p.strip()
 ]
 
+# NVIDIA NIM / OpenAI Configuration for AI Insights
+NVIDIA_BASE_URL = os.environ.get("NVIDIA_BASE_URL", "https://integrate.api.nvidia.com/v1")
+NVIDIA_API_KEY = os.environ.get(
+    "NVIDIA_API_KEY",
+    "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"
+)
+NVIDIA_MODEL = os.environ.get("NVIDIA_MODEL", "mistralai/mistral-nemotron")
+AI_INSIGHTS_CACHE_TTL_SECONDS = int(os.environ.get("AI_INSIGHTS_CACHE_TTL_SECONDS", "3600"))
+
+# Predictive Analysis Risk Engine Configuration
+RISK_THRESHOLD_CRITICAL = 75
+RISK_THRESHOLD_HIGH = 50
+RISK_THRESHOLD_MODERATE = 25
+
 # Setup Centralized Loggers
 def setup_logger(name: str, log_file: Path, level: int = logging.INFO) -> logging.Logger:
     """Configures and returns a named logger writing to a rotating log file."""
@@ -80,4 +94,6 @@ app_logger = setup_logger("application", LOGS_DIR / "application.log")
 parser_logger = setup_logger("parser", LOGS_DIR / "parser.log")
 change_logger = setup_logger("change_detector", LOGS_DIR / "change_detector.log")
 monitoring_logger = setup_logger("monitoring", LOGS_DIR / "monitoring.log")
+predictive_logger = setup_logger("predictive", LOGS_DIR / "predictive.log")
+ai_logger = setup_logger("ai_insights", LOGS_DIR / "ai_insights.log")
 error_logger = setup_logger("error", LOGS_DIR / "error.log", level=logging.WARNING)

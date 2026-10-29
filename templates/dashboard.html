@@ -65,6 +65,58 @@
         </div>
     </div>
 
+    <!-- Predictive & AI Insights Spotlight Section -->
+    <div class="content-card spotlight-card" id="predictive-spotlight">
+        <div class="spotlight-header">
+            <div class="spotlight-title-group">
+                <span class="spotlight-badge">
+                    <span class="ai-sparkle-icon">✨</span> Autonomous AI &bull; NVIDIA Nemotron
+                </span>
+                <h2 class="spotlight-title">Predictive Failure Risk & AI Diagnostics</h2>
+                <p class="spotlight-desc">Proactive multi-factor risk scores and storage depletion warnings before hardware outages occur.</p>
+            </div>
+            <div class="spotlight-actions">
+                <a href="{{ url_for('predictive_dashboard') }}" class="btn btn-ai-primary">
+                    <span>⚡</span> Open Predictive & AI Center &rarr;
+                </a>
+            </div>
+        </div>
+
+        {% if at_risk_systems %}
+        <div class="spotlight-grid">
+            {% for sys in at_risk_systems %}
+            <div class="spotlight-item">
+                <div class="spotlight-item-header">
+                    <a href="{{ url_for('pc_details', computer_name=sys.computer_name) }}" class="spotlight-pc-name">{{ sys.computer_name }}</a>
+                    <span class="badge badge-{{ sys.badge_color }}">{{ sys.risk_tier }}</span>
+                </div>
+                <div class="spotlight-risk-row">
+                    <div class="spotlight-score-circle risk-color-{{ sys.badge_color }}">
+                        <span class="spotlight-score-num">{{ sys.risk_score }}</span>
+                        <span class="spotlight-score-denom">/100</span>
+                    </div>
+                    <div class="spotlight-meta">
+                        <div class="spotlight-prob">Failure Probability: <strong>{{ sys.failure_probability }}%</strong></div>
+                        <div class="spotlight-vectors">
+                            {% for v in sys.failure_vectors[:2] %}
+                            <span class="spotlight-vector-pill">{{ v }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="spotlight-action-hint">
+                    {{ sys.recommended_action }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="spotlight-empty">
+            <span>✅</span> All monitored systems currently operating with normal predictive risk margins.
+        </div>
+        {% endif %}
+    </div>
+
     <!-- PC Inventory Table Section -->
     <div class="content-card" id="pc-table">
         <div class="card-header">

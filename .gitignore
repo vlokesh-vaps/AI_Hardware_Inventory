@@ -120,4 +120,7 @@ build/
 *.bak
 *.orig
 
+#Data file the txt file of the system
+data/
+
 # End of file
